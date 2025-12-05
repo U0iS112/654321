@@ -3,8 +3,8 @@
 
 This repository contains a **scientific programming prototype** used to explore two main concepts:
 
-1. **SimpleLLM Architecture** – a minimalistic framework for experimenting with LLM-based reasoning modules.
-2. **SAST Blackboard** – an early-stage implementation of a blackboard-style coordination system for static analysis tasks.
+1. **SimpleLLM Architecture** – a minimalistic framework for semantic typing.
+2. **SAST Blackboard** – A multi-agent approach for semantic typing with focus of decision understanding via signals.
 
 The goal of this project is to provide a clean and modifiable structure for testing, benchmarking, and extending LLM-driven analysis workflows.
 
