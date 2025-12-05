@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Site vcslam:name "SiteName".
+
+vcslam:Site vcslam:id "SiteID".
+
+vcslam:Site vcslam:use "PrimaryUse".
+
+vcslam:Area vcslam:value "AreaHa".
+
+vcslam:Borough vcslam:name "Borough".
+
+vcslam:Coordinate_pair vcslam:qualifier "Qualifier".
+
+vcslam:Coordinate_pair vcslam:easting "Easting".
+
+vcslam:Coordinate_pair vcslam:northing "Northing".
+
+vcslam:Data vcslam:version_DP "DataVersion".
+
+vcslam:Data vcslam:source_DP "DataSource".

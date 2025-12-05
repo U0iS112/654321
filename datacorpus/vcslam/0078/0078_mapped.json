@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "state": {
+            "key": "state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"state\"."
+        },
+        "zip": {
+            "key": "zip",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip\"."
+        },
+        "owner_legal_name": {
+            "key": "owner_legal_name",
+            "Path": null,
+            "mapping": "vcslam:Owner vcslam:legal_name \"owner_legal_name\"."
+        },
+        "description": {
+            "key": "description",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:description \"description\"."
+        },
+        "location_1.human_address": {
+            "key": "human_address",
+            "Path": "location_1",
+            "mapping": "vcslam:Location vcslam:human_address \"location_1.human_address\"."
+        },
+        "location_1.latitude": {
+            "key": "latitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location_1.latitude\"."
+        },
+        "location_1.longitude": {
+            "key": "longitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location_1.longitude\"."
+        },
+        "trade_name": {
+            "key": "trade_name",
+            "Path": null,
+            "mapping": "vcslam:Business vcslam:trade_name \"trade_name\"."
+        }
+    }
+}

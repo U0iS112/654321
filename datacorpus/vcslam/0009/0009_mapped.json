@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "SiteName": {
+            "key": "SiteName",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:name \"SiteName\"."
+        },
+        "SiteID": {
+            "key": "SiteID",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:id \"SiteID\"."
+        },
+        "PrimaryUse": {
+            "key": "PrimaryUse",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:use \"PrimaryUse\"."
+        },
+        "AreaHa": {
+            "key": "AreaHa",
+            "Path": null,
+            "mapping": "vcslam:Area vcslam:value \"AreaHa\"."
+        },
+        "Borough": {
+            "key": "Borough",
+            "Path": null,
+            "mapping": "vcslam:Borough vcslam:name \"Borough\"."
+        },
+        "Qualifier": {
+            "key": "Qualifier",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:qualifier \"Qualifier\"."
+        },
+        "Easting": {
+            "key": "Easting",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:easting \"Easting\"."
+        },
+        "Northing": {
+            "key": "Northing",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:northing \"Northing\"."
+        },
+        "DataVersion": {
+            "key": "DataVersion",
+            "Path": null,
+            "mapping": "vcslam:Data vcslam:version_DP \"DataVersion\"."
+        },
+        "DataSource": {
+            "key": "DataSource",
+            "Path": null,
+            "mapping": "vcslam:Data vcslam:source_DP \"DataSource\"."
+        }
+    }
+}

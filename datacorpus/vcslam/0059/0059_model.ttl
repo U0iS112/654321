@@ -1,0 +1,63 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:Fire_hydrant ;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Database vcslam:of vcslam:Fire_hydrant.
+
+vcslam:Fire_hydrant vcslam:id xsd:string;
+    vcslam:remark xsd:string;
+    vcslam:note xsd:string;
+    vcslam:colour xsd:string;
+    vcslam:status xsd:string;
+    vcslam:active_status xsd:string;
+    vcslam:feature  vcslam:Feature;
+    vcslam:latest vcslam:Out_of_commision;
+    vcslam:compass_direction xsd:string;
+    vcslam:installation  vcslam:Installation;
+    vcslam:system  vcslam:System;
+    vcslam:built_by vcslam:Manufacture;
+    vcslam:in_commission xsd:boolean;
+    vcslam:locatedAt vcslam:Location.
+
+
+vcslam:Add vcslam:of vcslam:Fire_hydrant;
+    vcslam:to vcslam:Database;
+    vcslam:date xsd:date.
+
+vcslam:Feature vcslam:id xsd:string.
+
+vcslam:Out_of_commision vcslam:note xsd:string;
+    vcslam:date xsd:date.
+
+vcslam:Installation vcslam:date xsd:date.
+
+vcslam:System vcslam:information xsd:string.
+
+vcslam:Manufacture vcslam:code xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Street vcslam:information xsd:string.
+
+vcslam:Planning_area vcslam:name xsd:string.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.
+
+
+vcslam:Distance_1 vcslam:from vcslam:Fire_hydrant;
+    vcslam:to vcslam:Valve;
+    vcslam:value xsd:decimal;
+    vcslam:measurement_unit_distance vcslam:Meter.
+
+vcslam:Distance_2 vcslam:from vcslam:Fire_hydrant;
+    vcslam:to vcslam:Corner;
+    vcslam:value xsd:decimal;
+    vcslam:measurement_unit_distance vcslam:Meter.

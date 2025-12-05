@@ -1,0 +1,47 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Sample vcslam:reference "sample_ref_no".
+
+vcslam:Sample vcslam:id "sample_id".
+
+vcslam:Sample vcslam:date_time "sample_date".
+
+vcslam:Sample vcslam:medium "medium".
+
+vcslam:Sample vcslam:date_time "sample_date".
+
+vcslam:Parameter vcslam:type "param_type".
+
+vcslam:Parameter vcslam:information "parameter".
+
+vcslam:Site vcslam:number "sample_site_no".
+
+vcslam:Site vcslam:name "site_name".
+
+vcslam:Site vcslam:type "site_type".
+
+vcslam:Result vcslam:value "result".
+
+vcslam:Result vcslam:measurement_unit_DP "unit".
+
+vcslam:Filter vcslam:information "filter".
+
+vcslam:Depth vcslam:value "depth_in_meters".
+
+vcslam:Project vcslam:name "project".
+
+vcslam:Location vcslam:information "watershed".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "lat_dd_wgs84".
+
+vcslam:Coordinate_pair vcslam:longitude "lon_dd_wgs84".
+
+vcslam:Measurement vcslam:method "method".

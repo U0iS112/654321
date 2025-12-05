@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Incident vcslam:of vcslam:Closure;
+                vcslam:description xsd:string;
+                vcslam:link xsd:anyURI.
+
+vcslam:Closure vcslam:of vcslam:Road;
+    vcslam:of vcslam:Lane.
+
+vcslam:Lane vcslam:description xsd:string;
+    vcslam:compass_direction xsd:string.

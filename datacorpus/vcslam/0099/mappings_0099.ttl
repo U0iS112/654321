@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location vcslam:address "address".
+
+vcslam:City vcslam:name "city".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:School vcslam:phone_number "phone".
+
+vcslam:School vcslam:link "url".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:School vcslam:type "category".
+
+vcslam:School vcslam:name "school_name".

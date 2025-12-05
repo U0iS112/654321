@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:House;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Building_project vcslam:house vcslam:House;
+                        vcslam:status xsd:string.
+
+vcslam:House vcslam:identifier xsd:string;
+    vcslam:operated_by vcslam:Organization;
+    vcslam:occupancy vcslam:Occupancy;
+    vcslam:name xsd:string;
+    vcslam:link xsd:anyURI;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Location vcslam:address xsd:string;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:positionAt vcslam:Position.
+
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+    vcslam:geometry_type xsd:string.
+
+vcslam:Planning_area vcslam:name xsd:string .

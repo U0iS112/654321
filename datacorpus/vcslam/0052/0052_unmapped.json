@@ -1,0 +1,30 @@
+{
+    "fields.std_street": {
+        "key": "std_street",
+        "Path": "fields"
+    },
+    "fields.street_side_name": {
+        "key": "street_side_name",
+        "Path": "fields"
+    },
+    "fields.assigned": {
+        "key": "assigned",
+        "Path": "fields"
+    },
+    "fields.civic_number": {
+        "key": "civic_number",
+        "Path": "fields"
+    },
+    "fields.height_range_id": {
+        "key": "height_range_id",
+        "Path": "fields"
+    },
+    "fields.on_street_block": {
+        "key": "on_street_block",
+        "Path": "fields"
+    },
+    "fields.root_barrier": {
+        "key": "root_barrier",
+        "Path": "fields"
+    }
+}

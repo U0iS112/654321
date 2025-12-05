@@ -1,0 +1,44 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Inspection vcslam:id "apcaseinspkey".
+
+vcslam:Inspection vcslam:type "insptype".
+
+vcslam:Inspection vcslam:completion_date_time "compdttm".
+
+vcslam:Result vcslam:information "result".
+
+vcslam:Result vcslam:date_time "resultdttm".
+
+vcslam:Person vcslam:name "inspby".
+
+vcslam:Location vcslam:address_number "address_number".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinates vcslam:geometry_type "location.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "location.coordinates".
+
+vcslam:City vcslam:name "city".
+
+vcslam:State vcslam:name "state".
+
+vcslam:Location vcslam:zip_code "zip".
+
+vcslam:Council_district vcslam:name "council_district".
+
+vcslam:Police_district vcslam:identifier "police_district".
+
+vcslam:Census_tract vcslam:identifier "census_tract".
+
+vcslam:Census_Block vcslam:identifier "census_block".
+
+vcslam:Group vcslam:identifier "census_block_group".
+
+vcslam:Neighbourhood vcslam:name "neighborhood".

@@ -1,0 +1,105 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "apcaseinspkey": {
+            "key": "apcaseinspkey",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:id \"apcaseinspkey\"."
+        },
+        "insptype": {
+            "key": "insptype",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:type \"insptype\"."
+        },
+        "compdttm": {
+            "key": "compdttm",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:completion_date_time \"compdttm\"."
+        },
+        "result": {
+            "key": "result",
+            "Path": null,
+            "mapping": "vcslam:Result vcslam:information \"result\"."
+        },
+        "resultdttm": {
+            "key": "resultdttm",
+            "Path": null,
+            "mapping": "vcslam:Result vcslam:date_time \"resultdttm\"."
+        },
+        "inspby": {
+            "key": "inspby",
+            "Path": null,
+            "mapping": "vcslam:Person vcslam:name \"inspby\"."
+        },
+        "address_number": {
+            "key": "address_number",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address_number \"address_number\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.type": {
+            "key": "type",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"location.type\"."
+        },
+        "location.coordinates": {
+            "key": "coordinates",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"location.coordinates\"."
+        },
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "state": {
+            "key": "state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"state\"."
+        },
+        "zip": {
+            "key": "zip",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip\"."
+        },
+        "council_district": {
+            "key": "council_district",
+            "Path": null,
+            "mapping": "vcslam:Council_district vcslam:name \"council_district\"."
+        },
+        "police_district": {
+            "key": "police_district",
+            "Path": null,
+            "mapping": "vcslam:Police_district vcslam:identifier \"police_district\"."
+        },
+        "census_tract": {
+            "key": "census_tract",
+            "Path": null,
+            "mapping": "vcslam:Census_tract vcslam:identifier \"census_tract\"."
+        },
+        "census_block": {
+            "key": "census_block",
+            "Path": null,
+            "mapping": "vcslam:Census_Block vcslam:identifier \"census_block\"."
+        },
+        "census_block_group": {
+            "key": "census_block_group",
+            "Path": null,
+            "mapping": "vcslam:Group vcslam:identifier \"census_block_group\"."
+        },
+        "neighborhood": {
+            "key": "neighborhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighborhood\"."
+        }
+    }
+}

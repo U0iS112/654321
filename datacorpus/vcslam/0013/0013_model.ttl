@@ -1,0 +1,34 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Station
+    vcslam:name xsd:string ;
+    vcslam:refers_to vcslam:Record;
+    vcslam:locatedAt xsd:Location.
+
+vcslam:Location    
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Air
+    vcslam:includes vcslam:Temperature.
+           
+vcslam:Temperature    
+    vcslam:value xsd:anySimpleType;
+    vcslam:measurement_unit_temperature vcslam:Fahrenheit.
+     
+vcslam:Road 
+    vcslam:surface_temperature vcslam:Temperature.
+
+ vcslam:Record
+      vcslam:includes vcslam:Road;
+      vcslam:includes vcslam:Air;
+      vcslam:dateTime xsd:dateTime ;
+      vcslam:locatedAt vcslam:Station;
+      vcslam:id xsd:string .
+

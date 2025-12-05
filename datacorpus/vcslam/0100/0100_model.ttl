@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Database vcslam:of vcslam:Property.
+
+vcslam:Add vcslam:of vcslam:Property;
+    vcslam:to vcslam:Database;
+    vcslam:date_time xsd:dateTime.
+
+vcslam:Property vcslam:information xsd:string;
+    vcslam:type xsd:string;
+    vcslam:title xsd:string;
+    vcslam:includes vcslam:Available;
+                vcslam:locatedAt vcslam:Location.
+
+vcslam:Available vcslam:for vcslam:Purchase.
+
+vcslam:Purchase vcslam:includes vcslam:Price;
+                vcslam:is_available xsd:boolean.
+
+vcslam:Price vcslam:value xsd:string.
+
+
+vcslam:Location vcslam:locatedAt vcslam:Ward_physical;
+    vcslam:zip_code xsd:string;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Ward_physical vcslam:identifier xsd:string.
+
+vcslam:Street vcslam:address xsd:string.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

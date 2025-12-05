@@ -1,0 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Parking_ticket vcslam:description "ticket_description".
+
+vcslam:Location vcslam:information "controlled_parking_zone_area".
+
+vcslam:Case vcslam:status "status_of_case".
+
+vcslam:Registration vcslam:value "country_vehicle_registered_to".
+
+vcslam:Vehicle vcslam:removed "vehicle_removed".
+
+vcslam:Vehicle vcslam:foreign "foreign_vehicle".
+
+vcslam:Contravention vcslam:code "contravention_code".
+
+vcslam:Contravention vcslam:suffix "contravention_code_suffix".
+
+vcslam:Contravention vcslam:date_time "contravention_date".
+
+vcslam:Contravention vcslam:description "contravention_description".
+
+vcslam:Contravention vcslam:in_last_7_days "contravention_in_last_7_days".
+
+vcslam:Cancel vcslam:reason "cancellation_reason".
+
+vcslam:Ward vcslam:code "ward_code".
+
+vcslam:Ward vcslam:name "ward_name".
+
+vcslam:Street vcslam:name "street".
+
+vcslam:Coordinates vcslam:spatial_accuracy "spatial_accuracy".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:easting "easting".
+
+vcslam:Coordinate_pair vcslam:northing "northing".
+
+vcslam:Category vcslam:information "vehicle_category".
+
+vcslam:Parking_ticket vcslam:type "ticket_type".

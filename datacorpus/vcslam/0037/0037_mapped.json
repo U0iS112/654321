@@ -1,0 +1,85 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "grades_offered": {
+            "key": "grades_offered",
+            "Path": null,
+            "mapping": "vcslam:Grade vcslam:range \"grades_offered\"."
+        },
+        "grade_level": {
+            "key": "grade_level",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:type \"grade_level\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "postal_code": {
+            "key": "postal_code",
+            "Path": null,
+            "mapping": "vcslam:Postal vcslam:code \"postal_code\"."
+        },
+        "programs": {
+            "key": "programs",
+            "Path": null,
+            "mapping": "vcslam:Program vcslam:information \"programs\"."
+        },
+        "ward": {
+            "key": "ward",
+            "Path": null,
+            "mapping": "vcslam:Ward vcslam:identifier \"ward\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "fax_number": {
+            "key": "fax_number",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:fax_number \"fax_number\"."
+        },
+        "email_address": {
+            "key": "email_address",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:email_address \"email_address\"."
+        },
+        "phone_number": {
+            "key": "phone_number",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:phone_number \"phone_number\"."
+        },
+        "ab_education_school_number": {
+            "key": "ab_education_school_number",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:number \"ab_education_school_number\"."
+        },
+        "website.url": {
+            "key": "url",
+            "Path": "website",
+            "mapping": "vcslam:School vcslam:link \"website.url\"."
+        },
+        "school_name": {
+            "key": "school_name",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:name \"school_name\"."
+        }
+    }
+}

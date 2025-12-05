@@ -1,0 +1,70 @@
+{
+    "total_yearly_eco_benefits": {
+        "key": "total_yearly_eco_benefits",
+        "Path": null
+    },
+    "stormwater_benefits": {
+        "key": "stormwater_benefits",
+        "Path": null
+    },
+    "stormwater_gallons_saved": {
+        "key": "stormwater_gallons_saved",
+        "Path": null
+    },
+    "greenhouse_co2_benefits": {
+        "key": "greenhouse_co2_benefits",
+        "Path": null
+    },
+    "co2_avoided_in_lbs": {
+        "key": "co2_avoided_in_lbs",
+        "Path": null
+    },
+    "co2_sequestered_in_lbs": {
+        "key": "co2_sequestered_in_lbs",
+        "Path": null
+    },
+    "energy_benefits": {
+        "key": "energy_benefits",
+        "Path": null
+    },
+    "kwh_saved": {
+        "key": "kwh_saved",
+        "Path": null
+    },
+    "therms_saved": {
+        "key": "therms_saved",
+        "Path": null
+    },
+    "air_quality_benefits": {
+        "key": "air_quality_benefits",
+        "Path": null
+    },
+    "pollutants_saved_in_lbs": {
+        "key": "pollutants_saved_in_lbs",
+        "Path": null
+    },
+    "property_benefits": {
+        "key": "property_benefits",
+        "Path": null
+    },
+    ":@computed_region_fk4y_hpmh": {
+        "key": ":@computed_region_fk4y_hpmh",
+        "Path": null
+    },
+    ":@computed_region_eziv_p4ck": {
+        "key": ":@computed_region_eziv_p4ck",
+        "Path": null
+    },
+    ":@computed_region_tmcg_v66k": {
+        "key": ":@computed_region_tmcg_v66k",
+        "Path": null
+    },
+    ":@computed_region_kwzn_pe6v": {
+        "key": ":@computed_region_kwzn_pe6v",
+        "Path": null
+    },
+    ":@computed_region_xbxg_7ifr": {
+        "key": ":@computed_region_xbxg_7ifr",
+        "Path": null
+    }
+}

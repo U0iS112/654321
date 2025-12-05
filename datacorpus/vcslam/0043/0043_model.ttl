@@ -1,0 +1,40 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location
+    vcslam:includes vcslam:Ward;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position 
+   vcslam:latitude xsd:decimal ;
+   vcslam:geometry_type xsd:string;
+   vcslam:longitude xsd:decimal .
+
+vcslam:Speed 
+   vcslam:limit vcslam:anySimpleType.
+
+vcslam:Display
+   vcslam:shows vcslam:Speed;
+   vcslam:refers_to vcslam:Sign.
+
+vcslam:Ward
+    vcslam:number xsd:int.
+
+vcslam:Sign
+   vcslam:id xsd:string;
+   vcslam:name xsd:string;
+   vcslam:includes vcslam:Display;
+   vcslam:active vcslam:Time_period;
+   vcslam:compass_direction xsd:string;
+   vcslam:locatedAt vcslam:Location.
+                                                  
+vcslam:Start
+   vcslam:date_time xsd:date_time.   
+
+vcslam:End 
+   vcslam:date_time xsd:date_time.    
+
+vcslam:Time_period
+   vcslam:includes vcslam:Start;
+   vcslam:includes vcslam:End.    

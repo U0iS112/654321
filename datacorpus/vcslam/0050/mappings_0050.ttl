@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Operator vcslam:name "fields.businessoperator".
+
+vcslam:Housing_unit vcslam:total "fields.totalunits".
+
+vcslam:Street vcslam:number "fields.streetnumber".
+
+vcslam:Street vcslam:name "fields.street".
+
+vcslam:Local_area vcslam:name "fields.geo_local_area".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Issue vcslam:outstanding_amount "fields.totaloutstanding".
+
+vcslam:Rental_property vcslam:link "fields.detailurl".

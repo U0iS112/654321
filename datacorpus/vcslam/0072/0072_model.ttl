@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+vcslam:Inspection vcslam:of vcslam:Building;
+    vcslam:date_time xsd:dateTime;
+    vcslam:type xsd:string;
+    vcslam:permit  vcslam:Permit;
+    vcslam:result xsd:string.
+
+vcslam:Building vcslam:locatedAt vcslam:Location.
+
+vcslam:Location vcslam:address xsd:string;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal.
+
+vcslam:Permit vcslam:status xsd:string;
+    vcslam:identifier xsd:string.

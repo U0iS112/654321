@@ -1,0 +1,47 @@
+
+A listing of large-scale, site-specific publicly accessible artwork in Nashville.
+
+
+Column Name
+Description
+Type
+
+Title	
+Name of the art piece
+Plain Text
+
+Artist Last Name	
+Last name(s) of the artist(s)
+Plain Text
+
+Artist First Name	
+First name(s) of the artist(s)
+Plain Text
+
+Location	
+Text street address where the art piece can be found
+Plain Text
+
+Medium	
+List of materials used in the art piece
+Plain Text
+
+Type	
+General type of the art piece
+Plain Text
+
+Description	
+Brief text description of the art piece
+Plain Text
+
+Latitude	
+Approximate latitude of the art piece
+Number
+
+Longitude	
+Approximate longitude of the art piece
+Number
+
+Mapped Location	
+Combined latitude and longitude of the art piece for mapping purposes
+Location

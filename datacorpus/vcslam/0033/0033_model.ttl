@@ -1,0 +1,60 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Property
+    vcslam:refers_to vcslam:Assessment;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Lot;
+    vcslam:identifier xsd:string;
+    vcslam:is_part_of vcslam:Zone;
+    vcslam:contains vcslam:Building.
+
+vcslam:Zone
+    vcslam:abbreviation xsd:string.
+
+vcslam:Lot
+    vcslam:contains vcslam:Garage;
+    vcslam:refers_to vcslam:Size.
+
+vcslam:Garage
+    vcslam:is_available xsd:boolean.    
+
+vcslam:Building
+    vcslam:built_year xsd:gYear.
+
+vcslam:Size
+    vcslam:measured vcslam:Meter.
+
+vcslam:Assessment
+   vcslam:value xsd:anySimpleType;
+   vcslam:includes vcslam:Mill;
+   vcslam:includes vcslam:Tax;
+   vcslam:description xsd:string;
+   vcslam:year xsd:gYear.
+
+vcslam:Mill
+   vcslam:refers_to vcslam:Class.
+
+vcslam:Tax
+   vcslam:refers_to vcslam:Class.   
+
+vcslam:Class
+   vcslam:description xsd:string.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position ;
+    vcslam:includes vcslam:Neighbourhood;
+    vcslam:includes vcslam:Street.
+
+vcslam:Neighbourhood
+    vcslam:name xsd:string.
+
+vcslam:Street
+    vcslam:name xsd:string.    
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:geometry_type xsd:string ;
+    vcslam:longitude xsd:decimal .

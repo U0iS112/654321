@@ -1,0 +1,45 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "pay_by_cash": {
+            "key": "pay_by_cash",
+            "Path": null,
+            "mapping": "vcslam:Cash vcslam:is_available \"pay_by_cash\"."
+        },
+        "pay_by_credit_card": {
+            "key": "pay_by_credit_card",
+            "Path": null,
+            "mapping": "vcslam:Card vcslam:is_available \"pay_by_credit_card\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "tvm_identifier": {
+            "key": "tvm_identifier",
+            "Path": null,
+            "mapping": "vcslam:Ticket_vending_machine vcslam:identifier \"tvm_identifier\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.type": {
+            "key": "type",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"location.type\"."
+        },
+        "location.coordinates": {
+            "key": "coordinates",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"location.coordinates\"."
+        }
+    }
+}

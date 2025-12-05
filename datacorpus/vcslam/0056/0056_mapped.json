@@ -1,0 +1,50 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "properties.bikeway_type": {
+            "key": "bikeway_type",
+            "Path": "properties",
+            "mapping": "vcslam:Bikeway vcslam:type \"properties.bikeway_type\"."
+        },
+        "properties.street_name": {
+            "key": "street_name",
+            "Path": "properties",
+            "mapping": "vcslam:Street vcslam:name \"properties.street_name\"."
+        },
+        "properties.street_segment_types": {
+            "key": "street_segment_types",
+            "Path": "properties",
+            "mapping": "vcslam:Segment vcslam:type \"properties.street_segment_types\"."
+        },
+        "properties.unique_id": {
+            "key": "unique_id",
+            "Path": "properties",
+            "mapping": "vcslam:Segment vcslam:id \"properties.unique_id\"."
+        },
+        "properties.year_of_construction": {
+            "key": "year_of_construction",
+            "Path": "properties",
+            "mapping": "vcslam:Segment vcslam:built_year \"properties.year_of_construction\"."
+        },
+        "properties.length": {
+            "key": "length",
+            "Path": "properties",
+            "mapping": "vcslam:Length vcslam:value \"properties.length\"."
+        },
+        "properties.bike_route_name": {
+            "key": "bike_route_name",
+            "Path": "properties",
+            "mapping": "vcslam:Route vcslam:name \"properties.bike_route_name\"."
+        },
+        "properties.direction_of_movement": {
+            "key": "direction_of_movement",
+            "Path": "properties",
+            "mapping": "vcslam:Movement vcslam:compass_direction \"properties.direction_of_movement\"."
+        },
+        "geometry.type": {
+            "key": "type",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geometry.type\"."
+        }
+    }
+}

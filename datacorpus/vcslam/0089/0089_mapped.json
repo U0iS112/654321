@@ -1,0 +1,130 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "crime_type": {
+            "key": "crime_type",
+            "Path": null,
+            "mapping": "vcslam:Crime vcslam:type \"crime_type\"."
+        },
+        "incident_report_number": {
+            "key": "incident_report_number",
+            "Path": null,
+            "mapping": "vcslam:Crime vcslam:identifier \"incident_report_number\"."
+        },
+        "ucr_code": {
+            "key": "ucr_code",
+            "Path": null,
+            "mapping": "vcslam:Crime vcslam:ucr_code \"ucr_code\"."
+        },
+        "location_type": {
+            "key": "location_type",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:type \"location_type\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "zip_code": {
+            "key": "zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip_code\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "y_coordinate": {
+            "key": "y_coordinate",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"y_coordinate\"."
+        },
+        "x_coordinate": {
+            "key": "x_coordinate",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"x_coordinate\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "council_district": {
+            "key": "council_district",
+            "Path": null,
+            "mapping": "vcslam:Council_district vcslam:identifier \"council_district\"."
+        },
+        "sector": {
+            "key": "sector",
+            "Path": null,
+            "mapping": "vcslam:Sector vcslam:identifier \"sector\"."
+        },
+        "district": {
+            "key": "district",
+            "Path": null,
+            "mapping": "vcslam:District vcslam:identifier \"district\"."
+        },
+        "clearance_status": {
+            "key": "clearance_status",
+            "Path": null,
+            "mapping": "vcslam:Clearance vcslam:status \"clearance_status\"."
+        },
+        "clearance_date": {
+            "key": "clearance_date",
+            "Path": null,
+            "mapping": "vcslam:Clearance vcslam:date_time \"clearance_date\"."
+        },
+        "category_description": {
+            "key": "category_description",
+            "Path": null,
+            "mapping": "vcslam:Category vcslam:description \"category_description\"."
+        },
+        "occ_date_time": {
+            "key": "occ_date_time",
+            "Path": null,
+            "mapping": "vcslam:Occurrence vcslam:date_time \"occ_date_time\"."
+        },
+        "occ_date": {
+            "key": "occ_date",
+            "Path": null,
+            "mapping": "vcslam:Occurrence vcslam:date_time \"occ_date\"."
+        },
+        "occ_time": {
+            "key": "occ_time",
+            "Path": null,
+            "mapping": "vcslam:Occurrence vcslam:time \"occ_time\"."
+        },
+        "rep_date_time": {
+            "key": "rep_date_time",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:date_time \"rep_date_time\"."
+        },
+        "rep_time": {
+            "key": "rep_time",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:time \"rep_time\"."
+        },
+        "rep_date": {
+            "key": "rep_date",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:date_time \"rep_date\"."
+        }
+    }
+}

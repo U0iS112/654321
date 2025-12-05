@@ -1,0 +1,30 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "dog_breed": {
+            "key": "dog_breed",
+            "Path": null,
+            "mapping": "vcslam:Breed vcslam:name \"dog_breed\"."
+        },
+        "neighborhood": {
+            "key": "neighborhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighborhood\"."
+        },
+        "latitude_masked": {
+            "key": "latitude_masked",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude_masked\"."
+        },
+        "longitude_masked": {
+            "key": "longitude_masked",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude_masked\"."
+        },
+        "dog_name": {
+            "key": "dog_name",
+            "Path": null,
+            "mapping": "vcslam:Dog vcslam:name \"dog_name\"."
+        }
+    }
+}

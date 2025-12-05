@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Accident 
+   vcslam:involves vcslam:Traffic;
+   vcslam:involves vcslam:Crash .
+
+vcslam:Crash
+    vcslam:locatedAt vcslam:Location;
+    vcslam:involves vcslam:Object_1;
+    vcslam:involves vcslam:Object_2;
+    vcslam:id xsd:int ;
+    vcslam:day xsd:gDay;
+    vcslam:datetime xsd:dateTime .
+
+vcslam:Object_1
+    vcslam:description xsd:string.
+
+vcslam:Object_2
+    vcslam:description xsd:string.
+
+vcslam:Location 
+    vcslam:positionAt vcslam:Position;               
+    vcslam:information xsd:string;
+    vcslam:includes vcslam:Street;
+    vcslam:cross_street xsd:string.
+
+vcslam:Street
+    vcslam:name xsd:string;
+    vcslam:number xsd:int;
+
+vcslam:Position  
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal.

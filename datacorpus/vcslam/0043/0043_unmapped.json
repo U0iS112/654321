@@ -1,0 +1,22 @@
+{
+    "type": {
+        "key": "type",
+        "Path": null
+    },
+    "properties._id": {
+        "key": "_id",
+        "Path": "properties"
+    },
+    "properties.flash_speed": {
+        "key": "flash_speed",
+        "Path": "properties"
+    },
+    "properties.strobe_speed": {
+        "key": "strobe_speed",
+        "Path": "properties"
+    },
+    "geometry.type": {
+        "key": "type",
+        "Path": "geometry"
+    }
+}

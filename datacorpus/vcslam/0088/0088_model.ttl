@@ -1,0 +1,49 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Measurement
+                  vcslam:method xsd:string;
+                  vcslam:is_part_of vcslam:Project;
+                  vcslam:at vcslam:Site;
+                  vcslam:of vcslam:Water;
+                  vcslam:consists_of vcslam:Parameter;
+                  vcslam:qualifier xsd:string;
+                  vcslam:result xsd:string;
+                  vcslam:uses vcslam:Filter;
+                  vcslam:reference  xsd:int;
+                  vcslam:includes vcslam:Sample;
+                  vcslam:id  xsd:string.
+
+vcslam:Sample vcslam:reference xsd:int;
+                vcslam:id xsd:string;
+              vcslam:type xsd:string;
+              vcslam:of vcslam:Water;
+              vcslam:from vcslam:Depth;
+              vcslam:date_time xsd:dateTime.
+
+vcslam:Filter vcslam:information xsd:string.
+
+vcslam:Projcet vcslam:name xsd:string.
+
+vcslam:Site vcslam:name xsd:string;
+            vcslam:type xsd:string;
+            vcslam:locatedAt vcslam:Location;
+            vcslam:number xsd:int.
+
+vcslam:Parameter vcslam:type xsd:string;
+                 vcslam:information xsd:string.
+
+vcslam:Water vcslam:measurement vcslam:Volume.
+
+vcslam:Depth vcslam:measurement_unit_distance vcslam:Meter;
+             vcslam:value xsd:string.
+
+vcslam:Volume vcslam:measurement_unit_used xsd:string.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position .
+vcslam:Position vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+

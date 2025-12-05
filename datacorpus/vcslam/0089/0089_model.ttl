@@ -1,0 +1,50 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Report vcslam:of vcslam:Crime;
+              vcslam:date_time xsd:dateTime;
+              vcslam:date xsd:date;
+              vcslam:time xsd:time.
+
+vcslam:Crime vcslam:type xsd:string;
+             vcslam:includes  vcslam:Occurence;
+             vcslam:includes  vcslam:Clearance;
+             vcslam:includes  vcslam:Category;
+             vcslam:locatedAt vcslam:Location;
+             vcslam:number xsd:int.
+
+vcslam:Occurence vcslam:date xsd:date;
+                 vcslam:date_time xsd:dateTime;
+                 vcslam:time xsd:time.
+
+
+vcslam:Clearance vcslam:date_time xsd:dateTime;
+                 vcslam:status xsd:string.
+
+
+vcslam:Category
+             vcslam:ucr_code xsd:string;
+                vcslam:description xsd:string.
+
+vcslam:Location
+    vcslam:type xsd:string;
+    vcslam:zip_code xsd:string;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Council_district;
+    vcslam:locatedAt vcslam:District;
+    vcslam:human_address xsd:string;
+    vcslam:locatedAt vcslam:Sector;
+    vcslam:address xsd:string;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Street vcslam:address xsd:string.
+
+vcslam:Council_district vcslam:information xsd:string.
+
+vcslam:Sector vcslam:information xsd:string.
+
+vcslam:District vcslam:information xsd:string.
+
+vcslam:Position vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

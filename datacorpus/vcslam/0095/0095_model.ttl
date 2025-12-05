@@ -1,0 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+
+vcslam:Tow vcslam:date_time xsd:dateTime;
+    vcslam:for vcslam:Vehicle;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:reason xsd:string;
+    vcslam:description xsd:string;
+    vcslam:by vcslam:Agency.
+
+vcslam:Agency vcslam:abbreviation xsd:string.
+
+vcslam:Location
+    vcslam:information xsd:string;
+    vcslam:zip_code xsd:string;
+    vcslam:locatedAt vcslam:Council_district;
+    vcslam:locatedAt vcslam:Police_district;
+    vcslam:locatedAt vcslam:Neighbourhood;
+    vcslam:locatedAt vcslam:Census_tract;
+    vcslam:locatedAt vcslam:Census_Block;
+    vcslam:locatedAt vcslam:City;
+    vcslam:locatedAt vcslam:State;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:City vcslam:name xsd:string.
+
+vcslam:State vcslam:name xsd:string.
+
+vcslam:Police_district vcslam:identifier xsd:string.
+
+vcslam:Council_district vcslam:identifier xsd:string.
+
+vcslam:Census_tract vcslam:identifier xsd:string.
+
+vcslam:Census_Block vcslam:includes vcslam:Group;
+                    vcslam:identifier xsd:string .
+
+vcslam:Neighbourhood vcslam:name xsd:string.
+
+vcslam:Group vcslam:identifier xsd:string.
+
+vcslam:Position vcslam:longitude xsd:decimal;
+    vcslam:latitude xsd:decimal.
+
+vcslam:Vehicle vcslam:year xsd:gYear;
+    vcslam:manufactured_by vcslam:Manufacture.
+
+vcslam:Manufacture vcslam:abbreviation xsd:string.

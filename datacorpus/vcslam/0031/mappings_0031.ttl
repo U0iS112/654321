@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Measurement vcslam:id "row_id".
+
+vcslam:Measurement vcslam:date_time "date_and_time".
+
+vcslam:Flow vcslam:value "water_flow_cu_meter_per_sec".
+
+vcslam:Level vcslam:value "water_level_m".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "station_location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "station_location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "station_location.longitude".
+
+vcslam:Monitoring_station vcslam:description "station_description".
+
+vcslam:Monitoring_station vcslam:id "station_number".

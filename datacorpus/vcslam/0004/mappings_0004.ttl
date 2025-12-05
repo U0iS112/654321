@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Height vcslam:value "Height restriction (m)".
+
+vcslam:Height vcslam:value "Height restriction (imperial)".
+
+vcslam:Bridge vcslam:comment  "comments".
+
+vcslam:Borough vcslam:name "Borough".
+
+vcslam:Coordinate_pair vcslam:latitude "Lat".
+
+vcslam:Coordinate_pair vcslam:longitude "Lng".
+
+vcslam:Coordinate_pair vcslam:northing "Northing".
+
+vcslam:Coordinate_pair vcslam:easting "Easting".
+
+vcslam:Geo_grid vcslam:reference "Grid Reference".
+
+vcslam:Road vcslam:name "Road name".
+
+vcslam:Road vcslam:number "Road number".
+
+vcslam:Road vcslam:is_red_route "TLRN [Red route]?".

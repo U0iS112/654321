@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "sumd_type": {
+            "key": "sumd_type",
+            "Path": null,
+            "mapping": "vcslam:Sumd vcslam:type \"sumd_type\"."
+        },
+        "sumd_group": {
+            "key": "sumd_group",
+            "Path": null,
+            "mapping": "vcslam:Group vcslam:type \"sumd_group\"."
+        },
+        "availability_start_date": {
+            "key": "availability_start_date",
+            "Path": null,
+            "mapping": "vcslam:Available vcslam:start_date \"availability_start_date\"."
+        },
+        "availability_start_time": {
+            "key": "availability_start_time",
+            "Path": null,
+            "mapping": "vcslam:Available vcslam:start_time \"availability_start_time\"."
+        },
+        "availability_duration": {
+            "key": "availability_duration",
+            "Path": null,
+            "mapping": "vcslam:Duration vcslam:value \"availability_duration\"."
+        },
+        "real_time_fare": {
+            "key": "real_time_fare",
+            "Path": null,
+            "mapping": "vcslam:Fare vcslam:value \"real_time_fare\"."
+        },
+        "company_phone": {
+            "key": "company_phone",
+            "Path": null,
+            "mapping": "vcslam:Company vcslam:link \"company_phone\"."
+        },
+        "company_website": {
+            "key": "company_website",
+            "Path": null,
+            "mapping": "vcslam:Company vcslam:phone_number \"company_website\"."
+        },
+        "gps_latitude": {
+            "key": "gps_latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"gps_latitude\"."
+        },
+        "gps_longitude": {
+            "key": "gps_longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"gps_longitude\"."
+        },
+        "sumd_id": {
+            "key": "sumd_id",
+            "Path": null,
+            "mapping": "vcslam:Sumd vcslam:id \"sumd_id\"."
+        }
+    }
+}

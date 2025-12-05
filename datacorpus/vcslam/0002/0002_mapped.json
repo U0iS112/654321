@@ -1,0 +1,30 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "name": {
+            "key": "name",
+            "Path": null,
+            "mapping": "vcslam:Shop vcslam:name \"name\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "region": {
+            "key": "region",
+            "Path": null,
+            "mapping": "vcslam:Region vcslam:name \"region\"."
+        },
+        "geocoded_column.type": {
+            "key": "type",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geocoded_column.type\"."
+        },
+        "geocoded_column.coordinates": {
+            "key": "coordinates",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"geocoded_column.coordinates\"."
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Winter vcslam:times_of_operation "fields.winter_hours".
+
+vcslam:Summer vcslam:times_of_operation "fields.summer_hours".
+
+vcslam:Maintenance vcslam:information "fields.maintainer".
+
+vcslam:Local_area vcslam:name "fields.geo_local_area".
+
+vcslam:Location vcslam:information "fields.location".
+
+vcslam:Location vcslam:address "fields.address".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Washroom vcslam:type "fields.type".
+
+vcslam:Washroom vcslam:name "fields.name".
+
+vcslam:Washroom vcslam:note "fields.note".
+
+vcslam:Washroom vcslam:wheelchair_accessible "fields.wheel_access".
+
+vcslam:Washroom vcslam:id "fields.primaryind".

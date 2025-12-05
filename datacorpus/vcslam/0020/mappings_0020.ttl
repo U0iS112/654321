@@ -1,0 +1,41 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Permit vcslam:description "permittypedesc".
+
+vcslam:Permit vcslam:type "permittypemapped".
+
+vcslam:Permit vcslam:link "link.url".
+
+vcslam:Registration vcslam:status "statuscurrent".
+
+vcslam:Registration vcslam:date "registereddate".
+
+vcslam:Expire vcslam:date "expiredate".
+
+vcslam:Property vcslam:name "propertyname".
+
+vcslam:Housing_unit vcslam:amount "rentalhousingunits".
+
+vcslam:Location vcslam:address "originaladdress1".
+
+vcslam:City vcslam:name "originalcity".
+
+vcslam:State vcslam:name "originalstate".
+
+vcslam:Location vcslam:zip_code "originalzip".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location1.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location1.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location1.longitude".
+
+vcslam:Property vcslam:contact_information "propertycontactname".
+
+vcslam:Permit vcslam:identifier "permitnum".

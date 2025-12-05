@@ -1,0 +1,29 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Company vcslam:link "organisation_uri.url".
+
+vcslam:Company vcslam:name "company_name".
+
+vcslam:Property vcslam:reference "property_reference".
+
+vcslam:Tax_payment vcslam:start_date_time "start_date".
+
+vcslam:Tax_payment vcslam:end_date_time "end_date".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:easting "easting".
+
+vcslam:Coordinates vcslam:spatial_accuracy "spatial_accuracy".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".

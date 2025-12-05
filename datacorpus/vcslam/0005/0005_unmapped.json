@@ -1,0 +1,54 @@
+{
+    "charge_type": {
+        "key": "charge_type",
+        "Path": null
+    },
+    "gross_charge": {
+        "key": "gross_charge",
+        "Path": null
+    },
+    "supplement": {
+        "key": "supplement",
+        "Path": null
+    },
+    "small_business_relief": {
+        "key": "small_business_relief",
+        "Path": null
+    },
+    "charity_relief": {
+        "key": "charity_relief",
+        "Path": null
+    },
+    "exemption_relief": {
+        "key": "exemption_relief",
+        "Path": null
+    },
+    "discretionary_relief": {
+        "key": "discretionary_relief",
+        "Path": null
+    },
+    "additional_relief": {
+        "key": "additional_relief",
+        "Path": null
+    },
+    "supporting_small_business_relief": {
+        "key": "supporting_small_business_relief",
+        "Path": null
+    },
+    "last_uploaded": {
+        "key": "last_uploaded",
+        "Path": null
+    },
+    "socrata_id": {
+        "key": "socrata_id",
+        "Path": null
+    },
+    ":@computed_region_hxwp_gyfc": {
+        "key": ":@computed_region_hxwp_gyfc",
+        "Path": null
+    },
+    ":@computed_region_6i9a_26nj": {
+        "key": ":@computed_region_6i9a_26nj",
+        "Path": null
+    }
+}

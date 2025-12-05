@@ -1,0 +1,44 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Company 
+    vcslam:name xsd:string;
+    vcslam:performs vcslam:Tax_payment;
+    vcslam:owns vcslam:Website;    
+    vcslam:performs vcslam:Lease.
+
+vcslam:Lease
+    vcslam:involves vcslam:Property.
+
+vcslam:Website 
+    vcslam:url xsd:anyURI.
+
+vcslam:Location 
+    vcslam:positionAt vcslam:Position;
+    vcslam:address xsd:string.
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal;
+    vcslam:northing xsd:decimal;
+    vcslam:easting xsd:decimal ;
+    vcslam:spatial_accuracy xsd:string.
+
+vcslam:Tax_payment 
+    vcslam:involves vcslam:Time_period.
+
+vcslam:Time_period
+    vcslam:includes vcslam:Start;
+    vcslam:includes vcslam:End.
+
+vcslam:Start
+    vcslam:date xsd:date.   
+
+vcslam:End
+    vcslam:date xsd:date.        
+       
+vcslam:Property
+    vcslam:locatedAt vcslam:Location;
+    vcslam:reference xsd:string.
+

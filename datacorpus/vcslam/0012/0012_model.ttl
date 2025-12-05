@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Dog 
+    vcslam:name xsd:string ;
+    vcslam:refers_to vcslam:Breed;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:is_part_of vcslam:Neighbourhood .
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position .
+
+
+vcslam:Breed
+    vcslam:name xsd:string.
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Neighbourhood
+    vcslam:name xsd:string .

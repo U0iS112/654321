@@ -1,0 +1,105 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "properties.Bike_Make": {
+            "key": "Bike_Make",
+            "Path": "properties",
+            "mapping": "vcslam:Manufacture vcslam:id \"properties.Bike_Make\"."
+        },
+        "properties.Cost_of_Bike": {
+            "key": "Cost_of_Bike",
+            "Path": "properties",
+            "mapping": "vcslam:Cost vcslam:value \"properties.Cost_of_Bike\"."
+        },
+        "properties.Bike_Speed": {
+            "key": "Bike_Speed",
+            "Path": "properties",
+            "mapping": "vcslam:Speed vcslam:value \"properties.Bike_Speed\"."
+        },
+        "properties.Status": {
+            "key": "Status",
+            "Path": "properties",
+            "mapping": "vcslam:Theft vcslam:status \"properties.Status\"."
+        },
+        "properties.event_unique_id": {
+            "key": "event_unique_id",
+            "Path": "properties",
+            "mapping": "vcslam:Theft vcslam:id \"properties.event_unique_id\"."
+        },
+        "properties.Occurrence_Date": {
+            "key": "Occurrence_Date",
+            "Path": "properties",
+            "mapping": "vcslam:Occurrence vcslam:date_time \"properties.Occurrence_Date\"."
+        },
+        "properties.Occurrence_Year": {
+            "key": "Occurrence_Year",
+            "Path": "properties",
+            "mapping": "vcslam:Occurrence vcslam:year \"properties.Occurrence_Year\"."
+        },
+        "properties.Occurrence_Month": {
+            "key": "Occurrence_Month",
+            "Path": "properties",
+            "mapping": "vcslam:Occurrence vcslam:month_number \"properties.Occurrence_Month\"."
+        },
+        "properties.Occurrence_Day": {
+            "key": "Occurrence_Day",
+            "Path": "properties",
+            "mapping": "vcslam:Occurrence vcslam:day_of_month \"properties.Occurrence_Day\"."
+        },
+        "properties.Occurrence_Time": {
+            "key": "Occurrence_Time",
+            "Path": "properties",
+            "mapping": "vcslam:Occurrence vcslam:time \"properties.Occurrence_Time\"."
+        },
+        "properties.City": {
+            "key": "City",
+            "Path": "properties",
+            "mapping": "vcslam:City vcslam:name \"properties.City\"."
+        },
+        "properties.Division": {
+            "key": "Division",
+            "Path": "properties",
+            "mapping": "vcslam:Division vcslam:number \"properties.Division\"."
+        },
+        "properties.Primary_Offence": {
+            "key": "Primary_Offence",
+            "Path": "properties",
+            "mapping": "vcslam:Offense vcslam:information \"properties.Primary_Offence\"."
+        },
+        "properties.Hood_ID": {
+            "key": "Hood_ID",
+            "Path": "properties",
+            "mapping": "vcslam:Neighbourhood vcslam:id \"properties.Hood_ID\"."
+        },
+        "properties.Neighbourhood": {
+            "key": "Neighbourhood",
+            "Path": "properties",
+            "mapping": "vcslam:Neighbourhood vcslam:name \"properties.Neighbourhood\"."
+        },
+        "geometry.type": {
+            "key": "type",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geometry.type\"."
+        },
+        "geometry.coordinate.latitude": {
+            "key": "latitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geometry.coordinate.latitude\"."
+        },
+        "geometry.coordinate.longitude": {
+            "key": "longitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geometry.coordinate.longitude\"."
+        },
+        "properties.Bike_Type": {
+            "key": "Bike_Type",
+            "Path": "properties",
+            "mapping": "vcslam:Bicycle vcslam:type \"properties.Bike_Type\"."
+        },
+        "properties.Bike_Colour": {
+            "key": "Bike_Colour",
+            "Path": "properties",
+            "mapping": "vcslam:Bicycle vcslam:colour \"properties.Bike_Colour\"."
+        }
+    }
+}

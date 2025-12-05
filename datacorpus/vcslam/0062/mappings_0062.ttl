@@ -1,0 +1,34 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+vcslam:Park vcslam:id "fields.parkid".
+
+vcslam:Park vcslam:is_official "fields.official".
+
+vcslam:Facility vcslam:is_present "fields.facilities".
+
+vcslam:Washroom vcslam:is_present "fields.washrooms".
+
+vcslam:Area vcslam:value "fields.hectare".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.googlemapdest".
+
+vcslam:Street vcslam:number "fields.streetnumber".
+
+vcslam:Street vcslam:name "fields.streetname".
+
+vcslam:Neighbourhood vcslam:name "fields.neighbourhoodname".
+
+vcslam:Neighbourhood vcslam:link "fields.neighbourhoodurl".
+
+vcslam:Park vcslam:name "fields.name".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Coordinates vcslam:geometry_type "geometry.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "geometry.coordinates".

@@ -1,0 +1,17 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Breed vcslam:name "dog_breed".
+
+vcslam:Neighbourhood vcslam:name "neighborhood".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude_masked".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude_masked".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Dog vcslam:name "dog_name".

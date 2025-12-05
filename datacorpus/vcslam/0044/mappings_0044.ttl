@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Inspection vcslam:date_time_close "Inspections..ClosedDate".
+
+vcslam:Inspection vcslam:date_time_open "Inspections..OpenedDate".
+
+vcslam:Ward vcslam:number "propertyWard".
+
+vcslam:Location vcslam:address "propertyAddress".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Violation vcslam:description "violations..violationDescription".
+
+vcslam:Violation vcslam:type "violations..violationFireCode".

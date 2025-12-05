@@ -1,0 +1,34 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Fire 
+   vcslam:refers_to vcslam:Violation.
+
+vcslam:Violation   
+    vcslam:type xsd:string;
+    vcslam:description xsd:string ;
+    vcslam:includes vcslam:Inspection;
+    vcslam:id xsd:string;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Inspection
+   vcslam:includes vcslam:Open;
+   vcslam:includes vcslam:Close.
+
+vcslam:Open
+   vcslam:date_time xsd:dateTime.
+
+vcslam:Close
+   vcslam:date_time xsd:dateTime.
+
+vcslam:Location
+    vcslam:includes vcslam:Ward;
+    vcslam:address xsd:string;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Ward
+    vcslam:number xsd:int.     

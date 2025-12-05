@@ -1,0 +1,40 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "date_designated": {
+            "key": "date_designated",
+            "Path": null,
+            "mapping": "vcslam:Historic vcslam:date_time \"date_designated\"."
+        },
+        "resolution_number": {
+            "key": "resolution_number",
+            "Path": null,
+            "mapping": "vcslam:Historic vcslam:identifier \"resolution_number\"."
+        },
+        "location_1.human_address": {
+            "key": "human_address",
+            "Path": "location_1",
+            "mapping": "vcslam:Location vcslam:human_address \"location_1.human_address\"."
+        },
+        "location_1.latitude": {
+            "key": "latitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location_1.latitude\"."
+        },
+        "location_1.longitude": {
+            "key": "longitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location_1.longitude\"."
+        },
+        "architect": {
+            "key": "architect",
+            "Path": null,
+            "mapping": "vcslam:Architect vcslam:name \"architect\"."
+        },
+        "property_name": {
+            "key": "property_name",
+            "Path": null,
+            "mapping": "vcslam:Property vcslam:name \"property_name\"."
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "species": {
+            "key": "species",
+            "Path": null,
+            "mapping": "vcslam:Species vcslam:name \"species\"."
+        },
+        "species_botanical": {
+            "key": "species_botanical",
+            "Path": null,
+            "mapping": "vcslam:Species vcslam:information \"species_botanical\"."
+        },
+        "genus": {
+            "key": "genus",
+            "Path": null,
+            "mapping": "vcslam:Genus vcslam:name \"genus\"."
+        },
+        "planted_date": {
+            "key": "planted_date",
+            "Path": null,
+            "mapping": "vcslam:Planted vcslam:date \"planted_date\"."
+        },
+        "owner": {
+            "key": "owner",
+            "Path": null,
+            "mapping": "vcslam:Owner vcslam:information \"owner\"."
+        },
+        "diameter_breast_height": {
+            "key": "diameter_breast_height",
+            "Path": null,
+            "mapping": "vcslam:Diameter_at_breast_height vcslam:value \"diameter_breast_height\"."
+        },
+        "cultivar": {
+            "key": "cultivar",
+            "Path": null,
+            "mapping": "vcslam:Tree vcslam:cultivar \"cultivar\"."
+        },
+        "neighbourhood_name": {
+            "key": "neighbourhood_name",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighbourhood_name\"."
+        },
+        "count": {
+            "key": "count",
+            "Path": null,
+            "mapping": "vcslam:Tree vcslam:count \"count\"."
+        },
+        "bears_edible_fruit": {
+            "key": "bears_edible_fruit",
+            "Path": null,
+            "mapping": "vcslam:Fruit vcslam:bears_edible \"bears_edible_fruit\"."
+        },
+        "location_type": {
+            "key": "location_type",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:type \"location_type\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "id": {
+            "key": "id",
+            "Path": null,
+            "mapping": "vcslam:Tree vcslam:id \"id\"."
+        }
+    }
+}

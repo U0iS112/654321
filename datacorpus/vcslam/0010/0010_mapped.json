@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "Day Of Week": {
+            "key": "Day Of Week",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:day_of_week \"Day Of Week\"."
+        },
+        "Object 1": {
+            "key": "Object 1",
+            "Path": null,
+            "mapping": "vcslam:Object vcslam:type \"Object 1\"."
+        },
+        "Object 2": {
+            "key": "Object 2",
+            "Path": null,
+            "mapping": "vcslam:Object vcslam:type \"Object 2\"."
+        },
+        "Steet Name": {
+            "key": "Steet Name",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"Steet Name\"."
+        },
+        "Street Number": {
+            "key": "Street Number",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:number \"Street Number\"."
+        },
+        "Cross Street": {
+            "key": "Cross Street",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:cross_street \"Cross Street\"."
+        },
+        "Location": {
+            "key": "Location",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"Location\"."
+        },
+        "Longitude": {
+            "key": "Longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"Longitude\"."
+        },
+        "Latitude": {
+            "key": "Latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"Latitude\"."
+        },
+        "Crash Number": {
+            "key": "Crash Number",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:id \"Crash Number\"."
+        }
+    }
+}

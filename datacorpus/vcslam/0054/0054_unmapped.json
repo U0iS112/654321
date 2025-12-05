@@ -1,0 +1,10 @@
+{
+    "fields.vhr": {
+        "key": "vhr",
+        "Path": "fields"
+    },
+    "fields.hra_hcc": {
+        "key": "hra_hcc",
+        "Path": "fields"
+    }
+}

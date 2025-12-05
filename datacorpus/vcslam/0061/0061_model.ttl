@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:Parking_zone ;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Parking_zone vcslam:for vcslam:Motorcycle;
+    vcslam:id xsd:string;
+    vcslam:type xsd:string;
+    vcslam:offers vcslam:Payment_methods;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:nearest vcslam:Intersection.
+
+
+vcslam:Payment_methods vcslam:credit_card  vcslam:Credit_card.
+
+vcslam:Credit_card vcslam:is_available xsd:boolean.
+
+vcslam:Intersection vcslam:information xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Planning_area;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Planning_area vcslam:name xsd:string.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

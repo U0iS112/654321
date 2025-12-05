@@ -1,0 +1,53 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Parking_bay a vcslam:Parking ;
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:spaces xsd:int ;
+    vcslam:times_of_operation xsd:string ;
+    vcslam:maximum_stay xsd:string ;
+    vcslam:contains vcslam:Lentgh ;
+    vcslam:nearest vcslam:Parking_meter;
+    vcslam:id xsd:string ;
+    vcslam:includes vcslam:Tariff;
+    vcslam:involves vcslam:Restriction;
+    vcslam:includes vcslam:Cashless ;
+    vcslam:valid_for vcslam:Permits .
+
+vcslam:Cashless
+    vcslam:identifier xsd:string .
+
+vcslam:Parking_meter
+    vcslam:information xsd:string.    
+
+vcslam:Tariff
+    vcslam:value xsd:anySimpleType.
+
+vcslam:Length
+    vcslam:value xsd:anySimpleType;
+    vcslam:measurement_unit_distance vcslam:Meter.
+
+vcslam:Restriction
+    vcslam:type xsd:string .
+
+vcslam:Permits
+    vcslam:information xsd:string .
+
+vcslam:Location 
+    vcslam:positionAt vcslam:Position ;
+    vcslam:includes vcslam:Road ;
+    vcslam:includes vcslam:Postal .
+
+vcslam:Postal 
+    vcslam:code xsd:string.
+
+vcslam:Road
+    vcslam:name xsd:string .    
+
+vcslam:Position  
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal ;
+    vcslam:spatial_accuracy xsd:string ;
+    vcslam:easting xsd:decimal ;
+    vcslam:northing xsd:decimal .

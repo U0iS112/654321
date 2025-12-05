@@ -1,0 +1,39 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Size vcslam:is_compliant "cpl_size".
+
+vcslam:Contrast vcslam:is_compliant "cpl_ctrst".
+
+vcslam:Force vcslam:is_compliant "cpl_force".
+
+vcslam:Placement vcslam:is_compliant "cpl_place".
+
+vcslam:Audio_indicator vcslam:is_compliant "cpl_aud".
+
+vcslam:Visual_indicator vcslam:is_compliant "cpl_vis".
+
+vcslam:Inspection vcslam:date_time "date".
+
+vcslam:Inspection vcslam:comment "cmnt_1".
+
+vcslam:Inspection vcslam:comment "cmnt_2".
+
+vcslam:Inspection vcslam:comment "oa_cmnt".
+
+vcslam:Coordinates vcslam:geometry_type "mapped_location.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "mapped_location.coordinates".
+
+vcslam:Coordinate_pair vcslam:latitude "evnt_lat".
+
+vcslam:Coordinate_pair vcslam:longitude "evnt_long".
+
+vcslam:Intersection vcslam:id "intersectionid".
+
+vcslam:Event vcslam:type "evnt_type".
+
+vcslam:Event vcslam:identifier "evnt_map".
+
+vcslam:Person vcslam:name "inspector".

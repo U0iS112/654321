@@ -1,0 +1,14 @@
+{
+    "fields.call_type": {
+        "key": "call_type",
+        "Path": "fields"
+    },
+    "geometry.type": {
+        "key": "type",
+        "Path": "geometry"
+    },
+    "geometry.coordinates": {
+        "key": "coordinates",
+        "Path": "geometry"
+    }
+}

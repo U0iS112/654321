@@ -1,0 +1,95 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.remarks": {
+            "key": "remarks",
+            "Path": "fields",
+            "mapping": "vcslam:Fire_hydrant vcslam:remark \"fields.remarks\"."
+        },
+        "fields.color": {
+            "key": "color",
+            "Path": "fields",
+            "mapping": "vcslam:Fire_hydrant vcslam:colour \"fields.color\"."
+        },
+        "fields.id": {
+            "key": "id",
+            "Path": "fields",
+            "mapping": "vcslam:Fire_hydrant vcslam:id \"fields.id\"."
+        },
+        "fields.status": {
+            "key": "status",
+            "Path": "fields",
+            "mapping": "vcslam:Fire_hydrant vcslam:status \"fields.status\"."
+        },
+        "fields.geo_local_area": {
+            "key": "geo_local_area",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_local_area\"."
+        },
+        "fields.active": {
+            "key": "active",
+            "Path": "fields",
+            "mapping": "vcslam:Fire vcslam:active_status \"fields.active\"."
+        },
+        "fields.street": {
+            "key": "street",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:name \"fields.street\"."
+        },
+        "fields.street_number": {
+            "key": "street_number",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:identifier \"fields.street_number\"."
+        },
+        "fields.instdate1": {
+            "key": "instdate1",
+            "Path": "fields",
+            "mapping": "vcslam:Installation vcslam:date \"fields.instdate1\"."
+        },
+        "fields.distancefromcorner": {
+            "key": "distancefromcorner",
+            "Path": "fields",
+            "mapping": "vcslam:Distance vcslam:value \"fields.distancefromcorner\"."
+        },
+        "fields.feederlen": {
+            "key": "feederlen",
+            "Path": "fields",
+            "mapping": "vcslam:Distance vcslam:value \"fields.feederlen\"."
+        },
+        "fields.feature_id": {
+            "key": "feature_id",
+            "Path": "fields",
+            "mapping": "vcslam:Feature vcslam:id \"fields.feature_id\"."
+        },
+        "fields.fireuseonly": {
+            "key": "fireuseonly",
+            "Path": "fields",
+            "mapping": "vcslam:Fire vcslam:fire_use_only \"fields.fireuseonly\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        }
+    }
+}

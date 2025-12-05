@@ -1,0 +1,30 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Complaint 
+    vcslam:type xsd:string ;
+    vcslam:initiated_by xsd:string;
+    vcslam:status xsd:string ;
+    vcslam:count xsd:string;
+    vcslam:includes vcslam:Report;
+    vcslam:includes vcslam:Neighbourhood.
+
+vcslam:Report
+    vcslam:consists_of vcslam:Time_period.
+
+vcslam:Time_period
+    vcslam:month_of_year xsd:gYearMonth.   
+
+vcslam:Neighbourhood 
+    vcslam:locatedAt vcslam:Location;
+    vcslam:name xsd:string;
+    vcslam:id xsd:string.
+
+vcslam:Location
+    vcslam:address xsd:string;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

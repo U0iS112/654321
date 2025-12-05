@@ -1,0 +1,35 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "center_location.human_address": {
+            "key": "human_address",
+            "Path": "center_location",
+            "mapping": "vcslam:Location vcslam:human_address \"center_location.human_address\"."
+        },
+        "center_location.latitude": {
+            "key": "latitude",
+            "Path": "center_location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"center_location.latitude\"."
+        },
+        "center_location.longitude": {
+            "key": "longitude",
+            "Path": "center_location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"center_location.longitude\"."
+        },
+        "website.url": {
+            "key": "url",
+            "Path": "website",
+            "mapping": "vcslam:Community_center vcslam:link \"website.url\"."
+        },
+        "phone": {
+            "key": "phone",
+            "Path": null,
+            "mapping": "vcslam:Community_center vcslam:phone_number \"phone\"."
+        },
+        "center_name": {
+            "key": "center_name",
+            "Path": null,
+            "mapping": "vcslam:Community_center vcslam:name \"center_name\"."
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "type": {
+        "key": "type",
+        "Path": null
+    },
+    "properties._id": {
+        "key": "_id",
+        "Path": "properties"
+    },
+    "properties.Index_": {
+        "key": "Index_",
+        "Path": "properties"
+    },
+    "properties.Location_Type": {
+        "key": "Location_Type",
+        "Path": "properties"
+    },
+    "properties.Premise_Type": {
+        "key": "Premise_Type",
+        "Path": "properties"
+    },
+    "properties.Long": {
+        "key": "Long",
+        "Path": "properties"
+    },
+    "properties.ObjectId": {
+        "key": "ObjectId",
+        "Path": "properties"
+    },
+    "crs.type": {
+        "key": "type",
+        "Path": "crs"
+    },
+    "crs.properties.name": {
+        "key": "name",
+        "Path": "crs.properties"
+    }
+}

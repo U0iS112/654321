@@ -1,0 +1,115 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "state": {
+            "key": "state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"state\"."
+        },
+        "zip": {
+            "key": "zip",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip\"."
+        },
+        "tow_location": {
+            "key": "tow_location",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"tow_location\"."
+        },
+        "council_district": {
+            "key": "council_district",
+            "Path": null,
+            "mapping": "vcslam:Council_district vcslam:name \"council_district\"."
+        },
+        "police_district": {
+            "key": "police_district",
+            "Path": null,
+            "mapping": "vcslam:Police_district vcslam:identifier \"police_district\"."
+        },
+        "census_tract": {
+            "key": "census_tract",
+            "Path": null,
+            "mapping": "vcslam:Census_tract vcslam:identifier \"census_tract\"."
+        },
+        "census_block": {
+            "key": "census_block",
+            "Path": null,
+            "mapping": "vcslam:Census_Block vcslam:identifier \"census_block\"."
+        },
+        "census_block_group": {
+            "key": "census_block_group",
+            "Path": null,
+            "mapping": "vcslam:Group vcslam:identifier \"census_block_group\"."
+        },
+        "neighborhood": {
+            "key": "neighborhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighborhood\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location_1.latitude": {
+            "key": "latitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location_1.latitude\"."
+        },
+        "location_1.longitude": {
+            "key": "longitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location_1.longitude\"."
+        },
+        "vehicle_make": {
+            "key": "vehicle_make",
+            "Path": null,
+            "mapping": "vcslam:Manufacture vcslam:name \"vehicle_make\"."
+        },
+        "vehicle_year": {
+            "key": "vehicle_year",
+            "Path": null,
+            "mapping": "vcslam:Vehicle vcslam:year \"vehicle_year\"."
+        },
+        "license_state": {
+            "key": "license_state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:abbreviation \"license_state\"."
+        },
+        "agency": {
+            "key": "agency",
+            "Path": null,
+            "mapping": "vcslam:Agency vcslam:abbreviation \"agency\"."
+        },
+        "tow_reason": {
+            "key": "tow_reason",
+            "Path": null,
+            "mapping": "vcslam:Tow vcslam:reason \"tow_reason\"."
+        },
+        "unique_key": {
+            "key": "unique_key",
+            "Path": null,
+            "mapping": "vcslam:Tow vcslam:id \"unique_key\"."
+        },
+        "tow_description": {
+            "key": "tow_description",
+            "Path": null,
+            "mapping": "vcslam:Tow vcslam:description \"tow_description\"."
+        },
+        "tow_date": {
+            "key": "tow_date",
+            "Path": null,
+            "mapping": "vcslam:Tow vcslam:date_time \"tow_date\"."
+        }
+    }
+}

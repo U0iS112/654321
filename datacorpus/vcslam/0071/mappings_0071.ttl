@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Parking_space vcslam:total "totalparkingspaces".
+
+vcslam:Parking_space vcslam:amount_occupied "occupied".
+
+vcslam:Parking_space vcslam:amount_free "freespaces".
+
+vcslam:Percent vcslam:value "fullcapacity".
+
+vcslam:Percent vcslam:colour "color".
+
+vcslam:Coordinate_pair vcslam:latitude "lat".
+
+vcslam:Coordinate_pair vcslam:longitude "long".
+
+vcslam:Parking_lot vcslam:identifier "key_value".
+
+vcslam:Parking_lot vcslam:description "lotdescription".
+
+vcslam:Parking_lot vcslam:name "parkingname".
+
+vcslam:Parking_lot vcslam:id "parkingid".

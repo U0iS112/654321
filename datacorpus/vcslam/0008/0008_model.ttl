@@ -1,0 +1,69 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Parking_ticket
+    vcslam:type xsd:string ;
+    vcslam:description xsd:string ;
+    vcslam:issued_by vcslam:Police;
+    vcslam:involves vcslam:Contravention ;
+    vcslam:involves vcslam:Vehicle ;
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:involves vcslam:Restriction.
+
+vcslam:Restriction
+    vcslam:refers_to vcslam:Parking_zone; 
+    vcslam:type xsd:string. 
+
+vcslam:Parking_zone
+    vcslam:includes vcslam:Area.
+
+vcslam:Contravention 
+    vcslam:code xsd:string;
+    vcslam:date_time xsd:dateTime;
+    vcslam:suffix xsd:string;
+    vcslam:description xsd:string ;
+    vcslam:in_last_7_days xsd:boolean.
+
+vcslam:Vehicle 
+    vcslam:includes vcslam:Category;
+    vcslam:foreign xsd:boolean;
+    vcslam:refers_to vcslam:Country;
+    vcslam:removed xsd:boolean .
+
+vcslam:Country
+    vcslam:includes vcslam:Registration .
+
+vcslam:Registration
+    vcslam:value xsd:anySimpleType .    
+
+vcslam:Category
+    vcslam:description xsd:string.
+
+vcslam:Case 
+    vcslam:status xsd:string;
+    vcslam:includes vcslam:Parking_ticket;
+    vcslam:involves vcslam:Cancellation;
+    vcslam:refers_to vcslam:Ward.
+
+vcslam:Cancellation 
+    vcslam:reason xsd:string.
+
+vcslam:Ward 
+    vcslam:name xsd:string ;
+    vcslam:code xsd:string .
+
+vcslam:Location 
+    vcslam:positionAt vcslam:Position;
+    vcslam:includes xsd:Street.
+    
+
+vcslam:Street 
+    vcslam:name xsd:string.    
+
+vcslam:Position  
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal ;
+    vcslam:spatial_accuracy xsd:string;
+    vcslam:easting xsd:decimal;
+    vcslam:northing xsd:decimal.

@@ -1,0 +1,21 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Station vcslam:id "station".
+
+vcslam:Rating vcslam:id "storm_rating".
+
+vcslam:Rating vcslam:description "storm_rating_description".
+
+vcslam:Rating vcslam:value "amount_legend".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Observation vcslam:time "time".
+
+vcslam:Observation vcslam:date_time "date".

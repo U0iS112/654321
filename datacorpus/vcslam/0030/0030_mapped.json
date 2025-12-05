@@ -1,0 +1,50 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "station": {
+            "key": "station",
+            "Path": null,
+            "mapping": "vcslam:Station vcslam:id \"station\"."
+        },
+        "storm_rating": {
+            "key": "storm_rating",
+            "Path": null,
+            "mapping": "vcslam:Rating vcslam:id \"storm_rating\"."
+        },
+        "storm_rating_description": {
+            "key": "storm_rating_description",
+            "Path": null,
+            "mapping": "vcslam:Rating vcslam:description \"storm_rating_description\"."
+        },
+        "amount_legend": {
+            "key": "amount_legend",
+            "Path": null,
+            "mapping": "vcslam:Rating vcslam:value \"amount_legend\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "time": {
+            "key": "time",
+            "Path": null,
+            "mapping": "vcslam:Observation vcslam:time \"time\"."
+        },
+        "date": {
+            "key": "date",
+            "Path": null,
+            "mapping": "vcslam:Observation vcslam:date_time \"date\"."
+        }
+    }
+}

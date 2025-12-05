@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Artwork
+    vcslam:title xsd:string ;
+    vcslam:medium xsd:string ;
+    vcslam:type xsd:string ;
+    vcslam:description xsd:string ;
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:created_by vcslam:Artist .
+
+vcslam:Artist
+    vcslam:first_name xsd:string ;
+    vcslam:last_name xsd:string .
+
+vcslam:Location
+    vcslam:information xsd:string ;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

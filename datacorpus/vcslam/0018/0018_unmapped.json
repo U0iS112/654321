@@ -1,0 +1,26 @@
+{
+    "Date / Time": {
+        "key": "Date / Time",
+        "Path": null
+    },
+    "Blurred Address": {
+        "key": "Blurred Address",
+        "Path": null
+    },
+    "Years of SPD Service": {
+        "key": "Years of SPD Service",
+        "Path": null
+    },
+    "Number of Rounds": {
+        "key": "Number of Rounds",
+        "Path": null
+    },
+    "Fatal": {
+        "key": "Fatal",
+        "Path": null
+    },
+    "Disposition": {
+        "key": "Disposition",
+        "Path": null
+    }
+}

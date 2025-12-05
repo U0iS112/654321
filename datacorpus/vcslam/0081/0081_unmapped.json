@@ -1,0 +1,10 @@
+{
+    "geometry.type": {
+        "key": "type",
+        "Path": "geometry"
+    },
+    "geometry.coordinates": {
+        "key": "coordinates",
+        "Path": "geometry"
+    }
+}

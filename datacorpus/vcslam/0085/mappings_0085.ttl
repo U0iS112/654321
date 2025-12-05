@@ -1,0 +1,43 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Bill vcslam:code "bill_code".
+
+vcslam:Bill vcslam:date_time "bill_date".
+
+vcslam:Charge vcslam:amount "net".
+
+vcslam:Utility vcslam:type "utility_type".
+
+vcslam:Utility vcslam:start_date_time "start_date".
+
+vcslam:Utility vcslam:date_time "current_read_date".
+
+vcslam:Water vcslam:amount "usage_gallons".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:Census_Block vcslam:id "census_block_id".
+
+vcslam:Coordinate_pair vcslam:latitude "street_centroid_lat".
+
+vcslam:Coordinate_pair vcslam:longitude "street_centroid_lon".
+
+vcslam:Coordinate_pair vcslam:latitude "street_centroid.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "street_centroid.longitude".
+
+vcslam:Category vcslam:code "category_code".
+
+vcslam:Category vcslam:description "category_description".
+
+vcslam:Batch vcslam:number "batch_number".
+
+vcslam:Street vcslam:name "street_name".
+
+vcslam:Debtor vcslam:identifier "debtor_number".
+
+vcslam:Occupant vcslam:code "occupant_code".
+
+vcslam:Record vcslam:id "id".

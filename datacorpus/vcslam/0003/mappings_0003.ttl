@@ -1,0 +1,33 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Crash vcslam:time "crash_time".
+
+vcslam:Crash vcslam:compass_direction "crash_direction".
+
+vcslam:Crash vcslam:id "crash_id".
+
+vcslam:Crash vcslam:at_midblock "midblock".
+
+vcslam:Crash vcslam:at_intersection "intersection".
+
+vcslam:Crash vcslam:severity "crash_severity".
+
+vcslam:Road vcslam:condition_DP "road_condition".
+
+vcslam:Lighting vcslam:condition_DP "lighting_condition".
+
+vcslam:Weather vcslam:condition_DP "weather_condition".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Suburb vcslam:information "suburb_location".
+
+vcslam:Coordinate_pair vcslam:latitude "y".
+
+vcslam:Coordinate_pair vcslam:longitude "x".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".

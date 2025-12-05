@@ -1,0 +1,45 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Report vcslam:date_time "date_rptd".
+
+vcslam:Occurrence vcslam:date_time "date_occ".
+
+vcslam:Area vcslam:identifier "area".
+
+vcslam:Area vcslam:name "area_name".
+
+vcslam:District vcslam:number "rpt_dist_no".
+
+vcslam:Crime vcslam:code "crm_cd_1".
+
+vcslam:Crime vcslam:code "crm_cd_2".
+
+vcslam:Crime vcslam:code "crm_cd".
+
+vcslam:Crime vcslam:description "crm_cd_desc".
+
+vcslam:Victim vcslam:age "vict_age".
+
+vcslam:Victim vcslam:gender "vict_sex".
+
+vcslam:Victim vcslam:race "vict_descent".
+
+vcslam:Premise vcslam:code "premis_cd".
+
+vcslam:Premise vcslam:description "premis_desc".
+
+vcslam:Weapon vcslam:code "weapon_used_cd".
+
+vcslam:Weapon vcslam:description "weapon_desc".
+
+vcslam:Location vcslam:information "location".
+
+vcslam:Coordinate_pair vcslam:latitude "lat".
+
+vcslam:Coordinate_pair vcslam:longitude "lon".
+
+vcslam:Case vcslam:status "status_desc".
+
+vcslam:Case vcslam:id "dr_no".

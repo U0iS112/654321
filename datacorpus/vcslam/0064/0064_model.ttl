@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:Cultural_space ;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Cultural_space vcslam:digital_representation vcslam:Website;
+    vcslam:seat  vcslam:Seat;
+    vcslam:size vcslam:Area;
+    vcslam:name xsd:string;
+    vcslam:ownership xsd:string;
+    vcslam:type xsd:string;
+    vcslam:use xsd:string;
+    vcslam:is_active xsd:boolean;
+    vcslam:year xsd:gYear;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Website vcslam:url xsd:anyURI.
+
+vcslam:Seat vcslam:count xsd:int.
+
+vcslam:Area vcslam:measurement_unit_area vcslam:Square_foot;
+    vcslam:value xsd:decimal.
+
+vcslam:Location vcslam:address xsd:string;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Planning_area vcslam:name xsd:string.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

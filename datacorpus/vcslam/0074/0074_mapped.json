@@ -1,0 +1,30 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "direction": {
+            "key": "direction",
+            "Path": null,
+            "mapping": "vcslam:Lane vcslam:compass_direction \"direction\"."
+        },
+        "lanes": {
+            "key": "lanes",
+            "Path": null,
+            "mapping": "vcslam:Lane vcslam:information \"lanes\"."
+        },
+        "county": {
+            "key": "county",
+            "Path": null,
+            "mapping": "vcslam:County vcslam:name \"county\"."
+        },
+        "link": {
+            "key": "link",
+            "Path": null,
+            "mapping": "vcslam:Incident vcslam:link \"link\"."
+        },
+        "incident": {
+            "key": "incident",
+            "Path": null,
+            "mapping": "vcslam:Incident vcslam:information \"incident\"."
+        }
+    }
+}

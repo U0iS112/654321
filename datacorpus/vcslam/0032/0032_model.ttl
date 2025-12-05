@@ -1,0 +1,54 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Tree 
+    vcslam:locatedAt vcslam:Location;
+    vcslam:id xsd:string ;
+    vcslam:refers_to vcslam:Species;
+    vcslam:cultivar_name xsd:string;
+    vcslam:includes vcslam:Diameter;
+    vcslam:includes vcslam:Condition;
+    vcslam:includes vcslam:Planted;
+    vcslam:owner vcslam:Organization;
+    vcslam:bears_edible xsd:boolean;
+    vcslam:contains vcslam:Fruit;
+    vcslam:count xsd:int.
+
+vcslam:Condition
+    vcslam:measurement vcslam:Percent. 
+
+vcslam:Organization
+    vcslam:name xsd:string.
+    
+vcslam:Fruit
+    vcslam:type xsd:string.
+
+vcslam:Planted
+    vcslam:date xsd:date.
+
+vcslam:Diameter
+    vcslam:measurement_unit_distance vcslam:Meter;
+    vcslam:value vcslam:anySimpleType.
+
+vcslam:Species
+    vcslam:common_name xsd:string;
+    vcslam:scientific_name xsd:string;
+    vcslam:includes vcslam:Genus;
+    vcslam:identifier xsd:string.
+
+vcslam:Genus
+    vcslam:identifier xsd:string.
+
+vcslam:Neighbourhood
+    vcslam:name xsd:string.
+
+vcslam:Location
+    vcslam:address xsd:string ;
+    vcslam:includes vcslam:Neighbourhood;
+    vcslam:type xsd:string;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

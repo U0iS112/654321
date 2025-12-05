@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "offense_id": {
+            "key": "offense_id",
+            "Path": null,
+            "mapping": "vcslam:Offense vcslam:id \"offense_id\"."
+        },
+        "offense": {
+            "key": "offense",
+            "Path": null,
+            "mapping": "vcslam:Offense vcslam:description \"offense\"."
+        },
+        "offense_code": {
+            "key": "offense_code",
+            "Path": null,
+            "mapping": "vcslam:Offense vcslam:code \"offense_code\"."
+        },
+        "offense_start_datetime": {
+            "key": "offense_start_datetime",
+            "Path": null,
+            "mapping": "vcslam:Offense vcslam:start_date_time \"offense_start_datetime\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "sector": {
+            "key": "sector",
+            "Path": null,
+            "mapping": "vcslam:Sector vcslam:identifier \"sector\"."
+        },
+        "offense_parent_group": {
+            "key": "offense_parent_group",
+            "Path": null,
+            "mapping": "vcslam:Group vcslam:type \"offense_parent_group\"."
+        },
+        "report_datetime": {
+            "key": "report_datetime",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:date_time \"report_datetime\"."
+        },
+        "report_number": {
+            "key": "report_number",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:identifier \"report_number\"."
+        }
+    }
+}

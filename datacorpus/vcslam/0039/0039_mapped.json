@@ -1,0 +1,45 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "flow_rate": {
+            "key": "flow_rate",
+            "Path": null,
+            "mapping": "vcslam:Flow vcslam:value \"flow_rate\"."
+        },
+        "installation_year": {
+            "key": "installation_year",
+            "Path": null,
+            "mapping": "vcslam:Installation vcslam:year \"installation_year\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.type": {
+            "key": "type",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"location.type\"."
+        },
+        "location.coordinates": {
+            "key": "coordinates",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"location.coordinates\"."
+        },
+        "dome_colour": {
+            "key": "dome_colour",
+            "Path": null,
+            "mapping": "vcslam:Hydrant vcslam:colour \"dome_colour\"."
+        },
+        "hydrant_number": {
+            "key": "hydrant_number",
+            "Path": null,
+            "mapping": "vcslam:Hydrant vcslam:id \"hydrant_number\"."
+        }
+    }
+}

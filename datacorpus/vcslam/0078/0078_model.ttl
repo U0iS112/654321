@@ -1,0 +1,32 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Permit vcslam:valid_for vcslam:Venue;
+              vcslam:for vcslam:Live_entertainment;
+              vcslam:description xsd:string;
+              vcslam:issued_to vcslam:Business.
+
+
+vcslam:Business vcslam:trade_name xsd:string;
+                vcslam:owned_by vcslam:Owner;
+                vcslam:owns vcslam:Venue.
+
+vcslam:Owner vcslam:legal_name xsd:string.
+
+vcslam:Venue vcslam:locatedAt vcslam:Location.
+
+vcslam:Location vcslam:locatedAt vcslam:City;
+    vcslam:locatedAt vcslam:State;
+    vcslam:address xsd:string;
+    vcslam:zip_code xsd:string;
+    vcslam:human_address xsd:string;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:City vcslam:name xsd:string.
+
+vcslam:State vcslam:abbreviation xsd:string.
+
+vcslam:Position vcslam:longitude xsd:decimal;
+    vcslam:latitude xsd:decimal.

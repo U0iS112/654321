@@ -1,0 +1,44 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Length vcslam:value "parking_bay_length_metres".
+
+vcslam:Tariff vcslam:information "tariff".
+
+vcslam:Restriction vcslam:type "restriction_type".
+
+vcslam:Parking_space vcslam:amount "parking_spaces".
+
+vcslam:Parking_zone vcslam:information "controlled_parking_zone".
+
+vcslam:Postal vcslam:code "postcode".
+
+vcslam:Coordinates vcslam:spatial_accuracy "spatial_accuracy".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:easting "easting".
+
+vcslam:Coordinate_pair vcslam:northing "northing".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Dataset vcslam:disclaimer "disclaimer".
+
+vcslam:Organization vcslam:link "organisation_uri.url".
+
+vcslam:Cashless vcslam:id "cashless_identifier".
+
+vcslam:Parking_bay vcslam:id "unique_identifier".
+
+vcslam:Parking_bay vcslam:times_of_operation "times_of_operation".
+
+vcslam:Permit vcslam:information "valid_parking_permits".
+

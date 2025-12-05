@@ -1,0 +1,34 @@
+{
+    "maximum_stay": {
+        "key": "maximum_stay",
+        "Path": null
+    },
+    "nearest_machine": {
+        "key": "nearest_machine",
+        "Path": null
+    },
+    "last_uploaded": {
+        "key": "last_uploaded",
+        "Path": null
+    },
+    ":@computed_region_hxwp_gyfc": {
+        "key": ":@computed_region_hxwp_gyfc",
+        "Path": null
+    },
+    ":@computed_region_6i9a_26nj": {
+        "key": ":@computed_region_6i9a_26nj",
+        "Path": null
+    },
+    "epsg_27700_well_known_text_geometry": {
+        "key": ":epsg_27700_well_known_text_geometry",
+        "Path": null
+    },
+    "epsg_4326_well_known_text_geometry": {
+        "key": "epsg_4326_well_known_text_geometry",
+        "Path": null
+    },
+    "road_name": {
+        "key": "road_name",
+        "Path": null
+    }
+}

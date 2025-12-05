@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Disruption vcslam:id "disruption_id".
+
+vcslam:Disruption vcslam:status "status".
+
+vcslam:Disruption vcslam:type "activity_type".
+
+vcslam:Disruption vcslam:description "details".
+
+vcslam:Disruption vcslam:impact "impact".
+
+vcslam:Disruption vcslam:details "details".
+
+vcslam:Duration vcslam:information  "duration".
+
+vcslam:Infrastructure vcslam:information "infrastructure".
+
+vcslam:District vcslam:information "traffic_district".
+
+vcslam:Street vcslam:name "on_street".
+
+vcslam:Street vcslam:name "from_street".
+
+vcslam:Coordinates vcslam:geometry_type "point.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "point.coordinates".
+
+vcslam:Report vcslam:start_date_time "start_date".
+
+vcslam:Report vcslam:end_date_time "end_date".
+
+vcslam:Report vcslam:date_time_issued "date_issued".

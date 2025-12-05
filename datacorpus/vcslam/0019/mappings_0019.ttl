@@ -1,0 +1,30 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Building vcslam:built_year "year_built".
+
+vcslam:Building vcslam:retrofit_level "retrofit_level".
+
+vcslam:Building vcslam:use "building_use".
+
+vcslam:Occupant vcslam:estimated_amount "estimated_number_of_occupants".
+
+vcslam:Floor vcslam:amount  "no_stories".
+
+vcslam:Risk vcslam:type "preliminary_risk_category".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Neighbourhood vcslam:name "neighborhood".
+
+vcslam:City vcslam:name "city".
+
+vcslam:State vcslam:name "state".
+
+vcslam:Coordinates vcslam:geometry_type "geocoded_column.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "geocoded_column.coordinates".
+

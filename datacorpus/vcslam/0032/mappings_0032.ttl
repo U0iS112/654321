@@ -1,0 +1,37 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Species vcslam:name "species".
+
+vcslam:Species vcslam:information "species_botanical".
+
+vcslam:Genus vcslam:name "genus".
+
+vcslam:Planted vcslam:date "planted_date".
+
+vcslam:Owner vcslam:information "owner".
+
+vcslam:Diameter_at_breast_height vcslam:value "diameter_breast_height".
+
+vcslam:Tree vcslam:cultivar "cultivar".
+
+vcslam:Neighbourhood vcslam:name "neighbourhood_name".
+
+vcslam:Tree vcslam:count "count".
+
+vcslam:Fruit vcslam:bears_edible "bears_edible_fruit".
+
+vcslam:Location vcslam:type "location_type".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Tree vcslam:id "id".

@@ -1,0 +1,33 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Street vcslam:address "street_address".
+
+vcslam:City vcslam:name "city".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:Location vcslam:description "location_description".
+
+vcslam:Council_district vcslam:identifier "council_district".
+
+vcslam:Account vcslam:identifier "location_account".
+
+vcslam:Location vcslam:address "mailing_address".
+
+vcslam:City vcslam:name "mailing_city".
+
+vcslam:Location vcslam:zip_code "mailing_zip_code".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Business vcslam:legal_name "business_name".
+
+vcslam:Business vcslam:dba_name "dba_name".
+
+vcslam:Business vcslam:naics "naics".

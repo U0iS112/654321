@@ -1,0 +1,26 @@
+{
+    "HarvestTime": {
+        "key": "HarvestTime",
+        "Path": null
+    },
+    "EBikeProfileID": {
+        "key": "EBikeProfileID",
+        "Path": null
+    },
+    "EBikeStateID": {
+        "key": "EBikeStateID",
+        "Path": null
+    },
+    "IsSmartLock": {
+        "key": "IsSmartLock",
+        "Path": null
+    },
+    "LastGPSTime": {
+        "key": "LastGPSTime",
+        "Path": null
+    },
+    "SpikeID": {
+        "key": "SpikeID",
+        "Path": null
+    }
+}

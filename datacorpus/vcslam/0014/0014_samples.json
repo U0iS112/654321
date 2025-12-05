@@ -1,0 +1,56 @@
+[
+    {
+        "address": "105 5th Av S",
+        "type": "Triaged Incident",
+        "datetime": "2020-03-15T00:16:00.000",
+        "latitude": "47.601643",
+        "longitude": "-122.327656",
+        "report_location": {
+          "type": "Point",
+          "coordinates": [
+            -122.327656,
+            47.601643
+          ]
+        },
+        "incident_number": "F200026453",
+        ":@computed_region_ru88_fbhk": "27",
+        ":@computed_region_kuhn_3gp2": "22",
+        ":@computed_region_q256_3sug": "18379"
+      },
+      {
+        "address": "Nw 59th St / 15th Av Nw",
+        "type": "Triaged Incident",
+        "datetime": "2019-10-11T23:34:00.000",
+        "latitude": "47.67163",
+        "longitude": "-122.376212",
+        "report_location": {
+          "type": "Point",
+          "coordinates": [
+            -122.376212,
+            47.67163
+          ]
+        },
+        "incident_number": "F190108891",
+        ":@computed_region_ru88_fbhk": "4",
+        ":@computed_region_kuhn_3gp2": "1",
+        ":@computed_region_q256_3sug": "18386"
+      },
+      {
+        "address": "1431 Minor Av",
+        "type": "Aid Response",
+        "datetime": "2019-12-27T01:24:00.000",
+        "latitude": "47.613247",
+        "longitude": "-122.327187",
+        "report_location": {
+          "type": "Point",
+          "coordinates": [
+            -122.327187,
+            47.613247
+          ]
+        },
+        "incident_number": "F190136279",
+        ":@computed_region_ru88_fbhk": "8",
+        ":@computed_region_kuhn_3gp2": "12",
+        ":@computed_region_q256_3sug": "18081"
+      }
+]

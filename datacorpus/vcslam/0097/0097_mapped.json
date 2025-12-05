@@ -1,0 +1,85 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "botanical_name": {
+            "key": "botanical_name",
+            "Path": null,
+            "mapping": "vcslam:Tree vcslam:scientific_name \"botanical_name\"."
+        },
+        "common_name": {
+            "key": "common_name",
+            "Path": null,
+            "mapping": "vcslam:Tree vcslam:common_name \"common_name\"."
+        },
+        "dbh": {
+            "key": "dbh",
+            "Path": null,
+            "mapping": "vcslam:Diameter_at_breast_height vcslam:value \"dbh\"."
+        },
+        "leaf_surface_area_in_sq_ft": {
+            "key": "leaf_surface_area_in_sq_ft",
+            "Path": null,
+            "mapping": "vcslam:Area vcslam:value \"leaf_surface_area_in_sq_ft\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "street": {
+            "key": "street",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"street\"."
+        },
+        "site": {
+            "key": "site",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:identifier \"site\"."
+        },
+        "site_id": {
+            "key": "site_id",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:id \"site_id\"."
+        },
+        "side": {
+            "key": "side",
+            "Path": null,
+            "mapping": "vcslam:Parcel vcslam:side_of \"side\"."
+        },
+        "park_name": {
+            "key": "park_name",
+            "Path": null,
+            "mapping": "vcslam:Park vcslam:name \"park_name\"."
+        },
+        "council_district": {
+            "key": "council_district",
+            "Path": null,
+            "mapping": "vcslam:Council_district vcslam:name \"council_district\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "geocoded_column.latitude": {
+            "key": "latitude",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geocoded_column.latitude\"."
+        },
+        "geocoded_column.longitude": {
+            "key": "longitude",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geocoded_column.longitude\"."
+        },
+        "editing": {
+            "key": "editing",
+            "Path": null,
+            "mapping": "vcslam:Organization vcslam:name \"editing\"."
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "on": {
+            "key": "on",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"on\"."
+        },
+        "from": {
+            "key": "from",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:from_point \"from\"."
+        },
+        "to": {
+            "key": "to",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:to_point \"to\"."
+        },
+        "county": {
+            "key": "county",
+            "Path": null,
+            "mapping": "vcslam:County vcslam:name \"county\"."
+        },
+        "municipality": {
+            "key": "municipality",
+            "Path": null,
+            "mapping": "vcslam:Municipality vcslam:name \"municipality\"."
+        },
+        "direction": {
+            "key": "direction",
+            "Path": null,
+            "mapping": "vcslam:Traffic vcslam:direction_DP \"direction\"."
+        },
+        "location_1.latitude": {
+            "key": "latitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location_1.latitude\"."
+        },
+        "location_1.longitude": {
+            "key": "longitude",
+            "Path": "location_1",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location_1.longitude\"."
+        },
+        "localid": {
+            "key": "localid",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:id \"localid\"."
+        }
+    }
+}

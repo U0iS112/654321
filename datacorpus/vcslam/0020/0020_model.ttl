@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Rental
+    vcslam:refers_to vcslam:Permit;
+    vcslam:housing_unit xsd:string ;
+    vcslam:status xsd:string.
+    
+vcslam:Registration
+    vcslam:date xsd:date.
+
+vcslam:Expire   
+    vcslam:date xsd:date.
+
+vcslam:Permit 
+    vcslam:refers_to vcslam:Property;
+    vcslam:number xsd:int;
+    vcslam:includes vcslam:Category;
+    vcslam:type xsd:string;
+    vcslam:includes vcslam:Registration ;
+    vcslam:url xsd:anyURI ;
+    vcslam:includes vcslam:Expire.
+
+
+vcslam:Property 
+    vcslam:name xsd:string;
+    vcslam:contact xsd:string.
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Category 
+    vcslam:mapped xsd:string.
+    
+
+vcslam:Location
+    vcslam:information xsd:string ;
+    vcslam:includes vcslam:City;
+    vcslam:includes vcslam:State;
+    vcslam:zip_code xsd:string ;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:City
+    vcslam:name xsd:string.
+
+vcslam:State
+    vcslam:abbreviation xsd:string.
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

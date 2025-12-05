@@ -1,0 +1,45 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "scheduled_date": {
+            "key": "scheduled_date",
+            "Path": null,
+            "mapping": "vcslam:Schedule vcslam:information \"scheduled_date\"."
+        },
+        "scheduled_day": {
+            "key": "scheduled_day",
+            "Path": null,
+            "mapping": "vcslam:Schedule vcslam:day_of_week \"scheduled_day\"."
+        },
+        "maintenance_area_number": {
+            "key": "maintenance_area_number",
+            "Path": null,
+            "mapping": "vcslam:Area vcslam:identifier \"maintenance_area_number\"."
+        },
+        "neighbourhood": {
+            "key": "neighbourhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:information \"neighbourhood\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "status": {
+            "key": "status",
+            "Path": null,
+            "mapping": "vcslam:Maintenance vcslam:status \"status\"."
+        }
+    }
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "datasetid": "business-licences",
+        "recordid": "93fada8d07e8c5048a41d65df200e7ce0669fe85",
+        "fields": {
+            "province": "BC",
+            "expireddate": "2018-12-31",
+            "house": "332",
+            "licencerevisionnumber": "00",
+            "street": "WATER ST",
+            "unit": "215",
+            "city": "Vancouver",
+            "businesstype": "Retail Dealer",
+            "businesssubtype": "Other",
+            "unittype": "Unit",
+            "licencersn": "3036300",
+            "geom": {
+                "type": "Point",
+                "coordinates": [-123.109574932675, 49.2842098233685]
+            },
+            "status": "Issued",
+            "extractdate": "2020-11-01T11:32:29+01:00",
+            "numberofemployees": "1",
+            "localarea": "Downtown",
+            "folderyear": "18",
+            "businessname": "Derreumaux Interiors Inc",
+            "postalcode": "V6B 1B6",
+            "issueddate": "2017-11-11T22:19:46+01:00",
+            "country": "CA",
+            "feepaid": 145,
+            "businesstradename": "Espace D",
+            "licencenumber": "18-467992"
+        },
+        "record_timestamp": "2020-11-01T12:37:16.327+01:00"
+    }, {
+        "datasetid": "business-licences",
+        "recordid": "70d92d6c676df43c008cb7e5e52211ab72f6381b",
+        "fields": {
+            "province": "BC",
+            "expireddate": "2018-12-31",
+            "house": "555",
+            "licencerevisionnumber": "00",
+            "street": "W 12TH AV",
+            "unit": "011",
+            "city": "Vancouver",
+            "businesstype": "Retail Dealer",
+            "businesssubtype": "Clothing/Shoes",
+            "unittype": "Unit",
+            "licencersn": "3036302",
+            "geom": {
+                "type": "Point",
+                "coordinates": [-123.116286093249, 49.2608633217122]
+            },
+            "status": "Issued",
+            "extractdate": "2020-11-01T11:32:29+01:00",
+            "numberofemployees": "1",
+            "localarea": "Fairview",
+            "folderyear": "18",
+            "businessname": "Sui Ching Milton (Sui Milton)",
+            "postalcode": "V5Z 3X7",
+            "issueddate": "2017-12-30T03:18:43+01:00",
+            "country": "CA",
+            "feepaid": 145,
+            "businesstradename": "Erika Fashions",
+            "licencenumber": "18-467994"
+        },
+        "record_timestamp": "2020-11-01T12:37:16.327+01:00"
+    }, {
+        "datasetid": "business-licences",
+        "recordid": "60a6d019a9e82eb426de570345765b5ba2a86fc1",
+        "fields": {
+            "province": "BC",
+            "expireddate": "2018-12-31",
+            "house": "268",
+            "licencerevisionnumber": "00",
+            "street": "KEEFER ST",
+            "unit": "212",
+            "city": "Vancouver",
+            "businesstype": "Retail Dealer",
+            "businesssubtype": "Other",
+            "unittype": "Unit",
+            "licencersn": "3036336",
+            "geom": {
+                "type": "Point",
+                "coordinates": [-123.098022584843, 49.2791766945663]
+            },
+            "status": "Issued",
+            "extractdate": "2020-11-01T11:32:29+01:00",
+            "numberofemployees": "0",
+            "localarea": "Strathcona",
+            "folderyear": "18",
+            "businessname": "Barbara Doris La Rocque (Brandy) (Barbara La Rocque)",
+            "postalcode": "V6A 1X5",
+            "issueddate": "2018-01-02T21:10:43+01:00",
+            "country": "CA",
+            "feepaid": 145,
+            "businesstradename": "Grandma's Jewellery Box",
+            "licencenumber": "18-468028"
+        },
+        "record_timestamp": "2020-11-01T12:37:16.327+01:00"
+    }
+]

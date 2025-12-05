@@ -1,0 +1,38 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Fire_event    
+    vcslam:id xsd:string ;
+    vcslam:includes vcslam:Group;
+    vcslam:description xsd:string;
+    vcslam:includes vcslam:Close;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:count xsd:int;
+    vcslam:includes vcslam:Dispatch.
+
+vcslam:Group  
+    vcslam:mapped xsd:string. 
+
+vcslam:Close
+    vcslam:date xsd:date;
+    vcslam:time xsd:time.    
+
+vcslam:Dispatch     
+    vcslam:dateTime xsd:dateTime;
+    vcslam:time xsd:time;
+    vcslam:month xsd:gMonth;
+    vcslam:year xsd:gYear;
+    vcslam:day xsd:gDay.
+                  
+vcslam:Location
+    vcslam:includes vcslam:Neighbourhood;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Neighbourhood 
+   vcslam:id xsd:string;
+   vcslam:name xsd:string.
+   
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

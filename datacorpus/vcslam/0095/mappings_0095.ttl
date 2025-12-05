@@ -1,0 +1,47 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:City vcslam:name "city".
+
+vcslam:State vcslam:name "state".
+
+vcslam:Location vcslam:zip_code "zip".
+
+vcslam:Location vcslam:information "tow_location".
+
+vcslam:Council_district vcslam:name "council_district".
+
+vcslam:Police_district vcslam:identifier "police_district".
+
+vcslam:Census_tract vcslam:identifier "census_tract".
+
+vcslam:Census_Block vcslam:identifier "census_block".
+
+vcslam:Group vcslam:identifier "census_block_group".
+
+vcslam:Neighbourhood vcslam:name "neighborhood".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "location_1.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location_1.longitude".
+
+vcslam:Manufacture vcslam:name "vehicle_make".
+
+vcslam:Vehicle vcslam:year "vehicle_year".
+
+vcslam:State vcslam:abbreviation "license_state".
+
+vcslam:Agency vcslam:abbreviation "agency".
+
+vcslam:Tow vcslam:reason "tow_reason".
+
+vcslam:Tow vcslam:id "unique_key".
+
+vcslam:Tow vcslam:description "tow_description".
+
+vcslam:Tow vcslam:date_time "tow_date".

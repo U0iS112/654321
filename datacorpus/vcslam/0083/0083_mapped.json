@@ -1,0 +1,70 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.project_description": {
+            "key": "project_description",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:description \"fields.project_description\"."
+        },
+        "fields.project_title": {
+            "key": "project_title",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:title \"fields.project_title\"."
+        },
+        "fields.project_status": {
+            "key": "project_status",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:status \"fields.project_status\"."
+        },
+        "fields.capital_program_poly": {
+            "key": "capital_program_poly",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:type \"fields.capital_program_poly\"."
+        },
+        "fields.program_subclass": {
+            "key": "program_subclass",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:sub_type \"fields.program_subclass\"."
+        },
+        "fields.planned_construction_from": {
+            "key": "planned_construction_from",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:planned_start_date_time \"fields.planned_construction_from\"."
+        },
+        "fields.planned_construction_to": {
+            "key": "planned_construction_to",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:planned_end_date_time \"fields.planned_construction_to\"."
+        },
+        "fields.sde_objectid": {
+            "key": "sde_objectid",
+            "Path": "fields",
+            "mapping": "vcslam:Construction_project vcslam:id \"fields.sde_objectid\"."
+        },
+        "fields.organization": {
+            "key": "organization",
+            "Path": "fields",
+            "mapping": "vcslam:Organization vcslam:name \"fields.organization\"."
+        },
+        "fields.geo_point_2d": {
+            "key": "geo_point_2d",
+            "Path": "fields",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geo_point_2d\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        }
+    }
+}

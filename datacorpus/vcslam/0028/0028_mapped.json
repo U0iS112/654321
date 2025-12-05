@@ -1,0 +1,70 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "trade_name": {
+            "key": "trade_name",
+            "Path": null,
+            "mapping": "vcslam:Business vcslam:trade_name \"trade_name\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "status": {
+            "key": "status",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:status \"status\"."
+        },
+        "expiry_date": {
+            "key": "expiry_date",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:date_time_expiration \"expiry_date\"."
+        },
+        "neighbourhood_id": {
+            "key": "neighbourhood_id",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:id \"neighbourhood_id\"."
+        },
+        "neighbourhood": {
+            "key": "neighbourhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighbourhood\"."
+        },
+        "ward": {
+            "key": "ward",
+            "Path": null,
+            "mapping": "vcslam:Ward vcslam:information \"ward\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "business_category": {
+            "key": "business_category",
+            "Path": null,
+            "mapping": "vcslam:Business vcslam:type \"business_category\"."
+        }
+    }
+}

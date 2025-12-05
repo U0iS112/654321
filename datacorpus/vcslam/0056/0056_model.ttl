@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+vcslam:Segment vcslam:of vcslam:Bikeway;
+    vcslam:type xsd:string;
+    vcslam:status xsd:string;
+    vcslam:length vcslam:Length;
+    vcslam:id xsd:string;
+    vcslam:built_year xsd:gYear;
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:compass_direction xsd:string.
+
+
+vcslam:Bikeway vcslam:type xsd:string;
+    vcslam:is_part_of vcslam:Route.
+
+vcslam:Route vcslam:name xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Street;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal;
+    vcslam:geometry_type xsd:string.
+
+vcslam:Length vcslam:value xsd:int;
+    vcslam:measurement_unit_distance vcslam:Meter.

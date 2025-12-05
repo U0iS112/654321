@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Tree vcslam:is_memorial "fields.memorial_tree".
+
+vcslam:Stem vcslam:amount "fields.number_of_stems".
+
+vcslam:Tree vcslam:common_name "fields.common_name".
+
+vcslam:Tree vcslam:scientific_name "fields.scientific_name".
+
+vcslam:Park vcslam:name "fields.park".
+
+vcslam:Diameter vcslam:value "fields.trunk_diameter".
+
+vcslam:Tree vcslam:ownership "fields.owner".
+
+vcslam:Installation vcslam:date "fields.date_installed".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geo_point_2d".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geojson.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geojson.coordinates".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geometry.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geometry.coordinates".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Dataset vcslam:id "datasetid".

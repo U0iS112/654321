@@ -1,0 +1,65 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "properties.sign_id": {
+            "key": "sign_id",
+            "Path": "properties",
+            "mapping": "vcslam:Sign vcslam:id \"properties.sign_id\"."
+        },
+        "properties.sign_name": {
+            "key": "sign_name",
+            "Path": "properties",
+            "mapping": "vcslam:Sign vcslam:name \"properties.sign_name\"."
+        },
+        "properties.dir": {
+            "key": "dir",
+            "Path": "properties",
+            "mapping": "vcslam:Sign vcslam:compass_direction \"properties.dir\"."
+        },
+        "properties.schedule": {
+            "key": "schedule",
+            "Path": "properties",
+            "mapping": "vcslam:Schedule vcslam:information \"properties.schedule\"."
+        },
+        "properties.min_speed": {
+            "key": "min_speed",
+            "Path": "properties",
+            "mapping": "vcslam:Speed vcslam:min \"properties.min_speed\"."
+        },
+        "properties.start_date": {
+            "key": "start_date",
+            "Path": "properties",
+            "mapping": "vcslam:Report vcslam:start_date_time \"properties.start_date\"."
+        },
+        "properties.end_date": {
+            "key": "end_date",
+            "Path": "properties",
+            "mapping": "vcslam:Report vcslam:end_date_time \"properties.end_date\"."
+        },
+        "properties.address": {
+            "key": "address",
+            "Path": "properties",
+            "mapping": "vcslam:Location vcslam:address \"properties.address\"."
+        },
+        "geometry.coordinate.latitude": {
+            "key": "latitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geometry.coordinate.latitude\"."
+        },
+        "geometry.coordinate.longitude": {
+            "key": "longitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geometry.coordinate.longitude\"."
+        },
+        "properties.ward_no": {
+            "key": "ward_no",
+            "Path": "properties",
+            "mapping": "vcslam:Ward vcslam:number \"properties.ward_no\"."
+        },
+        "properties.speed_limit": {
+            "key": "speed_limit",
+            "Path": "properties",
+            "mapping": "vcslam:Speed vcslam:limit \"properties.speed_limit\"."
+        }
+    }
+}

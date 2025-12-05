@@ -1,0 +1,40 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Rain
+    vcslam:refers_to vcslam:Observation.
+    vcslam:range xsd:string ;
+    vcslam:measurement_unit_distance vcslam:Millimeter.
+
+
+vcslam:Observation
+    vcslam:date xsd:date ;
+    vcslam:time xsd:time ;
+    vcslam:includes vcslam:Station;
+    vcslam:includes vcslam:Precipitation;
+    vcslam:includes vcslam:Storm;
+    vcslam:range xsd:string. 
+
+vcslam:Precipitation
+    vcslam:measurement_unit_distance vcslam:Millimeter;
+    vcslam:total xsd:decimal.
+
+vcslam:Storm
+    vcslam:includes vcslam:Rating.
+
+vcslam:Rating
+    vcslam:id xsd:string;
+    vcslam:description xsd:string.
+
+vcslam:Station
+    vcslam:id xsd:string;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Station vcslam:name "fields.stations".
+
+vcslam:Time vcslam:median "fields.response_time_median".
+
+vcslam:Duration vcslam:value "fields.incident_duration".
+
+vcslam:Alarm vcslam:date "fields.alarm_time".
+
+vcslam:Incident vcslam:identifier "fields.incident".
+
+vcslam:Incident vcslam:type "fields.incident_type".
+
+vcslam:Unit vcslam:identifier "fields.units".
+
+vcslam:Unit vcslam:count "fields.unit_count".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geo_point_2d".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geojson.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geojson.coordinates".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geometry.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geometry.coordinates".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Dataset vcslam:id "datasetid".

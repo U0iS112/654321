@@ -1,0 +1,30 @@
+{
+    "type": {
+        "key": "type",
+        "Path": null
+    },
+    "properties._id": {
+        "key": "_id",
+        "Path": "properties"
+    },
+    "properties.OBJECTID": {
+        "key": "OBJECTID",
+        "Path": "properties"
+    },
+    "properties.TTL_RES_UNIT": {
+        "key": "TTL_RES_UNIT",
+        "Path": "properties"
+    },
+    "properties.RGI_UNITS": {
+        "key": "RGI_UNITS",
+        "Path": "properties"
+    },
+    "properties.SCATTERED": {
+        "key": "SCATTERED",
+        "Path": "properties"
+    },
+    "properties.FLR_ABV_GR": {
+        "key": "FLR_ABV_GR",
+        "Path": "properties"
+    }
+}

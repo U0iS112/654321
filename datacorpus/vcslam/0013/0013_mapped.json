@@ -1,0 +1,40 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "stationname": {
+            "key": "stationname",
+            "Path": null,
+            "mapping": "vcslam:Station vcslam:name \"stationname\"."
+        },
+        "stationlocation.type": {
+            "key": "type",
+            "Path": "stationlocation",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"stationlocation.type\"."
+        },
+        "stationlocation.coordinates": {
+            "key": "coordinates",
+            "Path": "stationlocation",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"stationlocation.coordinates\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "datetime": {
+            "key": "datetime",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:date_time \"datetime\"."
+        },
+        "roadsurfacetemperature": {
+            "key": "roadsurfacetemperature",
+            "Path": null,
+            "mapping": "vcslam:Temperature vcslam:value \"roadsurfacetemperature\"."
+        },
+        "airtemperature": {
+            "key": "airtemperature",
+            "Path": null,
+            "mapping": "vcslam:Temperature vcslam:value \"airtemperature\"."
+        }
+    }
+}

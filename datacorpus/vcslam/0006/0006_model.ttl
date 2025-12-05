@@ -1,0 +1,38 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Facility
+    vcslam:refers_to vcslam:Police;
+    vcslam:name xsd:string;
+    vcslam:locatedAt vcslam:Location.
+
+
+vcslam:City
+    vcslam:name xsd:string.
+
+vcslam:State 
+    vcslam:name xsd:string.
+
+vcslam:Postal
+    vcslam:zip_code xsd:int;
+    vcslam:zip_code_4 xsd:int.
+
+vcslam:Street   
+    vcslam:address xsd:string.
+
+
+
+vcslam:Location 
+   vcslam:positionAt vcslam:Position;
+   vcslam:includes vcslam:City;
+   vcslam:includes vcslam:State;
+   vcslam:includes vcslam:Street;
+   vcslam:includes vcslam:Postal.
+    
+    
+
+vcslam:Position  
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal ;
+    vcslam:geometry_type xsd:string.

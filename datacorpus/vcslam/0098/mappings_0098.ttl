@@ -1,0 +1,21 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Street vcslam:name "on".
+
+vcslam:Street vcslam:from_point "from".
+
+vcslam:Street vcslam:to_point "to".
+
+vcslam:County vcslam:name "county".
+
+vcslam:Municipality vcslam:name "municipality".
+
+vcslam:Traffic vcslam:direction_DP "direction".
+
+vcslam:Coordinate_pair vcslam:latitude "location_1.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location_1.longitude".
+
+vcslam:Location vcslam:id "localid".

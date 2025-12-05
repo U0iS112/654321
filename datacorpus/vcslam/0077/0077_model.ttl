@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Vehicle vcslam:identifier xsd:string;
+    vcslam:range xsd:string;
+    vcslam:manufactured_by vcslam:Manufacture;
+    vcslam:is vcslam:Electric;
+    vcslam:cafv xsd:string;
+    vcslam:includes vcslam:Msrp;
+    vcslam:includes vcslam:Model.
+
+vcslam:Model vcslam:year xsd:gYear;
+             vcslam:information xsd:string.
+
+vcslam:Manufacture vcslam:name xsd:string.
+
+vcslam:Msrp vcslam:value xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:City;
+    vcslam:locatedAt vcslam:State;
+    vcslam:locatedAt vcslam:County;
+    vcslam:zip_code xsd:string;
+    vcslam:locatedAt vcslam:Legsilative_district.

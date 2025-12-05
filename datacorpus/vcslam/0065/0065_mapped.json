@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.status": {
+            "key": "status",
+            "Path": "fields",
+            "mapping": "vcslam:Street_food_vendor vcslam:status \"fields.status\"."
+        },
+        "fields.description": {
+            "key": "description",
+            "Path": "fields",
+            "mapping": "vcslam:Street_food_vendor vcslam:description \"fields.description\"."
+        },
+        "fields.key": {
+            "key": "key",
+            "Path": "fields",
+            "mapping": "vcslam:Street_food_vendor vcslam:id \"fields.key\"."
+        },
+        "fields.location": {
+            "key": "location",
+            "Path": "fields",
+            "mapping": "vcslam:Location vcslam:information \"fields.location\"."
+        },
+        "fields.geo_localarea": {
+            "key": "geo_localarea",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_localarea\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        }
+    }
+}

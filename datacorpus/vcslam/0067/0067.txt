@@ -1,0 +1,47 @@
+Description:
+
+Address and Locations for Post Offices in Montgomery County, MD.
+
+
+Column Name
+Description
+Type
+
+NAME	
+Post Office Name
+Plain Text
+
+ADDRESS	
+Street Address of the Post Office
+Plain Text
+
+CITY	
+City for the Post Office
+Plain Text
+
+ZIP CODE	
+5 digit Postal Zip Code for the Post Office
+Number
+
+PHONE	
+Primary telephone number for the Post Office
+Plain Text
+
+URL	
+Internet address (URL) for the Post Office's Website
+Plain Text
+
+LONGITUDE	
+Longitude location for the Post Office
+Number
+
+LATITUDE	
+Latitude location for the Post Office
+Number
+
+LOCATION	
+Location field generated to indicate the location of a Post Office on a map.
+Point
+
+LOCATION (state)	
+Plain Text

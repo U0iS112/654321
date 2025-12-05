@@ -1,0 +1,72 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Library 
+    vcslam:includes vcslam:Branch.
+              
+
+vcslam:Branch
+    vcslam:abbreviation xsd:string;
+    vcslam:name xsd:string;
+    vcslam:includes vcslam:Phone;
+    vcslam:opening_hours vcslam:Opening_hours;
+    vcslam:includes vcslam:Open;
+    vcslam:includes vcslam:Close;
+    vcslam:includes vcslam:Wifi;           
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Phone
+    vcslam:number xsd:int.
+
+vcslam:Wifi
+    vcslam:is_available xsd:boolean.    
+
+vcslam:Open 
+    vcslam:refers_to vcslam:Hour.
+
+vcslam:Hour
+    vcslam:includes vcslam:Monday;
+    vcslam:includes vcslam:Tuesday;
+    vcslam:includes vcslam:Wednesday;
+    vcslam:includes vcslam:Thursday;
+    vcslam:includes vcslam:Friday;
+    vcslam:includes vcslam:Saturday;
+    vcslam:includes vcslam:Sunday;
+
+vcslam:Monday 
+    vcslam:time xsd:time.
+
+vcslam:Tuesday 
+    vcslam:time xsd:time.
+
+vcslam:Wednesday 
+    vcslam:time xsd:time.
+
+vcslam:Thursday 
+    vcslam:time xsd:time.
+
+vcslam:Friday 
+    vcslam:time xsd:time.
+
+vcslam:Saturday 
+    vcslam:time xsd:time.
+
+vcslam:Sunday 
+    vcslam:time xsd:time.
+
+vcslam:Location
+    vcslam:includes vcslam:Postal;
+    vcslam:includes vcslam:Street;
+    vcslam:address xsd:string ;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Postal 
+    vcslam:code xsd:string.
+
+vcslam:Street 
+    vcslam:address xsd:string.    
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

@@ -1,0 +1,41 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Violation vcslam:description "viodesc".
+
+vcslam:Fine vcslam:value "origfine".
+
+vcslam:Location vcslam:information "violation_address_number".
+
+vcslam:Location vcslam:address "violation_full_address".
+
+vcslam:Street vcslam:name "violation_street".
+
+vcslam:City vcslam:name "city".
+
+vcslam:State vcslam:name "state".
+
+vcslam:Census_tract vcslam:identifier "census_tract".
+
+vcslam:Census_Block vcslam:identifier "census_block".
+
+vcslam:Group vcslam:identifier "census_block_group".
+
+vcslam:Council_district vcslam:name "council_district".
+
+vcslam:police_district vcslam:identifier "police_district".
+
+vcslam:Location vcslam:human_address "location_2.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location_2.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location_2.longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Summon vcslam:date_time "summdt".
+
+vcslam:Summon vcslam:id "summno".

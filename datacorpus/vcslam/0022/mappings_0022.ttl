@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Segment vcslam:id "sourceelementkey".
+
+vcslam:Street vcslam:compass_direction "sideofstreet".
+
+vcslam:Minute vcslam:amount "parkingtimelimitcatergory".
+
+vcslam:Parking_space vcslam:amount "parkingspacecount".
+
+vcslam:Parking vcslam:type "parkingcategory".
+
+vcslam:Neighbourhood vcslam:name "paidparkingarea".
+
+vcslam:Neighbourhood vcslam:information "paidparkingsubarea".
+
+vcslam:Location vcslam:information "blockfacename".
+
+vcslam:Coordinates vcslam:geometry_type "location.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "location.coordinates".
+
+vcslam:Occupancy vcslam:date_time "occupancydatetime".

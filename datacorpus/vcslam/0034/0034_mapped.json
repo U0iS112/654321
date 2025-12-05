@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "neighbourhood": {
+            "key": "neighbourhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighbourhood\"."
+        },
+        "neighbourhood_number": {
+            "key": "neighbourhood_number",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:number \"neighbourhood_number\"."
+        },
+        "initiated_by": {
+            "key": "initiated_by",
+            "Path": null,
+            "mapping": "vcslam:Complaint vcslam:source_DP \"initiated_by\"."
+        },
+        "status": {
+            "key": "status",
+            "Path": null,
+            "mapping": "vcslam:Complaint vcslam:status \"status\"."
+        },
+        "count": {
+            "key": "count",
+            "Path": null,
+            "mapping": "vcslam:Complaint vcslam:count \"count\"."
+        },
+        "complaint": {
+            "key": "complaint",
+            "Path": null,
+            "mapping": "vcslam:Complaint vcslam:type \"complaint\"."
+        },
+        "year": {
+            "key": "year",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:year \"year\"."
+        },
+        "month": {
+            "key": "month",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:month_name \"month\"."
+        },
+        "month_number": {
+            "key": "month_number",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:month_number \"month_number\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        }
+    }
+}

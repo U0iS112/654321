@@ -1,0 +1,22 @@
+{
+    "type": {
+        "key": "type",
+        "Path": null
+    },
+    "properties._id": {
+        "key": "_id",
+        "Path": "properties"
+    },
+    "properties.TCDSB_LEVEL": {
+        "key": "TCDSB_LEVEL",
+        "Path": "properties"
+    },
+    "crs.type": {
+        "key": "type",
+        "Path": "crs"
+    },
+    "crs.properties.name": {
+        "key": "name",
+        "Path": "crs.properties"
+    }
+}

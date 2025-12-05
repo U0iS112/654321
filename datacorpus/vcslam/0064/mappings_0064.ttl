@@ -1,0 +1,31 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Seat vcslam:amount "fields.number_of_seats".
+
+vcslam:Area vcslam:value "fields.square_feet".
+
+vcslam:Local_area vcslam:address "fields.address".
+
+vcslam:Cultural_space vcslam:use "fields.primary_use".
+
+vcslam:Cultural_space vcslam:type "fields.type".
+
+vcslam:Cultural_space vcslam:ownership "fields.ownership".
+
+vcslam:Cultural_space vcslam:created_at_year "fields.year".
+
+vcslam:Cultural_space vcslam:name "fields.cultural_space_name".
+
+vcslam:Local_area vcslam:name "fields.local_area".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".

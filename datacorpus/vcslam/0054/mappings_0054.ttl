@@ -1,0 +1,29 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Heritage_site vcslam:id "fields.id".
+
+vcslam:Heritage_site vcslam:protection_type "fields.designation".
+
+vcslam:Street vcslam:name "fields.street".
+
+vcslam:Street vcslam:number "fields.street_nbr".
+
+vcslam:Coordinates vcslam:type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".
+
+vcslam:Location vcslam:address "fields.address".
+
+vcslam:Zone vcslam:identifier "fields.zoning".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Local_area vcslam:name "fields.localarea".
+
+vcslam:Building vcslam:name "fields.buildingname".

@@ -1,0 +1,37 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Neighbourhood vcslam:name "neighbourhood".
+
+vcslam:Neighbourhood vcslam:id "neighbourhood_id".
+
+vcslam:Pet vcslam:type "pet_type".
+
+vcslam:Breed vcslam:name "breed".
+
+vcslam:Pet vcslam:gender "gender".
+
+vcslam:Pet vcslam:is_sterilized "spayed_or_neutered".
+
+vcslam:Pet vcslam:count "count".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Coordinates vcslam:geometry_type "point_location.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "point_location.coordinates".
+
+vcslam:License vcslam:date_time "licence_date".
+
+vcslam:License vcslam:month_name "month".
+
+vcslam:License vcslam:month_number "month_number".

@@ -1,0 +1,31 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Electric vcslam:type "ev_type".
+
+vcslam:Distance vcslam:value "electric_range".
+
+vcslam:Model vcslam:year "model_year".
+
+vcslam:Model vcslam:name "model".
+
+vcslam:Msrp vcslam:value "base_msrp".
+
+vcslam:Legsilative_district vcslam:id "legislative_district".
+
+vcslam:Manufacture vcslam:name "make".
+
+vcslam:County vcslam:name "county".
+
+vcslam:City vcslam:name "city".
+
+vcslam:State vcslam:name "state".
+
+vcslam:Vehicle vcslam:id "dol_vehicle_id".
+
+vcslam:Coordinates vcslam:geometry_type "geocoded_column.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "geocoded_column.coordinates".
+
+vcslam:Vehicle vcslam:identifier "vin_1_10".

@@ -1,0 +1,22 @@
+{
+    "fields.project_url": {
+        "key": "project_url",
+        "Path": "fields"
+    },
+    "fields.geojson.type": {
+        "key": "type",
+        "Path": "fields.geojson"
+    },
+    "fields.geojson.coordinates": {
+        "key": "coordinates",
+        "Path": "fields.geojson"
+    },
+    "geometry.type": {
+        "key": "type",
+        "Path": "geometry"
+    },
+    "geometry.coordinates": {
+        "key": "coordinates",
+        "Path": "geometry"
+    }
+}

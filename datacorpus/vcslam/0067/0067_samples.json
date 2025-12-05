@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Clarksburg Post Office",
+        "address": "22505 Gateway Center Dr",
+        "city": "Clarksburg",
+        "zip_code": "20871",
+        "phone": "301-540-0856",
+        "url": "http://usps.whitepages.com/service/post_office/43391?p=1&s=md&service_name=post_office&z=Clarksburg",
+        "longitude": "-77.2767833125",
+        "latitude": "39.2267146734",
+        "location": {
+          "type": "Point",
+          "coordinates": [
+            -77.2767833125,
+            39.2267146734
+          ]
+        },
+        "location_state": "MD",
+        ":@computed_region_tx5f_5em3": "2",
+        ":@computed_region_kbsp_ykn9": "50",
+        ":@computed_region_rbt8_3x7n": "1",
+        ":@computed_region_d7bw_bq6x": "44"
+      },
+      {
+        "name": "Kentlands Post Office",
+        "address": "618 Center Point Way",
+        "city": "Gaithersburg",
+        "zip_code": "20878",
+        "phone": "301-869-4866",
+        "url": "http://usps.whitepages.com/service/post_office/37156?a=618+center+point+way&p=1&s=md&service_name=post_office&z=Gaithersburg",
+        "longitude": "-77.2326628759",
+        "latitude": "39.1222103107",
+        "location": {
+          "type": "Point",
+          "coordinates": [
+            -77.2326628759,
+            39.1222103107
+          ]
+        },
+        "location_state": "MD",
+        ":@computed_region_tx5f_5em3": "3",
+        ":@computed_region_kbsp_ykn9": "36",
+        ":@computed_region_rbt8_3x7n": "21",
+        ":@computed_region_d7bw_bq6x": "33"
+      },
+      {
+        "name": "Aspen Hill Finance Station",
+        "address": "13529 Connecticut Ave",
+        "city": "Silver Spring",
+        "zip_code": "20906",
+        "phone": "1-800-275-8777",
+        "url": "http://usps.whitepages.com/service/post_office/76254?p=1&s=md&service_name=post_office&z=Aspen+Hill",
+        "longitude": "-77.0797529474",
+        "latitude": "39.0773723485",
+        "location": {
+          "type": "Point",
+          "coordinates": [
+            -77.0797529474,
+            39.0773723485
+          ]
+        },
+        "location_state": "MD",
+        ":@computed_region_tx5f_5em3": "4",
+        ":@computed_region_kbsp_ykn9": "61",
+        ":@computed_region_rbt8_3x7n": "1",
+        ":@computed_region_d7bw_bq6x": "6"
+      }
+]

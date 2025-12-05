@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+vcslam:Community_center vcslam:name xsd:string;
+    vcslam:phone_number xsd:string ;
+    vcslam:link xsd:anyURI;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Location vcslam:human_address xsd:string;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal.

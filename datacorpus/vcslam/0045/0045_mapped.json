@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "APPLICATION_TYPE": {
+            "key": "APPLICATION_TYPE",
+            "Path": null,
+            "mapping": "vcslam:Application vcslam:type \"APPLICATION_TYPE\"."
+        },
+        "APPLICATION#": {
+            "key": "APPLICATION#",
+            "Path": null,
+            "mapping": "vcslam:Application vcslam:identifier \"APPLICATION#\"."
+        },
+        "DESCRIPTION": {
+            "key": "DESCRIPTION",
+            "Path": null,
+            "mapping": "vcslam:Application vcslam:description \"DESCRIPTION\"."
+        },
+        "DATE_SUBMITTED": {
+            "key": "DATE_SUBMITTED",
+            "Path": null,
+            "mapping": "vcslam:Submission vcslam:date \"DATE_SUBMITTED\"."
+        },
+        "HEARING_DATE": {
+            "key": "HEARING_DATE",
+            "Path": null,
+            "mapping": "vcslam:Hearing vcslam:date \"HEARING_DATE\"."
+        },
+        "REFERENCE_FILE#": {
+            "key": "REFERENCE_FILE#",
+            "Path": null,
+            "mapping": "vcslam:File vcslam:reference \"REFERENCE_FILE#\"."
+        },
+        "POSTAL": {
+            "key": "POSTAL",
+            "Path": null,
+            "mapping": "vcslam:Postal vcslam:code \"POSTAL\"."
+        },
+        "STREET_NUM": {
+            "key": "STREET_NUM",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:number \"STREET_NUM\"."
+        },
+        "STREET_TYPE": {
+            "key": "STREET_TYPE",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:type \"STREET_TYPE\"."
+        },
+        "STREET_DIRECTION": {
+            "key": "STREET_DIRECTION",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:compass_direction \"STREET_DIRECTION\"."
+        },
+        "STREET_NAME": {
+            "key": "STREET_NAME",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"STREET_NAME\"."
+        },
+        "Y": {
+            "key": "Y",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"Y\"."
+        },
+        "X": {
+            "key": "X",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"X\"."
+        },
+        "STATUS": {
+            "key": "STATUS",
+            "Path": null,
+            "mapping": "vcslam:Application vcslam:status \"STATUS\"."
+        }
+    }
+}

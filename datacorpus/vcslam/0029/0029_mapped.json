@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "disruption_id": {
+            "key": "disruption_id",
+            "Path": null,
+            "mapping": "vcslam:Disruption vcslam:id \"disruption_id\"."
+        },
+        "status": {
+            "key": "status",
+            "Path": null,
+            "mapping": "vcslam:Disruption vcslam:status \"status\"."
+        },
+        "activity_type": {
+            "key": "activity_type",
+            "Path": null,
+            "mapping": "vcslam:Disruption vcslam:type \"activity_type\"."
+        },
+        "details": {
+            "key": "details",
+            "Path": null,
+            "mapping": "vcslam:Disruption vcslam:details \"details\"."
+        },
+        "impact": {
+            "key": "impact",
+            "Path": null,
+            "mapping": "vcslam:Disruption vcslam:impact \"impact\"."
+        },
+        "duration": {
+            "key": "duration",
+            "Path": null,
+            "mapping": "vcslam:Duration vcslam:information \"duration\"."
+        },
+        "infrastructure": {
+            "key": "infrastructure",
+            "Path": null,
+            "mapping": "vcslam:Infrastructure vcslam:information \"infrastructure\"."
+        },
+        "traffic_district": {
+            "key": "traffic_district",
+            "Path": null,
+            "mapping": "vcslam:District vcslam:information \"traffic_district\"."
+        },
+        "on_street": {
+            "key": "on_street",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"on_street\"."
+        },
+        "from_street": {
+            "key": "from_street",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"from_street\"."
+        },
+        "point.type": {
+            "key": "type",
+            "Path": "point",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"point.type\"."
+        },
+        "point.coordinates": {
+            "key": "coordinates",
+            "Path": "point",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"point.coordinates\"."
+        },
+        "start_date": {
+            "key": "start_date",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:start_date_time \"start_date\"."
+        },
+        "date_issued": {
+            "key": "date_issued",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:date_time_issued \"date_issued\"."
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Bikeway vcslam:type "properties.bikeway_type".
+
+vcslam:Street vcslam:name "properties.street_name".
+
+vcslam:Segment vcslam:type "properties.street_segment_types".
+
+vcslam:Segment vcslam:id "properties.unique_id".
+
+vcslam:Segment vcslam:built_year "properties.year_of_construction".
+
+vcslam:Length vcslam:value "properties.length".
+
+vcslam:Route vcslam:name "properties.bike_route_name".
+
+vcslam:Movement vcslam:compass_direction "properties.direction_of_movement".
+
+vcslam:Coordinates vcslam:geometry_type "geometry.type".

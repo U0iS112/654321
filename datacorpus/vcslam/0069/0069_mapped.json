@@ -1,0 +1,70 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "date_rptd": {
+            "key": "date_rptd",
+            "Path": null,
+            "mapping": "vcslam:Report vcslam:date_time \"date_rptd\"."
+        },
+        "date_occ": {
+            "key": "date_occ",
+            "Path": null,
+            "mapping": "vcslam:Occurrence vcslam:date_time \"date_occ\"."
+        },
+        "area": {
+            "key": "area",
+            "Path": null,
+            "mapping": "vcslam:Area vcslam:identifier \"area\"."
+        },
+        "area_name": {
+            "key": "area_name",
+            "Path": null,
+            "mapping": "vcslam:Area vcslam:name \"area_name\"."
+        },
+        "rpt_dist_no": {
+            "key": "rpt_dist_no",
+            "Path": null,
+            "mapping": "vcslam:District vcslam:number \"rpt_dist_no\"."
+        },
+        "crm_cd": {
+            "key": "crm_cd",
+            "Path": null,
+            "mapping": "vcslam:Crime vcslam:code \"crm_cd\"."
+        },
+        "crm_cd_desc": {
+            "key": "crm_cd_desc",
+            "Path": null,
+            "mapping": "vcslam:Crime vcslam:description \"crm_cd_desc\"."
+        },
+        "vict_age": {
+            "key": "vict_age",
+            "Path": null,
+            "mapping": "vcslam:Victim vcslam:age \"vict_age\"."
+        },
+        "vict_sex": {
+            "key": "vict_sex",
+            "Path": null,
+            "mapping": "vcslam:Victim vcslam:gender \"vict_sex\"."
+        },
+        "vict_descent": {
+            "key": "vict_descent",
+            "Path": null,
+            "mapping": "vcslam:Victim vcslam:race \"vict_descent\"."
+        },
+        "premis_cd": {
+            "key": "premis_cd",
+            "Path": null,
+            "mapping": "vcslam:Premise vcslam:code \"premis_cd\"."
+        },
+        "premis_desc": {
+            "key": "premis_desc",
+            "Path": null,
+            "mapping": "vcslam:Premise vcslam:description \"premis_desc\"."
+        },
+        "dr_no": {
+            "key": "dr_no",
+            "Path": null,
+            "mapping": "vcslam:Case vcslam:id \"dr_no\"."
+        }
+    }
+}

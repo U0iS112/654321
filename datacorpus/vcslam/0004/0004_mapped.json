@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "Height restriction (m)": {
+            "key": "Height restriction (m)",
+            "Path": null,
+            "mapping": "vcslam:Height vcslam:value \"Height restriction (m)\"."
+        },
+        "Height restriction (imperial)": {
+            "key": "Height restriction (imperial)",
+            "Path": null,
+            "mapping": "vcslam:Height vcslam:value \"Height restriction (imperial)\"."
+        },
+        "Borough": {
+            "key": "Borough",
+            "Path": null,
+            "mapping": "vcslam:Borough vcslam:name \"Borough\"."
+        },
+        "Lat": {
+            "key": "Lat",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"Lat\"."
+        },
+        "Lng": {
+            "key": "Lng",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"Lng\"."
+        },
+        "Northing": {
+            "key": "Northing",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:northing \"Northing\"."
+        },
+        "Easting": {
+            "key": "Easting",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:easting \"Easting\"."
+        },
+        "Grid Reference": {
+            "key": "Grid Reference",
+            "Path": null,
+            "mapping": "vcslam:Geo_grid vcslam:reference \"Grid Reference\"."
+        },
+        "Road name": {
+            "key": "Road name",
+            "Path": null,
+            "mapping": "vcslam:Road vcslam:name \"Road name\"."
+        },
+        "Road number": {
+            "key": "Road number",
+            "Path": null,
+            "mapping": "vcslam:Road vcslam:number \"Road number\"."
+        },
+        "TLRN [Red route]?": {
+            "key": "TLRN [Red route]?",
+            "Path": null,
+            "mapping": "vcslam:Road vcslam:is_red_route \"TLRN [Red route]?\"."
+        }
+    }
+}

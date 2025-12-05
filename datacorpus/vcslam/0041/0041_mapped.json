@@ -1,0 +1,130 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "branch": {
+            "key": "branch",
+            "Path": null,
+            "mapping": "vcslam:Branch vcslam:name \"branch\"."
+        },
+        "branch_id": {
+            "key": "branch_id",
+            "Path": null,
+            "mapping": "vcslam:Branch vcslam:id \"branch_id\"."
+        },
+        "phone_number": {
+            "key": "phone_number",
+            "Path": null,
+            "mapping": "vcslam:Branch vcslam:phone_number \"phone_number\"."
+        },
+        "postal_code": {
+            "key": "postal_code",
+            "Path": null,
+            "mapping": "vcslam:Postal vcslam:code \"postal_code\"."
+        },
+        "monday_open": {
+            "key": "monday_open",
+            "Path": null,
+            "mapping": "vcslam:Monday vcslam:time_open \"monday_open\"."
+        },
+        "monday_close": {
+            "key": "monday_close",
+            "Path": null,
+            "mapping": "vcslam:Monday vcslam:time_close \"monday_close\"."
+        },
+        "tuesday_open": {
+            "key": "tuesday_open",
+            "Path": null,
+            "mapping": "vcslam:Tuesday vcslam:time_open \"tuesday_open\"."
+        },
+        "tuesday_close": {
+            "key": "tuesday_close",
+            "Path": null,
+            "mapping": "vcslam:Tuesday vcslam:time_close \"tuesday_close\"."
+        },
+        "wednesday_open": {
+            "key": "wednesday_open",
+            "Path": null,
+            "mapping": "vcslam:Wednesday vcslam:time_open \"wednesday_open\"."
+        },
+        "wednesday_close": {
+            "key": "wednesday_close",
+            "Path": null,
+            "mapping": "vcslam:Wednesday vcslam:time_close \"wednesday_close\"."
+        },
+        "thursday_open": {
+            "key": "thursday_open",
+            "Path": null,
+            "mapping": "vcslam:Thursday vcslam:time_open \"thursday_open\"."
+        },
+        "thursday_close": {
+            "key": "thursday_close",
+            "Path": null,
+            "mapping": "vcslam:Thursday vcslam:time_close \"thursday_close\"."
+        },
+        "friday_open": {
+            "key": "friday_open",
+            "Path": null,
+            "mapping": "vcslam:Friday vcslam:time_open \"friday_open\"."
+        },
+        "friday_close": {
+            "key": "friday_close",
+            "Path": null,
+            "mapping": "vcslam:Friday vcslam:time_close \"friday_close\"."
+        },
+        "saturday_open": {
+            "key": "saturday_open",
+            "Path": null,
+            "mapping": "vcslam:Saturday vcslam:time_open \"saturday_open\"."
+        },
+        "saturday_close": {
+            "key": "saturday_close",
+            "Path": null,
+            "mapping": "vcslam:Saturday vcslam:time_close \"saturday_close\"."
+        },
+        "sunday_open": {
+            "key": "sunday_open",
+            "Path": null,
+            "mapping": "vcslam:Sunday vcslam:time_open \"sunday_open\"."
+        },
+        "sunday_close": {
+            "key": "sunday_close",
+            "Path": null,
+            "mapping": "vcslam:Sunday vcslam:time_close \"sunday_close\"."
+        },
+        "free_wifi": {
+            "key": "free_wifi",
+            "Path": null,
+            "mapping": "vcslam:Wifi vcslam:is_free \"free_wifi\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        }
+    }
+}

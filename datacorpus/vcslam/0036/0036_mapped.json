@@ -1,0 +1,95 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "approximate_location": {
+            "key": "approximate_location",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"approximate_location\"."
+        },
+        "dispatch_date": {
+            "key": "dispatch_date",
+            "Path": null,
+            "mapping": "vcslam:Dispatch vcslam:date_time \"dispatch_date\"."
+        },
+        "dispatch_time": {
+            "key": "dispatch_time",
+            "Path": null,
+            "mapping": "vcslam:Dispatch vcslam:time \"dispatch_time\"."
+        },
+        "dispatch_year": {
+            "key": "dispatch_year",
+            "Path": null,
+            "mapping": "vcslam:Dispatch vcslam:year \"dispatch_year\"."
+        },
+        "dispatch_month_name": {
+            "key": "dispatch_month_name",
+            "Path": null,
+            "mapping": "vcslam:Dispatch vcslam:month_name \"dispatch_month_name\"."
+        },
+        "dispatch_month_number": {
+            "key": "dispatch_month_number",
+            "Path": null,
+            "mapping": "vcslam:Dispatch vcslam:month_number \"dispatch_month_number\"."
+        },
+        "dispatch_day_number": {
+            "key": "dispatch_day_number",
+            "Path": null,
+            "mapping": "vcslam:Dispatch vcslam:day_of_month \"dispatch_day_number\"."
+        },
+        "event_close_date": {
+            "key": "event_close_date",
+            "Path": null,
+            "mapping": "vcslam:Close vcslam:date_time \"event_close_date\"."
+        },
+        "event_close_time": {
+            "key": "event_close_time",
+            "Path": null,
+            "mapping": "vcslam:Close vcslam:time \"event_close_time\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "count": {
+            "key": "count",
+            "Path": null,
+            "mapping": "vcslam:Fire_event vcslam:count \"count\"."
+        },
+        "event_type_group": {
+            "key": "event_type_group",
+            "Path": null,
+            "mapping": "vcslam:Fire_event vcslam:type \"event_type_group\"."
+        },
+        "event_description": {
+            "key": "event_description",
+            "Path": null,
+            "mapping": "vcslam:Fire vcslam:description \"event_description\"."
+        },
+        "event_number": {
+            "key": "event_number",
+            "Path": null,
+            "mapping": "vcslam:Fire_event vcslam:id \"event_number\"."
+        }
+    }
+}

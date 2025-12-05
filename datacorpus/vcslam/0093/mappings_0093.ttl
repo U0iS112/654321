@@ -1,0 +1,21 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Bus_stop vcslam:abbreviation "stop_abbreviation".
+
+vcslam:Bus_stop vcslam:name "stopname".
+
+vcslam:Shelter vcslam:is_present "shelter".
+
+vcslam:Bench vcslam:is_present "bench".
+
+vcslam:Route vcslam:number "route_number".
+
+vcslam:Route vcslam:name "route_name".
+
+vcslam:Coordinate_pair vcslam:latitude "geocoded_column.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "geocoded_column.longitude".
+
+vcslam:Bus_stop vcslam:id "stop_id_number".

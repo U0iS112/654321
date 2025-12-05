@@ -1,0 +1,48 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Clothing_drop_box
+   vcslam:refers_to vcslam:Permit.
+
+vcslam:Permit
+    vcslam:number xsd:int;
+    vcslam:includes vcslam:Sticker;   
+    vcslam:includes vcslam:Class;                            
+    vcslam:operated_by vcslam:Company;
+    vcslam:date_issued xsd:date;
+    vcslam:includes vcslam:Phone;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Company 
+   vcslam:name xsd:string.
+
+vcslam:Phone
+    vcslam:number xsd:int.
+
+vcslam:Class
+    vcslam:description xsd:string.
+
+vcslam:Sticker
+   vcslam:number xsd:int.
+
+vcslam:Location   
+    vcslam:includes vcslam:Street;
+    vcslam:includes vcslam:Postal;   
+    vcslam:includes vcslam:Ward;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Postal 
+    vcslam:code xsd:string.
+
+vcslam:Ward
+    vcslam:number xsd:int.    
+
+vcslam:Street 
+    vcslam:number xsd:int;
+    vcslam:name xsd:string;
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:geometry_type xsd:string ;
+    vcslam:longitude xsd:decimal .

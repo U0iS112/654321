@@ -1,0 +1,65 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "zip_code": {
+            "key": "zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip_code\"."
+        },
+        "phone": {
+            "key": "phone",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:phone_number \"phone\"."
+        },
+        "url": {
+            "key": "url",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:link \"url\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "category": {
+            "key": "category",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:type \"category\"."
+        },
+        "school_name": {
+            "key": "school_name",
+            "Path": null,
+            "mapping": "vcslam:School vcslam:name \"school_name\"."
+        }
+    }
+}

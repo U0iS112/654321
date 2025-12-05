@@ -1,0 +1,32 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Business vcslam:offers vcslam:Lease.
+
+vcslam:Lease vcslam:for vcslam:Bicycle;
+    vcslam:latest vcslam:Rental.
+
+vcslam:Rental vcslam:start_date_time xsd:dateTime.
+
+vcslam:Retrival vcslam:of vcslam:Bicycle;
+    vcslam:date_time xsd:dateTime.
+
+
+vcslam:Bicycle vcslam:id xsd:string;
+    vcslam:type xsd:string;
+    vcslam:status xsd:string;
+    vcslam:consists_of vcslam:Battery;
+    vcslam:is_electric xsd:boolean;
+    vcslam:is_motorized xsd:boolean;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:latest vcslam:Gps.
+
+vcslam:Gps vcslam:date_time xsd:dateTime.
+
+vcslam:Battery vcslam:status xsd:string.
+
+vcslam:Location vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal.

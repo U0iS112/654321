@@ -1,0 +1,70 @@
+{
+    "fields.subsystem": {
+        "key": "subsystem",
+        "Path": "fields"
+    },
+    "fields.code": {
+        "key": "code",
+        "Path": "fields"
+    },
+    "fields.oocnotes": {
+        "key": "oocnotes",
+        "Path": "fields"
+    },
+    "fields.oracleid": {
+        "key": "oracleid",
+        "Path": "fields"
+    },
+    "fields.modby": {
+        "key": "modby",
+        "Path": "fields"
+    },
+    "fields.compression": {
+        "key": "compression",
+        "Path": "fields"
+    },
+    "fields.addby": {
+        "key": "addby",
+        "Path": "fields"
+    },
+    "fields.castsubs": {
+        "key": "castsubs",
+        "Path": "fields"
+    },
+    "fields.castsub": {
+        "key": "castsub",
+        "Path": "fields"
+    },
+    "fields.oocdate": {
+        "key": "oocdate",
+        "Path": "fields"
+    },
+    "fields.incomm": {
+        "key": "incomm",
+        "Path": "fields"
+    },
+    "fields.oldhydnum": {
+        "key": "oldhydnum",
+        "Path": "fields"
+    },
+    "fields.unitid": {
+        "key": "unitid",
+        "Path": "fields"
+    },
+    "fields.line": {
+        "key": "line",
+        "Path": "fields"
+    },
+    "fields.covwaterhydrantunittype": {
+        "key": "covwaterhydrantunittype",
+        "Path": "fields"
+    },
+    "fields.adddttm": {
+        "key": "adddttm",
+        "Path": "fields"
+    },
+    "fields.dir": {
+        "key": "dir",
+        "Path": "fields"
+    }
+}

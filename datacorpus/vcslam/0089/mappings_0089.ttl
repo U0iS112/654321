@@ -1,0 +1,55 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Crime vcslam:type "crime_type".
+
+vcslam:Crime vcslam:identifier "incident_report_number".
+
+vcslam:Crime vcslam:ucr_code "ucr_code".
+
+vcslam:Location vcslam:type "location_type".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "y_coordinate".
+
+vcslam:Coordinate_pair vcslam:longitude "x_coordinate".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Council_district vcslam:identifier "council_district".
+
+vcslam:Sector vcslam:identifier "sector".
+
+vcslam:District vcslam:identifier "district".
+
+vcslam:Clearance vcslam:status "clearance_status".
+
+vcslam:Clearance vcslam:date_time "clearance_date".
+
+vcslam:Category vcslam:ucr_code "urc_category".
+
+vcslam:Category vcslam:description "category_description".
+
+vcslam:Occurrence vcslam:date_time "occ_date_time".
+
+vcslam:Occurrence vcslam:date_time "occ_date".
+
+vcslam:Occurrence vcslam:time "occ_time".
+
+vcslam:Report vcslam:date_time "rep_date_time".
+
+vcslam:Report vcslam:time "rep_time".
+
+vcslam:Report vcslam:date_time "rep_date".

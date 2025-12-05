@@ -1,0 +1,78 @@
+{
+    "maintenance_area": {
+        "key": "maintenance_area",
+        "Path": null
+    },
+    "neighborhood_name": {
+        "key": "neighborhood_name",
+        "Path": null
+    },
+    "planned_start_date": {
+        "key": "planned_start_date",
+        "Path": null
+    },
+    "data_update": {
+        "key": "data_update",
+        "Path": null
+    },
+    "planned_start_date_postponed_": {
+        "key": "planned_start_date_postponed_",
+        "Path": null
+    },
+    "blurb": {
+        "key": "blurb",
+        "Path": null
+    },
+    "revised_start_date": {
+        "key": "revised_start_date",
+        "Path": null
+    },
+    "revised_earliest_scheduled_start_date": {
+        "key": "revised_earliest_scheduled_start_date",
+        "Path": null
+    },
+    ":@computed_region_7ccj_gre3": {
+        "key": ":@computed_region_7ccj_gre3",
+        "Path": null
+    },
+    "revised_latest_scheduled_start_date": {
+        "key": "revised_latest_scheduled_start_date",
+        "Path": null
+    },
+    "revised_start_date_2": {
+        "key": "revised_start_date_2",
+        "Path": null
+    },
+    ":@computed_region_ecxu_fw7u": {
+        "key": ":@computed_region_ecxu_fw7u",
+        "Path": null
+    },
+    ":@computed_region_izdr_ja4x": {
+        "key": ":@computed_region_izdr_ja4x",
+        "Path": null
+    },
+    ":@computed_region_5jki_au6x": {
+        "key": ":@computed_region_5jki_au6x",
+        "Path": null
+    },
+    ":@computed_region_mnf4_kaez": {
+        "key": ":@computed_region_mnf4_kaez",
+        "Path": null
+    },
+    ":@computed_region_da6r_6gkw": {
+        "key": ":@computed_region_da6r_6gkw",
+        "Path": null
+    },
+    ":@computed_region_uxfu_uxx8": {
+        "key": ":@computed_region_uxfu_uxx8",
+        "Path": null
+    },
+    ":@computed_region_ive2_3q52": {
+        "key": ":@computed_region_ive2_3q52",
+        "Path": null
+    },
+    ":@computed_region_bhid_jnzh": {
+        "key": ":@computed_region_bhid_jnzh",
+        "Path": null
+    }
+}

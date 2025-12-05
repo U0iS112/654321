@@ -1,0 +1,30 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Ticket_vending_machine
+    vcslam:identifier  xsd:string;
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:offers vcslam:Payment_methods.
+
+vcslam:Payment_methods
+    vcslam:includes vcslam:Card;
+    vcslam:includes vcslam:Cash.
+
+vcslam:Card
+    vcslam:is_available xsd:boolean.
+
+vcslam:Cash
+    vcslam:is_available xsd:boolean.    
+
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position ;
+    vcslam:information xsd:string.
+
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal ;
+    vcslam:geometry_type xsd:string.
+

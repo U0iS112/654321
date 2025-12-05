@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Response vcslam:type "type".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Fire_incident vcslam:date_time "datetime".
+
+vcslam:Coordinates vcslam:geometry_type "report_location.type".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "report_location.coordinates".
+
+vcslam:Fire_incident vcslam:identifier "incident_number".

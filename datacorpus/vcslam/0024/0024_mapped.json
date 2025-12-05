@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "meter_code": {
+            "key": "meter_code",
+            "Path": null,
+            "mapping": "vcslam:Parking_meter vcslam:id \"meter_code\"."
+        },
+        "transactiondatetime": {
+            "key": "transactiondatetime",
+            "Path": null,
+            "mapping": "vcslam:Transaction vcslam:date_time \"transactiondatetime\"."
+        },
+        "amount_paid": {
+            "key": "amount_paid",
+            "Path": null,
+            "mapping": "vcslam:Payment vcslam:amount \"amount_paid\"."
+        },
+        "elementkey": {
+            "key": "elementkey",
+            "Path": null,
+            "mapping": "vcslam:Segment vcslam:identifier \"elementkey\"."
+        },
+        "sideofstreet": {
+            "key": "sideofstreet",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:compass_direction \"sideofstreet\"."
+        },
+        "payment_mean": {
+            "key": "payment_mean",
+            "Path": null,
+            "mapping": "vcslam:Payment_methods vcslam:information \"payment_mean\"."
+        },
+        "durationinminutes": {
+            "key": "durationinminutes",
+            "Path": null,
+            "mapping": "vcslam:Duration vcslam:value \"durationinminutes\"."
+        },
+        "blockface_name": {
+            "key": "blockface_name",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"blockface_name\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "transaction_id": {
+            "key": "transaction_id",
+            "Path": null,
+            "mapping": "vcslam:Transaction vcslam:id \"transaction_id\"."
+        }
+    }
+}

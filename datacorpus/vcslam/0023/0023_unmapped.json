@@ -1,0 +1,18 @@
+{
+    "permitclass": {
+        "key": "permitclass",
+        "Path": null
+    },
+    "permitclassmapped": {
+        "key": "permitclassmapped",
+        "Path": null
+    },
+    "permittypemapped": {
+        "key": "permittypemapped",
+        "Path": null
+    },
+    "contractorcompanyname": {
+        "key": "contractorcompanyname",
+        "Path": null
+    }
+}

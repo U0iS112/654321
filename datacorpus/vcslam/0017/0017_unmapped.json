@@ -1,0 +1,26 @@
+{
+    "group_a_b": {
+        "key": "group_a_b",
+        "Path": null
+    },
+    "crime_against_category": {
+        "key": "crime_against_category",
+        "Path": null
+    },
+    "precinct": {
+        "key": "precinct",
+        "Path": null
+    },
+    "beat": {
+        "key": "beat",
+        "Path": null
+    },
+    "mcpp": {
+        "key": "mcpp",
+        "Path": null
+    },
+    "_100_block_address": {
+        "key": "_100_block_address",
+        "Path": null
+    }
+}

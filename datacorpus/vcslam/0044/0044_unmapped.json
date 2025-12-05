@@ -1,0 +1,22 @@
+{
+    "violations.violationFireCode": {
+        "key": "violationFireCode",
+        "Path": "violations"
+    },
+    "violations.violationDescription": {
+        "key": "violationDescription",
+        "Path": "violations"
+    },
+    "Inspections.ClosedDate": {
+        "key": "ClosedDate",
+        "Path": "Inspections"
+    },
+    "_id": {
+        "key": "_id",
+        "Path": null
+    },
+    "inspections.OpenedDate": {
+        "key": "OpenedDate",
+        "Path": "inspections"
+    }
+}

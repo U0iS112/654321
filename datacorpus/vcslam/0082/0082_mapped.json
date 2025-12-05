@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.stations": {
+            "key": "stations",
+            "Path": "fields",
+            "mapping": "vcslam:Station vcslam:name \"fields.stations\"."
+        },
+        "fields.response_time_median": {
+            "key": "response_time_median",
+            "Path": "fields",
+            "mapping": "vcslam:Time vcslam:median \"fields.response_time_median\"."
+        },
+        "fields.incident_duration": {
+            "key": "incident_duration",
+            "Path": "fields",
+            "mapping": "vcslam:Duration vcslam:value \"fields.incident_duration\"."
+        },
+        "fields.alarm_time": {
+            "key": "alarm_time",
+            "Path": "fields",
+            "mapping": "vcslam:Alarm vcslam:date \"fields.alarm_time\"."
+        },
+        "fields.incident": {
+            "key": "incident",
+            "Path": "fields",
+            "mapping": "vcslam:Incident vcslam:identifier \"fields.incident\"."
+        },
+        "fields.incident_type": {
+            "key": "incident_type",
+            "Path": "fields",
+            "mapping": "vcslam:Incident vcslam:type \"fields.incident_type\"."
+        },
+        "fields.units": {
+            "key": "units",
+            "Path": "fields",
+            "mapping": "vcslam:Unit vcslam:identifier \"fields.units\"."
+        },
+        "fields.unit_count": {
+            "key": "unit_count",
+            "Path": "fields",
+            "mapping": "vcslam:Unit vcslam:count \"fields.unit_count\"."
+        },
+        "fields.geo_point_2d": {
+            "key": "geo_point_2d",
+            "Path": "fields",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geo_point_2d\"."
+        },
+        "fields.geojson.type": {
+            "key": "type",
+            "Path": "fields.geojson",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geojson.type\"."
+        },
+        "fields.geojson.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geojson",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geojson.coordinates\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        }
+    }
+}

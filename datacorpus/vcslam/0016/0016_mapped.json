@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "recordtype": {
+            "key": "recordtype",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:type \"recordtype\"."
+        },
+        "statuscurrent": {
+            "key": "statuscurrent",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:status \"statuscurrent\"."
+        },
+        "link.url": {
+            "key": "url",
+            "Path": "link",
+            "mapping": "vcslam:Record vcslam:link \"link.url\"."
+        },
+        "opendate": {
+            "key": "opendate",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:created_at_date \"opendate\"."
+        },
+        "originaladdress1": {
+            "key": "originaladdress1",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"originaladdress1\"."
+        },
+        "originalstate": {
+            "key": "originalstate",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"originalstate\"."
+        },
+        "originalcity": {
+            "key": "originalcity",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"originalcity\"."
+        },
+        "originalzip": {
+            "key": "originalzip",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"originalzip\"."
+        },
+        "location1.human_address": {
+            "key": "human_address",
+            "Path": "location1",
+            "mapping": "vcslam:Location vcslam:human_address \"location1.human_address\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location1.latitude": {
+            "key": "latitude",
+            "Path": "location1",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location1.latitude\"."
+        },
+        "location1.longitude": {
+            "key": "longitude",
+            "Path": "location1",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location1.longitude\"."
+        },
+        "recordnum": {
+            "key": "recordnum",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:identifier \"recordnum\"."
+        }
+    }
+}

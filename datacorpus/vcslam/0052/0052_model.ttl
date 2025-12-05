@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Tree
+    vcslam:planted vcslam:Planted;
+    vcslam:diameter_at_breast_height  vcslam:Diameter_at_breast_height;
+    vcslam:genus  vcslam:Genus;
+    vcslam:species  vcslam:Species;
+    vcslam:id xsd:string;
+    vcslam:cultivar_name xsd:string;
+    vcslam:includes vcslam:Barrier;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Planted vcslam:date xsd:date.
+
+vcslam:Diameter_at_breast_height  vcslam:measurement_unit_distance vcslam:Inch;
+    vcslam:value xsd:int.
+
+vcslam:Genus vcslam:name xsd:string.
+
+vcslam:Species vcslam:name xsd:string.
+
+vcslam:Barrier vcslam:is_installed xsd:boolean.
+
+vcslam:Record vcslam:timestamp xsd:dateTimeStamp;
+    vcslam:of vcslam:Tree;
+    vcslam:id xsd:string.
+
+vcslam:Location vcslam:positionAt vcslam:Position;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Neighbourhood;
+    vcslam:locatedAt vcslam:Block.
+
+vcslam:Street vcslam:name xsd:string.
+
+vcslam:Neighbourhood vcslam:name xsd:string.
+
+vcslam:Block vcslam:information xsd:string.
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+    vcslam:geometry_type xsd:string.

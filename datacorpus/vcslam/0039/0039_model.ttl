@@ -1,0 +1,28 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Hydrant 
+    vcslam:id xsd:string ;
+    vcslam:colour xsd:string ;
+    vcslam:includes vcslam:Flow;
+    vcslam:includes vcslam:Installation;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Flow
+    vcslam:rate xsd:string.
+    vcslam:measurement_unit_volume vcslam:Liter;
+
+vcslam:Installation
+    vcslam:year xsd:gYear.
+
+vcslam:Liter
+    vcslam:per vcslam:Second.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:geometry_type xsd:string ;
+    vcslam:longitude xsd:decimal .

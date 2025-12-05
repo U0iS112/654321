@@ -1,0 +1,34 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Record vcslam:of vcslam:Event ;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Event vcslam:of vcslam:Fire_incident;
+             vcslam:involves vcslam:Response.
+
+vcslam:Fire_incident vcslam:includes vcslam:Duration;
+                     vcslam:date xsd:date;
+                     vcslam:id xsd:string;
+                     vcslam:type xsd:string.
+
+vcslam:Response vcslam:measurement vcslam:Time;
+                vcslam:by vcslam:Station;
+                vcslam:by vcslam:Response_unit.
+
+vcslam:Response_unit vcslam:information xsd:string;
+                     vcslam:count xsd:int.
+
+vcslam:Station vcslam:information xsd:string.
+
+vcslam:Duration vcslam:measurement_unit vcslam:Minute;
+                vcslam:value xsd:decimal.
+
+vcslam:Time vcslam:measurement_unit_time vcslam:Minute;
+            vcslam:median xsd:decimal.
+
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

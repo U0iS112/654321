@@ -1,0 +1,30 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "days": {
+            "key": "days",
+            "Path": null,
+            "mapping": "vcslam:Day vcslam:amount \"days\"."
+        },
+        "description": {
+            "key": "description",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:description \"description\"."
+        },
+        "start_date": {
+            "key": "start_date",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:start_date_time \"start_date\"."
+        }
+    }
+}

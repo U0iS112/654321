@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+vcslam:Parking_lot vcslam:id xsd:string;
+    vcslam:identifier xsd:string;
+    vcslam:description xsd:string;
+    vcslam:consists_of vcslam:Parking_space;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Parking_space vcslam:total xsd:decimal;
+    vcslam:amount_free xsd:decimal;
+    vcslam:amount_occupied xsd:decimal;
+    vcslam:percent  vcslam:Percent.
+
+vcslam:Percent vcslam:value xsd:string;
+    vcslam:colour xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Position.
+
+vcslam:Position vcslam:longitude xsd:decimal;
+    vcslam:latitude xsd:decimal .
+
+vcslam:Record vcslam:of vcslam:Parking_lot;
+    vcslam:date_time xsd:dateTime.

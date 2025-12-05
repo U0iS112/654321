@@ -1,0 +1,101 @@
+[
+    {
+        "property_reference": "UPRN00000012905006",
+        "charge_type": "Occupied",
+        "gross_charge": "8750.5",
+        "supplement": "150.5",
+        "small_business_relief": "0",
+        "charity_relief": "0",
+        "exemption_relief": "0",
+        "discretionary_relief": "0",
+        "additional_relief": "0",
+        "supporting_small_business_relief": "0",
+        "start_date": "2010-04-01T00:00:00.000",
+        "end_date": "2011-03-31T00:00:00.000",
+        "company_name": "ARTICHOKE HEART LTD",
+        "address": "QUEENS HEAD & ARTICHOKE, 30-32 ALBANY STREET, LONDON, NW1 4EA",
+        "easting": "528848",
+        "northing": "182423",
+        "longitude": "-0.144058",
+        "latitude": "51.526029",
+        "spatial_accuracy": "Postcode Level",
+        "location": {
+            "latitude": "51.526029",
+            "longitude": "-0.144058",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        },
+        "last_uploaded": "2020-10-30T11:06:49.000",
+        "organisation_uri": {
+            "url": "http://opendatacommunities.org/id/london-borough-council/camden"
+        },
+        "socrata_id": "1",
+        ":@computed_region_hxwp_gyfc": "15",
+        ":@computed_region_6i9a_26nj": "103"
+    },
+    {
+        "property_reference": "UPRN00000020101013",
+        "charge_type": "Void (empty)",
+        "gross_charge": "2075.7",
+        "supplement": "35.7",
+        "small_business_relief": "0",
+        "charity_relief": "0",
+        "exemption_relief": "2111.4",
+        "discretionary_relief": "0",
+        "additional_relief": "0",
+        "supporting_small_business_relief": "0",
+        "start_date": "2010-04-01T00:00:00.000",
+        "end_date": "2011-03-31T00:00:00.000",
+        "company_name": "LBC-H35715623140",
+        "address": "213 EVERSHOLT STREET, LONDON, NW1 1DE",
+        "easting": "529316",
+        "northing": "183160",
+        "longitude": "-0.137019",
+        "latitude": "51.532548",
+        "spatial_accuracy": "Postcode Level",
+        "location": {
+            "latitude": "51.532548",
+            "longitude": "-0.137019",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        },
+        "last_uploaded": "2020-10-30T11:06:51.000",
+        "organisation_uri": {
+            "url": "http://opendatacommunities.org/id/london-borough-council/camden"
+        },
+        "socrata_id": "2",
+        ":@computed_region_hxwp_gyfc": "16",
+        ":@computed_region_6i9a_26nj": "113"
+    },
+    {
+        "property_reference": "UPRN00000026050022",
+        "charge_type": "Occupied",
+        "gross_charge": "404810.39",
+        "supplement": "10035.12",
+        "small_business_relief": "0",
+        "charity_relief": "0",
+        "exemption_relief": "0",
+        "discretionary_relief": "0",
+        "additional_relief": "0",
+        "supporting_small_business_relief": "0",
+        "start_date": "2010-04-01T00:00:00.000",
+        "end_date": "2010-08-31T00:00:00.000",
+        "company_name": "THE IMPERIAL LONDON HOTELS LTD",
+        "address": "ROYAL NATIONAL HOTEL, 1 BEDFORD WAY, LONDON, WC1H 0AP",
+        "easting": "529902",
+        "northing": "182215",
+        "longitude": "-0.12895",
+        "latitude": "51.523919",
+        "spatial_accuracy": "Postcode Level",
+        "location": {
+            "latitude": "51.523919",
+            "longitude": "-0.12895",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        },
+        "last_uploaded": "2020-10-30T11:06:51.000",
+        "organisation_uri": {
+            "url": "http://opendatacommunities.org/id/london-borough-council/camden"
+        },
+        "socrata_id": "3",
+        ":@computed_region_hxwp_gyfc": "2",
+        ":@computed_region_6i9a_26nj": "14"
+    }
+]

@@ -1,0 +1,46 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record
+    vcslam:number xsd:int ;
+    vcslam:type xsd:string ;
+    vcslam:status xsd:string ;
+    vcslam:url xsd:anyURI ;
+    vcslam:includes vcslam:Open;
+    vcslam:includes vcslam:Category;
+    vcslam:description xsd:string;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Location
+    vcslam:includes vcslam:City;
+    vcslam:includes vcslam:State;
+    vcslam:address xsd:string ;
+    vcslam:zip_code xsd:string ;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Category
+    vcslam:includes vcslam:Complaint;
+    vcslam:includes vcslam:Violation.
+    
+vcslam:Complaint
+    vcslam:is_true xsd:boolean;
+    vcslam:description xsd:string.
+
+vcslam:Violation
+    vcslam:is_true xsd:boolean;
+    vcslam:description xsd:string.    
+
+vcslam:City
+    vcslam:name xsd:string.
+
+vcslam:State
+    vcslam:name xsd:string.
+
+vcslam:Open
+    vcslam:date xsd:date.    
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

@@ -1,0 +1,65 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.mapid": {
+            "key": "mapid",
+            "Path": "fields",
+            "mapping": "vcslam:Drinking_fountain vcslam:id \"fields.mapid\"."
+        },
+        "fields.photo_name": {
+            "key": "photo_name",
+            "Path": "fields",
+            "mapping": "vcslam:Photo vcslam:name \"fields.photo_name\"."
+        },
+        "fields.maintainer": {
+            "key": "maintainer",
+            "Path": "fields",
+            "mapping": "vcslam:Maintenance vcslam:name \"fields.maintainer\"."
+        },
+        "fields.location": {
+            "key": "location",
+            "Path": "fields",
+            "mapping": "vcslam:Location vcslam:information \"fields.location\"."
+        },
+        "fields.pet_friendly": {
+            "key": "pet_friendly",
+            "Path": "fields",
+            "mapping": "vcslam:Drinking_fountain vcslam:pet_friendly \"fields.pet_friendly\"."
+        },
+        "fields.in_operation": {
+            "key": "in_operation",
+            "Path": "fields",
+            "mapping": "vcslam:Drinking_fountain vcslam:times_of_operation \"fields.in_operation\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.geo_local_area": {
+            "key": "geo_local_area",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_local_area\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        }
+    }
+}

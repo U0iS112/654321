@@ -1,0 +1,10 @@
+{
+    "fields.business_name": {
+        "key": "business_name",
+        "Path": "fields"
+    },
+    "fields.vendor_type": {
+        "key": "vendor_type",
+        "Path": "fields"
+    }
+}

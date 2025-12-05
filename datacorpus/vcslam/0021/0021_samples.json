@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Angel",
+        "last_name": "Ralston",
+        "first_name": "William",
+        "location": "4715 Harding Pike, Nashville TN",
+        "medium": "Stone on concrete and brick base",
+        "type": "Sculpture",
+        "description": "An elongated figure consisting of a stylized face atop a tall column. The figure has two arm or wing-like appendages. The proper left one reaches up to the face and the proper right one is down by its side. In front of the figure is a curved bench with a bird placed on one corner.",
+        "latitude": "36.11975",
+        "longitude": "-86.85343",
+        "mapped_location": {
+          "latitude": "36.11975",
+          "longitude": "-86.85343"
+        },
+        ":@computed_region_wvby_4s8j": "1",
+        ":@computed_region_3aw5_2wv7": "2",
+        ":@computed_region_p6sk_2acq": "32",
+        ":@computed_region_gxvr_9jxz": "5",
+        ":@computed_region_v3ji_vzam": "2005",
+        ":@computed_region_gisn_y5cm": "8",
+        ":@computed_region_c9xn_skx3": "32",
+        ":@computed_region_f73m_vb2k": "6",
+        ":@computed_region_sjpq_96s8": "30816"
+      },
+      {
+        "title": "I Believe in Nashville - North Nashville",
+        "last_name": "Saporiti",
+        "first_name": "Adrien",
+        "location": "1402 Clinton Street, Nashville TN",
+        "medium": "Latex Paint",
+        "type": "Mural",
+        "description": "The I Believe in Nashville mural was created as a unifying symbol for local and visitor alike, to represent our individual experiences and to connect us through our shared experiences with the city. Marathon was the 3rd mural, painted after the one at Charlotte & 11th, which is no longer there.",
+        "latitude": "36.164133",
+        "longitude": "-86.797418",
+        "mapped_location": {
+          "latitude": "36.164133",
+          "longitude": "-86.797418"
+        },
+        ":@computed_region_wvby_4s8j": "1",
+        ":@computed_region_3aw5_2wv7": "1",
+        ":@computed_region_p6sk_2acq": "20",
+        ":@computed_region_gxvr_9jxz": "40",
+        ":@computed_region_v3ji_vzam": "2005",
+        ":@computed_region_gisn_y5cm": "6",
+        ":@computed_region_c9xn_skx3": "13",
+        ":@computed_region_f73m_vb2k": "7",
+        ":@computed_region_sjpq_96s8": "30406"
+      },
+      {
+        "title": "Happy Times at The Arcade",
+        "last_name": "Cooper",
+        "first_name": "Michael",
+        "location": "Alley between 4th and 5th off Union Street, Nashville TN",
+        "medium": "Silicate paint on brick and concrete block",
+        "type": "Mural",
+        "description": "Trompe L'oeil artwork celebrating The Arcade.",
+        "latitude": "36.1647",
+        "longitude": "-86.78043",
+        "mapped_location": {
+          "latitude": "36.1647",
+          "longitude": "-86.78043"
+        },
+        ":@computed_region_wvby_4s8j": "1",
+        ":@computed_region_3aw5_2wv7": "1",
+        ":@computed_region_p6sk_2acq": "20",
+        ":@computed_region_gxvr_9jxz": "1",
+        ":@computed_region_v3ji_vzam": "2005",
+        ":@computed_region_gisn_y5cm": "1",
+        ":@computed_region_c9xn_skx3": "13",
+        ":@computed_region_f73m_vb2k": "7",
+        ":@computed_region_sjpq_96s8": "16169",
+        ":@computed_region_cfa7_hbpz": "50"
+      }
+]

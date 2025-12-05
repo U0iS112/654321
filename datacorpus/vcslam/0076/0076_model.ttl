@@ -1,0 +1,21 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Property vcslam:name xsd:string;
+    vcslam:built_date_time xsd:dateTime;
+    vcslam:involves vcslam:Architect;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Designation.
+
+vcslam:Designation vcslam:of vcslam:Historic;
+    vcslam:date_time xsd:dateTime.
+
+vcslam:Architect vcslam:names xsd:string.
+
+vcslam:Location vcslam:human_address xsd:string;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:longitude xsd:decimal;
+    vcslam:latitude xsd:decimal.

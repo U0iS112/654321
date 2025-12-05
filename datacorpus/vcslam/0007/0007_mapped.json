@@ -1,0 +1,105 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "parking_bay_length_metres": {
+            "key": "parking_bay_length_metres",
+            "Path": null,
+            "mapping": "vcslam:Length vcslam:value \"parking_bay_length_metres\"."
+        },
+        "tariff": {
+            "key": "tariff",
+            "Path": null,
+            "mapping": "vcslam:Tariff vcslam:information \"tariff\"."
+        },
+        "restriction_type": {
+            "key": "restriction_type",
+            "Path": null,
+            "mapping": "vcslam:Restriction vcslam:type \"restriction_type\"."
+        },
+        "parking_spaces": {
+            "key": "parking_spaces",
+            "Path": null,
+            "mapping": "vcslam:Parking_space vcslam:amount \"parking_spaces\"."
+        },
+        "controlled_parking_zone": {
+            "key": "controlled_parking_zone",
+            "Path": null,
+            "mapping": "vcslam:Parking_zone vcslam:information \"controlled_parking_zone\"."
+        },
+        "postcode": {
+            "key": "postcode",
+            "Path": null,
+            "mapping": "vcslam:Postal vcslam:code \"postcode\"."
+        },
+        "spatial_accuracy": {
+            "key": "spatial_accuracy",
+            "Path": null,
+            "mapping": "vcslam:Coordinates vcslam:spatial_accuracy \"spatial_accuracy\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "easting": {
+            "key": "easting",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:easting \"easting\"."
+        },
+        "northing": {
+            "key": "northing",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:northing \"northing\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "disclaimer": {
+            "key": "disclaimer",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:disclaimer \"disclaimer\"."
+        },
+        "organisation_uri.url": {
+            "key": "url",
+            "Path": "organisation_uri",
+            "mapping": "vcslam:Organization vcslam:link \"organisation_uri.url\"."
+        },
+        "cashless_identifier": {
+            "key": "cashless_identifier",
+            "Path": null,
+            "mapping": "vcslam:Cashless vcslam:id \"cashless_identifier\"."
+        },
+        "unique_identifier": {
+            "key": "unique_identifier",
+            "Path": null,
+            "mapping": "vcslam:Parking_bay vcslam:id \"unique_identifier\"."
+        },
+        "times_of_operation": {
+            "key": "times_of_operation",
+            "Path": null,
+            "mapping": "vcslam:Parking_bay vcslam:times_of_operation \"times_of_operation\"."
+        },
+        "valid_parking_permits": {
+            "key": "valid_parking_permits",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:information \"valid_parking_permits\"."
+        }
+    }
+}

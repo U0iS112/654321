@@ -1,0 +1,30 @@
+{
+    "fields.licencerevisionnumber": {
+        "key": "licencerevisionnumber",
+        "Path": "fields"
+    },
+    "fields.businesssubtype": {
+        "key": "businesssubtype",
+        "Path": "fields"
+    },
+    "fields.extractdate": {
+        "key": "extractdate",
+        "Path": "fields"
+    },
+    "fields.numberofemployees": {
+        "key": "numberofemployees",
+        "Path": "fields"
+    },
+    "fields.folderyear": {
+        "key": "folderyear",
+        "Path": "fields"
+    },
+    "fields.feepaid": {
+        "key": "feepaid",
+        "Path": "fields"
+    },
+    "fields.licencenumber": {
+        "key": "licencenumber",
+        "Path": "fields"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "type": {
+            "key": "type",
+            "Path": null,
+            "mapping": "vcslam:Response vcslam:type \"type\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "datetime": {
+            "key": "datetime",
+            "Path": null,
+            "mapping": "vcslam:Fire_incident vcslam:date_time \"datetime\"."
+        },
+        "report_location.type": {
+            "key": "type",
+            "Path": "report_location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"report_location.type\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "report_location.coordinates": {
+            "key": "coordinates",
+            "Path": "report_location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"report_location.coordinates\"."
+        },
+        "incident_number": {
+            "key": "incident_number",
+            "Path": null,
+            "mapping": "vcslam:Fire_incident vcslam:identifier \"incident_number\"."
+        }
+    }
+}

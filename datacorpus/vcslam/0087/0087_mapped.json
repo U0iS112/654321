@@ -1,0 +1,40 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "kiosk_status": {
+            "key": "kiosk_status",
+            "Path": null,
+            "mapping": "vcslam:Kiosk vcslam:status \"kiosk_status\"."
+        },
+        "kiosk_name": {
+            "key": "kiosk_name",
+            "Path": null,
+            "mapping": "vcslam:Kiosk vcslam:name \"kiosk_name\"."
+        },
+        "kiosk_id": {
+            "key": "kiosk_id",
+            "Path": null,
+            "mapping": "vcslam:Kiosk vcslam:id \"kiosk_id\"."
+        }
+    }
+}

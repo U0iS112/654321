@@ -1,0 +1,43 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Manufacture vcslam:id "properties.Bike_Make".
+
+vcslam:Cost vcslam:value "properties.Cost_of_Bike".
+
+vcslam:Speed vcslam:value "properties.Bike_Speed".
+
+vcslam:Theft vcslam:status "properties.Status".
+
+vcslam:Theft vcslam:id "properties.event_unique_id".
+
+vcslam:Occurrence vcslam:date_time "properties.Occurrence_Date".
+
+vcslam:Occurrence vcslam:year "properties.Occurrence_Year".
+
+vcslam:Occurrence vcslam:month_number "properties.Occurrence_Month".
+
+vcslam:Occurrence vcslam:day_of_month "properties.Occurrence_Day".
+
+vcslam:Occurrence vcslam:time "properties.Occurrence_Time".
+
+vcslam:City vcslam:name "properties.City".
+
+vcslam:Division vcslam:number "properties.Division".
+
+vcslam:Offense vcslam:information "properties.Primary_Offence".
+
+vcslam:Neighbourhood vcslam:id "properties.Hood_ID".
+
+vcslam:Neighbourhood vcslam:name "properties.Neighbourhood".
+
+vcslam:Coordinates vcslam:geometry_type "geometry.type".
+
+vcslam:Coordinate_pair vcslam:latitude "geometry.coordinate.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "geometry.coordinate.longitude".
+
+vcslam:Bicycle vcslam:type "properties.Bike_Type".
+
+vcslam:Bicycle vcslam:colour "properties.Bike_Colour".

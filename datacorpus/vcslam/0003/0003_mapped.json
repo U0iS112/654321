@@ -1,0 +1,80 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "crash_time": {
+            "key": "crash_time",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:time \"crash_time\"."
+        },
+        "crash_direction": {
+            "key": "crash_direction",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:compass_direction \"crash_direction\"."
+        },
+        "crash_id": {
+            "key": "crash_id",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:id \"crash_id\"."
+        },
+        "midblock": {
+            "key": "midblock",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:at_midblock \"midblock\"."
+        },
+        "intersection": {
+            "key": "intersection",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:at_intersection \"intersection\"."
+        },
+        "crash_severity": {
+            "key": "crash_severity",
+            "Path": null,
+            "mapping": "vcslam:Crash vcslam:severity \"crash_severity\"."
+        },
+        "road_condition": {
+            "key": "road_condition",
+            "Path": null,
+            "mapping": "vcslam:Road vcslam:condition_DP \"road_condition\"."
+        },
+        "lighting_condition": {
+            "key": "lighting_condition",
+            "Path": null,
+            "mapping": "vcslam:Lighting vcslam:condition_DP \"lighting_condition\"."
+        },
+        "weather_condition": {
+            "key": "weather_condition",
+            "Path": null,
+            "mapping": "vcslam:Weather vcslam:condition_DP \"weather_condition\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "suburb_location": {
+            "key": "suburb_location",
+            "Path": null,
+            "mapping": "vcslam:Suburb vcslam:information \"suburb_location\"."
+        },
+        "y": {
+            "key": "y",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"y\"."
+        },
+        "x": {
+            "key": "x",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"x\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        }
+    }
+}

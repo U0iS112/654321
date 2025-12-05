@@ -1,0 +1,65 @@
+[
+    {
+        "location_account": "0000969451-0012-2",
+        "business_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT LOS ANGELES",
+        "dba_name": "UCLA LUSKIN CONFERENCE CENTER",
+        "street_address": "425 WESTWOOD PLAZA",
+        "city": "LOS ANGELES",
+        "zip_code": "90095-0001",
+        "location_description": "425 WESTWOOD 90095-0001",
+        "mailing_address": "10920 WILSHIRE BLVD SUITE #500",
+        "mailing_city": "LOS ANGELES",
+        "mailing_zip_code": "90024-6541",
+        "naics": "721100",
+        "primary_naics_description": "Traveler accommodation (including hotels, motels, & bed & breakfast inns)",
+        "council_district": "5",
+        "location_start_date": "2020-09-02T00:00:00.000",
+        "location": {
+            "latitude": "34.0738",
+            "longitude": "-118.4436",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        }
+    },
+    {
+        "location_account": "0003116107-0001-8",
+        "business_name": "PROVIDING EXTERMINATING SOLUTIONS TODAY INC",
+        "dba_name": "P.E.S.T.",
+        "street_address": "16140 LEADWELL STREET",
+        "city": "VAN NUYS",
+        "zip_code": "91406-3424",
+        "location_description": "16140 LEADWELL 91406-3424",
+        "mailing_address": "16140 LEADWELL STREET",
+        "mailing_city": "VAN NUYS",
+        "mailing_zip_code": "91406-3424",
+        "naics": "561710",
+        "primary_naics_description": "Exterminating & pest control services",
+        "council_district": "6",
+        "location_start_date": "2019-04-01T00:00:00.000",
+        "location": {
+            "latitude": "34.2036",
+            "longitude": "-118.4851",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        }
+    },
+    {
+        "location_account": "0003209409-0001-2",
+        "business_name": "SLK VIP SMOKE INC",
+        "dba_name": "VIP SMOKE SHOP INC",
+        "street_address": "7131 W SUNSET BLVD   SUITE #A",
+        "city": "LOS ANGELES",
+        "zip_code": "90046-4411",
+        "location_description": "7131 SUNSET 90046",
+        "mailing_address": "7131 W SUNSET BLVD   SUITE #A",
+        "mailing_city": "LOS ANGELES",
+        "mailing_zip_code": "90046-4411",
+        "naics": "453990",
+        "primary_naics_description": "All other miscellaneous store retailers (including tobacco, candle, & trophy shops)",
+        "council_district": "4",
+        "location_start_date": "2020-09-01T00:00:00.000",
+        "location": {
+            "latitude": "34.0981",
+            "longitude": "-118.345",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        }
+    }
+]

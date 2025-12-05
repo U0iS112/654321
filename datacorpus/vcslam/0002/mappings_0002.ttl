@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Shop vcslam:name "name".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Region vcslam:name "region".
+
+vcslam:Coordinates vcslam:geometry_type "geocoded_column.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "geocoded_column.coordinates".

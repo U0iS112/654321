@@ -1,0 +1,105 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "bill_code": {
+            "key": "bill_code",
+            "Path": null,
+            "mapping": "vcslam:Bill vcslam:code \"bill_code\"."
+        },
+        "bill_date": {
+            "key": "bill_date",
+            "Path": null,
+            "mapping": "vcslam:Bill vcslam:date_time \"bill_date\"."
+        },
+        "net": {
+            "key": "net",
+            "Path": null,
+            "mapping": "vcslam:Charge vcslam:amount \"net\"."
+        },
+        "utility_type": {
+            "key": "utility_type",
+            "Path": null,
+            "mapping": "vcslam:Utility vcslam:type \"utility_type\"."
+        },
+        "start_date": {
+            "key": "start_date",
+            "Path": null,
+            "mapping": "vcslam:Utility vcslam:start_date_time \"start_date\"."
+        },
+        "current_read_date": {
+            "key": "current_read_date",
+            "Path": null,
+            "mapping": "vcslam:Utility vcslam:date_time \"current_read_date\"."
+        },
+        "usage_gallons": {
+            "key": "usage_gallons",
+            "Path": null,
+            "mapping": "vcslam:Water vcslam:amount \"usage_gallons\"."
+        },
+        "zip_code": {
+            "key": "zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip_code\"."
+        },
+        "census_block_id": {
+            "key": "census_block_id",
+            "Path": null,
+            "mapping": "vcslam:Census_Block vcslam:id \"census_block_id\"."
+        },
+        "street_centroid_lat": {
+            "key": "street_centroid_lat",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"street_centroid_lat\"."
+        },
+        "street_centroid_lon": {
+            "key": "street_centroid_lon",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"street_centroid_lon\"."
+        },
+        "street_centroid.latitude": {
+            "key": "latitude",
+            "Path": "street_centroid",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"street_centroid.latitude\"."
+        },
+        "street_centroid.longitude": {
+            "key": "longitude",
+            "Path": "street_centroid",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"street_centroid.longitude\"."
+        },
+        "category_code": {
+            "key": "category_code",
+            "Path": null,
+            "mapping": "vcslam:Category vcslam:code \"category_code\"."
+        },
+        "category_description": {
+            "key": "category_description",
+            "Path": null,
+            "mapping": "vcslam:Category vcslam:description \"category_description\"."
+        },
+        "batch_number": {
+            "key": "batch_number",
+            "Path": null,
+            "mapping": "vcslam:Batch vcslam:number \"batch_number\"."
+        },
+        "street_name": {
+            "key": "street_name",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"street_name\"."
+        },
+        "debtor_number": {
+            "key": "debtor_number",
+            "Path": null,
+            "mapping": "vcslam:Debtor vcslam:identifier \"debtor_number\"."
+        },
+        "occupant_code": {
+            "key": "occupant_code",
+            "Path": null,
+            "mapping": "vcslam:Occupant vcslam:code \"occupant_code\"."
+        },
+        "id": {
+            "key": "id",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"id\"."
+        }
+    }
+}

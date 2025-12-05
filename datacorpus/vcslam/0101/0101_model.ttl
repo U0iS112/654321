@@ -1,0 +1,50 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:School vcslam:name xsd:string;
+              vcslam:number xsd:int;
+              vcslam:includes vcslam:Category;
+              vcslam:phone_number xsd:string;
+              vcslam:fax_number xsd:string;
+              vcslam:start_date_time xsd:dateTime;
+              vcslam:end_date_time xsd:dateTime ;
+              vcslam:involves vcslam:Principal.
+
+
+vcslam:Principal  vcslam:name xsd:string.
+
+vcslam:Category vcslam:value xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Council_district;
+    vcslam:locatedAt vcslam:Police_district;
+    vcslam:locatedAt vcslam:Census_tract;
+    vcslam:locatedAt vcslam:Census_Block;
+    vcslam:locatedAt vcslam:City;
+    vcslam:locatedAt vcslam:State;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Street vcslam:name xsd:string;
+    vcslam:number xsd:int;
+    vcslam:address xsd:string.
+
+vcslam:City vcslam:name xsd:string.
+
+vcslam:State vcslam:name xsd:string.
+
+vcslam:Police_district vcslam:identifier xsd:string.
+
+vcslam:Council_district vcslam:identifier xsd:string.
+
+vcslam:Census_tract vcslam:identifier xsd:string.
+
+vcslam:Census_Block vcslam:includes vcslam:Group;
+                    vcslam:identifier xsd:string .
+
+vcslam:Group vcslam:identifier xsd:string.
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+    vcslam:geometry_type xsd:string;
+    vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal.

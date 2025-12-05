@@ -1,0 +1,18 @@
+{
+    "created": {
+        "key": "created",
+        "Path": null
+    },
+    "lat": {
+        "key": "lat",
+        "Path": null
+    },
+    "long": {
+        "key": "long",
+        "Path": null
+    },
+    "updated": {
+        "key": "updated",
+        "Path": null
+    }
+}

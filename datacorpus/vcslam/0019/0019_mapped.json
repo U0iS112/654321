@@ -1,0 +1,70 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "year_built": {
+            "key": "year_built",
+            "Path": null,
+            "mapping": "vcslam:Building vcslam:built_year \"year_built\"."
+        },
+        "retrofit_level": {
+            "key": "retrofit_level",
+            "Path": null,
+            "mapping": "vcslam:Building vcslam:retrofit_level \"retrofit_level\"."
+        },
+        "building_use": {
+            "key": "building_use",
+            "Path": null,
+            "mapping": "vcslam:Building vcslam:use \"building_use\"."
+        },
+        "estimated_number_of_occupants": {
+            "key": "estimated_number_of_occupants",
+            "Path": null,
+            "mapping": "vcslam:Occupant vcslam:estimated_amount \"estimated_number_of_occupants\"."
+        },
+        "no_stories": {
+            "key": "no_stories",
+            "Path": null,
+            "mapping": "vcslam:Floor vcslam:amount \"no_stories\"."
+        },
+        "preliminary_risk_category": {
+            "key": "preliminary_risk_category",
+            "Path": null,
+            "mapping": "vcslam:Risk vcslam:type \"preliminary_risk_category\"."
+        },
+        "zip_code": {
+            "key": "zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip_code\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "neighborhood": {
+            "key": "neighborhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighborhood\"."
+        },
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "state": {
+            "key": "state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"state\"."
+        },
+        "geocoded_column.type": {
+            "key": "type",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geocoded_column.type\"."
+        },
+        "geocoded_column.coordinates": {
+            "key": "coordinates",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"geocoded_column.coordinates\"."
+        }
+    }
+}

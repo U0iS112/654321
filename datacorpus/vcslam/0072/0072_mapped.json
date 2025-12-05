@@ -1,0 +1,45 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "lat_lon.latitude": {
+            "key": "latitude",
+            "Path": "lat_lon",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"lat_lon.latitude\"."
+        },
+        "lat_lon.longitude": {
+            "key": "longitude",
+            "Path": "lat_lon",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"lat_lon.longitude\"."
+        },
+        "permit": {
+            "key": "permit",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:identifier \"permit\"."
+        },
+        "permit_status": {
+            "key": "permit_status",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:status \"permit_status\"."
+        },
+        "inspection_result": {
+            "key": "inspection_result",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:result_DP \"inspection_result\"."
+        },
+        "inspection": {
+            "key": "inspection",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:information \"inspection\"."
+        },
+        "inspection_date": {
+            "key": "inspection_date",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:date_time \"inspection_date\"."
+        }
+    }
+}

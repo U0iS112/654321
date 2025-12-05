@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Shooting_incident
+    vcslam:id xsd:string;
+    vcslam:date_time xsd:dateTime ;
+    vcslam:description xsd:string ;
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:involves vcslam:Officer ;
+    vcslam:involves vcslam:Subject .
+
+
+vcslam:Officer
+    vcslam:rank xsd:string ;
+    vcslam:gender xsd:string ;
+    vcslam:race xsd:string ;
+    vcslam:on_duty xsd:boolean ;
+    vcslam:is_injured xsd:boolean ;
+    vcslam:is_disciplined xsd:boolean .
+
+vcslam:Subject
+    vcslam:gender xsd:string ;
+    vcslam:race xsd:string ;
+    vcslam:date_of_birth xsd:date ;
+    vcslam:age xsd:int;
+    vcslam:includes vcslam:Weapon.
+
+vcslam:Weapon
+    vcslam:is_true;
+    vcslam:description xsd:string.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position ;
+    vcslam:address xsd:string ;
+    vcslam:includes vcslam:City;
+    vcslam:includes vcslam:State.
+
+vcslam:City
+    vcslam:name xsd:string.    
+
+vcslam:State
+    vcslam:abbreviation xsd:string.     
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

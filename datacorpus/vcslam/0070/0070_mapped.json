@@ -1,0 +1,80 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "street_address": {
+            "key": "street_address",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:address \"street_address\"."
+        },
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "zip_code": {
+            "key": "zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip_code\"."
+        },
+        "location_description": {
+            "key": "location_description",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:description \"location_description\"."
+        },
+        "council_district": {
+            "key": "council_district",
+            "Path": null,
+            "mapping": "vcslam:Council_district vcslam:identifier \"council_district\"."
+        },
+        "location_account": {
+            "key": "location_account",
+            "Path": null,
+            "mapping": "vcslam:Account vcslam:identifier \"location_account\"."
+        },
+        "mailing_address": {
+            "key": "mailing_address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"mailing_address\"."
+        },
+        "mailing_city": {
+            "key": "mailing_city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"mailing_city\"."
+        },
+        "mailing_zip_code": {
+            "key": "mailing_zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"mailing_zip_code\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "business_name": {
+            "key": "business_name",
+            "Path": null,
+            "mapping": "vcslam:Business vcslam:legal_name \"business_name\"."
+        },
+        "dba_name": {
+            "key": "dba_name",
+            "Path": null,
+            "mapping": "vcslam:Business vcslam:dba_name \"dba_name\"."
+        },
+        "naics": {
+            "key": "naics",
+            "Path": null,
+            "mapping": "vcslam:Business vcslam:naics \"naics\"."
+        }
+    }
+}

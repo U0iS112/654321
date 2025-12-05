@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Property vcslam:details "property_details".
+
+vcslam:Ward vcslam:identifier "ward".
+
+vcslam:Parcel vcslam:identifier "parcel".
+
+vcslam:Location vcslam:address "street_address".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:Purchase vcslam:is_available "available_for_purchase".
+
+vcslam:Price vcslam:value "purchase_price".
+
+vcslam:Fund vcslam:source_DP "funding_source".
+
+vcslam:Property vcslam:type "property_type".
+
+vcslam:Coordinates vcslam:geometry_type "geocoded_column.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "geocoded_column.coordinates".
+
+vcslam:Add vcslam:date_time "date".

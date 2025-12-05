@@ -1,0 +1,45 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "meter": {
+            "key": "meter",
+            "Path": null,
+            "mapping": "vcslam:Parking_meter vcslam:identifier \"meter\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "department": {
+            "key": "department",
+            "Path": null,
+            "mapping": "vcslam:Department vcslam:name \"department\"."
+        },
+        "violation_description": {
+            "key": "violation_description",
+            "Path": null,
+            "mapping": "vcslam:Violation vcslam:description \"violation_description\"."
+        },
+        "ticket_issue_date": {
+            "key": "ticket_issue_date",
+            "Path": null,
+            "mapping": "vcslam:Parking_ticket vcslam:date_time \"ticket_issue_date\"."
+        },
+        "issue_time": {
+            "key": "issue_time",
+            "Path": null,
+            "mapping": "vcslam:Parking_ticket vcslam:time \"issue_time\"."
+        }
+    }
+}

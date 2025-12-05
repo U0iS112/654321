@@ -1,0 +1,59 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Inspection vcslam:of vcslam:Case;
+    vcslam:identifier xsd:string;
+    vcslam:type xsd:string;
+    vcslam:by vcslam:Person;
+    vcslam:includes vcslam:Completion;
+    vcslam:includes vcslam:Result;
+    vcslam:at vcslam:Location.
+
+vcslam:Completion vcslam:date_time xsd:dateTime.
+
+vcslam:Result vcslam:value xsd:string;
+              vcslam:date_time xsd:dateTime.
+
+vcslam:Case vcslam:number xsd:int.
+
+vcslam:Location
+    vcslam:information xsd:string;
+    vcslam:zip_code xsd:string;
+    vcslam:locatedAt vcslam:Council_district;
+    vcslam:locatedAt vcslam:Police_district;
+    vcslam:locatedAt vcslam:Neighbourhood;
+    vcslam:locatedAt vcslam:Census_tract;
+    vcslam:locatedAt vcslam:Census_Block;
+    vcslam:locatedAt vcslam:City;
+    vcslam:locatedAt vcslam:State;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:positionAt vcslam:Position.
+
+
+vcslam:Person vcslam:name xsd:string.
+
+vcslam:Street vcslam:name xsd:string;
+    vcslam:number xsd:int;
+    vcslam:address xsd:string.
+
+vcslam:City vcslam:name xsd:string.
+
+vcslam:State vcslam:name xsd:string.
+
+vcslam:Police_district vcslam:identifier xsd:string.
+
+vcslam:Council_district vcslam:identifier xsd:string.
+
+vcslam:Census_tract vcslam:identifier xsd:string.
+
+vcslam:Census_Block vcslam:includes vcslam:Group;
+                    vcslam:identifier xsd:string .
+
+vcslam:Neighbourhood vcslam:name xsd:string.
+
+vcslam:Group vcslam:identifier xsd:string.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

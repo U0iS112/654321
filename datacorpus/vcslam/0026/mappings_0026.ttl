@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Schedule vcslam:information "scheduled_date".
+
+vcslam:Schedule vcslam:day_of_week "scheduled_day".
+
+vcslam:Area vcslam:identifier "maintenance_area_number".
+
+vcslam:Neighbourhood vcslam:information "neighbourhood".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Maintenance vcslam:status "status".

@@ -1,0 +1,15 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location vcslam:human_address "center_location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "center_location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "center_location.longitude".
+
+vcslam:Community_center vcslam:link "website.url".
+
+vcslam:Community_center vcslam:phone_number "phone".
+
+vcslam:Community_center vcslam:name "center_name".

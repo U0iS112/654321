@@ -1,0 +1,30 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Record vcslam:id xsd:string;
+              vcslam:timestamp xsd:dateTimeStamp;
+              vcslam:of vcslam:Construction_project .
+
+
+vcslam:Construction_project vcslam:title xsd:string;
+    vcslam:status xsd:string;
+    vcslam:description xsd:string;
+    vcslam:planned_start_date_time xsd:dateTime;
+    vcslam:planned_end_date_time xsd:dateTime;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:link xsd:anyURI;
+    vcslam:id xsd:int;
+    vcslam:is_part_of vcslam:Capital_program.
+
+vcslam:Organization vcslam:responsible_for vcslam:Construction_project;
+    vcslam:name xsd:string.
+
+vcslam:Capital_program vcslam:name xsd:string ;
+    vcslam:sub_type xsd:string.
+
+vcslam:Location vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+    vcslam:geometry_type xsd:string.

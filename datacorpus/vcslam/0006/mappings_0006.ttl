@@ -1,0 +1,17 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Police_facility vcslam:name "facility".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Location vcslam:zip_code_4 "zip4".
+
+vcslam:Location vcslam:zip_code "zip".
+
+vcslam:Location vcslam:information "city_state".
+
+vcslam:Coordinates vcslam:geometry_type "the_geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "the_geom.coordinates".

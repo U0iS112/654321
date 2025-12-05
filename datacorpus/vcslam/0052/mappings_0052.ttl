@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Species vcslam:name "fields.species_name".
+
+vcslam:Genus vcslam:name "fields.genus_name".
+
+vcslam:Street vcslam:information "fields.on_street".
+
+vcslam:Neighbourhood vcslam:name "fields.neighbourhood_name".
+
+vcslam:Diameter vcslam:value "fields.diameter".
+
+vcslam:Area vcslam:identifier "fields.plant_area".
+
+vcslam:Planted vcslam:date "fields.date_planted".
+
+vcslam:Curb vcslam:is_present "fields.curb".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".
+
+vcslam:Tree vcslam:common_name "fields.common_name".
+
+vcslam:Tree vcslam:cultivar_name "fields.cultivar_name".
+
+vcslam:Tree vcslam:id "fields.tree_id".

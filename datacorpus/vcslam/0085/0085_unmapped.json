@@ -1,0 +1,34 @@
+{
+    "last_read_date": {
+        "key": "last_read_date",
+        "Path": null
+    },
+    "usage_hcf": {
+        "key": "usage_hcf",
+        "Path": null
+    },
+    "block_address": {
+        "key": "block_address",
+        "Path": null
+    },
+    "street_side": {
+        "key": "street_side",
+        "Path": null
+    },
+    "street_centroid_wkt": {
+        "key": "street_centroid_wkt",
+        "Path": null
+    },
+    "street_segment_wkt": {
+        "key": "street_segment_wkt",
+        "Path": null
+    },
+    ":@computed_region_a96n_jaww": {
+        "key": ":@computed_region_a96n_jaww",
+        "Path": null
+    },
+    ":@computed_region_28yu_qtqf": {
+        "key": ":@computed_region_28yu_qtqf",
+        "Path": null
+    }
+}

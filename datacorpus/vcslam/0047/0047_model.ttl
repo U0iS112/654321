@@ -1,0 +1,58 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Building
+    vcslam:refers_to vcslam:Object 
+    vcslam:includes vcslam:Rent;
+    vcslam:id xsd:string;
+    vcslam:includes vcslam:Development;
+    vcslam:includes vcslam:Housing_unit;
+    vcslam:includes vcslam:Market_unit;
+    vcslam:built_year xsd:gYear;
+    vcslam:type xsd:string ;
+    vcslam:form xsd:string;
+    vcslam:description xsd:string;
+    vcslam:includes vcslam:Police;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Housing_unit
+    vcslam:total xsd:int. 
+
+vcslam:Rent 
+    vcslam:includes vcslam:Income. 
+
+vcslam:Income
+    vcslam:total xsd:int. 
+
+vcslam:Market_unit 
+    vcslam:total xsd:int.     
+
+vcslam:Police 
+    vcslam:includes vcslam:Division.
+
+vcslam:Division 
+    vcslam:number xsd:int.
+
+vcslam:Object
+    vcslam:id xsd:string.
+
+vcslam:Development
+    vcslam:id xsd:string;
+    vcslam:name xsd:string;
+
+vcslam:Location
+    vcslam:includes vcslam:Neighbourhood;
+    vcslam:includes vcslam:Postal;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Postal 
+   vcslam:code xsd:string.
+
+vcslam:Neighbourhood
+   vcslam:number xsd:int.
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:geometry_type xsd:string;
+    vcslam:longitude xsd:decimal .      

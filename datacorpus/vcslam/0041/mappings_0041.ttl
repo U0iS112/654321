@@ -1,0 +1,53 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Branch vcslam:name "branch".
+
+vcslam:Branch vcslam:id "branch_id".
+
+vcslam:Branch vcslam:phone_number "phone_number".
+
+vcslam:Postal vcslam:code "postal_code".
+
+vcslam:Monday vcslam:time_open "monday_open".
+
+vcslam:Monday vcslam:time_close "monday_close".
+
+vcslam:Tuesday vcslam:time_open "tuesday_open".
+
+vcslam:Tuesday vcslam:time_close "tuesday_close".
+
+vcslam:Wednesday vcslam:time_open "wednesday_open".
+
+vcslam:Wednesday vcslam:time_close "wednesday_close".
+
+vcslam:Thursday vcslam:time_open "thursday_open".
+
+vcslam:Thursday vcslam:time_close "thursday_close".
+
+vcslam:Friday vcslam:time_open "friday_open".
+
+vcslam:Friday vcslam:time_close "friday_close".
+
+vcslam:Saturday vcslam:time_open "saturday_open".
+
+vcslam:Saturday vcslam:time_close "saturday_close".
+
+vcslam:Sunday vcslam:time_open "sunday_open".
+
+vcslam:Sunday vcslam:time_close "sunday_close".
+
+vcslam:Wifi vcslam:is_free "free_wifi".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".

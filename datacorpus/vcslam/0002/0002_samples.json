@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Ainslie Newsagency and Licensed Post Office",
+      "region": "Northside",
+      "address": "3 Edgar St, Ainslie ACT 2602",
+      "geocoded_column": {
+        "type": "Point",
+        "coordinates": [
+          149.14508,
+          -35.26243
+        ]
+      }
+    },
+    {
+      "name": "Blackjack Kiosk",
+      "region": "Southside",
+      "address": "Shop 22B, Erindale Shopping Centre, Wanniassa",
+      "geocoded_column": {
+        "type": "Point",
+        "coordinates": [
+          149.098627,
+          -35.403686
+        ]
+      }
+    },
+    {
+      "name": "Calwell Video and Post",
+      "region": "Southside",
+      "address": "Shop 22, Calwell Shopping Centre, Calwell",
+      "geocoded_column": {
+        "type": "Point",
+        "coordinates": [
+          149.114312,
+          -35.434953
+        ]
+      }
+    }
+]

@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of  vcslam:Crime;
+    vcslam:id xsd:string .
+
+vcslam:Report vcslam:of vcslam:Crime;
+              vcslam:date_time xsd:dateTime;
+              vcslam:district  vcslam:District.
+
+vcslam:Crime vcslam:includes vcslam:Occurrence;
+    vcslam:involves vcslam:Victim;
+    vcslam:involves vcslam:Weapon;
+    vcslam:description xsd:string;
+    vcslam:code xsd:string.
+
+
+vcslam:Case vcslam:of vcslam:Crime;
+            vcslam:status xsd:string;
+            vcslam:description xsd:string.
+
+vcslam:Occurrence  vcslam:time xsd:time;
+    vcslam:date_time xsd:dateTime;
+    vcslam:locatedAt vcslam:Location.
+
+
+vcslam:Victim vcslam:age xsd:string;
+              vcslam:race xsd:string;
+              vcslam:gender xsd:string.
+
+vcslam:Weapon vcslam:code xsd:string;
+              vcslam:description xsd:string.
+
+vcslam:Premise vcslam:code xsd:string;
+               vcslam:description xsd:string.
+
+vcslam:District vcslam:number xsd:int.
+
+vcslam:Location vcslam:locatedAt vcslam:Premise;
+                vcslam:information xsd:string;
+                vcslam:cross_street xsd:string;
+                vcslam:locatedAt vcslam:Area;
+                vcslam:positionAt vcslam:Position.
+
+vcslam:Area vcslam:code xsd:string;
+            vcslam:name xsd:string.
+
+vcslam:Position vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal.

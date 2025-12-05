@@ -1,0 +1,50 @@
+{
+    "time_occ": {
+        "key": "time_occ",
+        "Path": null
+    },
+    "mocodes": {
+        "key": "mocodes",
+        "Path": null
+    },
+    "location": {
+        "key": "location",
+        "Path": null
+    },
+    "cross_street": {
+        "key": "cross_street",
+        "Path": null
+    },
+    "location_1.latitude": {
+        "key": "latitude",
+        "Path": "location_1"
+    },
+    "location_1.longitude": {
+        "key": "longitude",
+        "Path": "location_1"
+    },
+    "location_1.human_address": {
+        "key": "human_address",
+        "Path": "location_1"
+    },
+    ":@computed_region_qz3q_ghft": {
+        "key": ":@computed_region_qz3q_ghft",
+        "Path": null
+    },
+    ":@computed_region_k96s_3jcv": {
+        "key": ":@computed_region_k96s_3jcv",
+        "Path": null
+    },
+    ":@computed_region_tatf_ua23": {
+        "key": ":@computed_region_tatf_ua23",
+        "Path": null
+    },
+    ":@computed_region_kqwf_mjcx": {
+        "key": ":@computed_region_kqwf_mjcx",
+        "Path": null
+    },
+    ":@computed_region_2dna_qi2s": {
+        "key": ":@computed_region_2dna_qi2s",
+        "Path": null
+    }
+}

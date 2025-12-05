@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:Park ;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Park vcslam:name xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:id xsd:string;
+    vcslam:is_official xsd:boolean;
+    vcslam:includes vcslam:Facility;
+    vcslam:size vcslam:Area;
+    vcslam:advisory  vcslam:Advisory;
+    vcslam:feature  vcslam:Feature.
+
+vcslam:Facility vcslam:includes vcslam:Washroom;
+    vcslam:is_present xsd:boolean.
+
+vcslam:Washroom vcslam:is_present xsd:boolean.
+
+vcslam:Feature vcslam:is_present xsd:boolean.
+
+vcslam:Advisory vcslam:is_present xsd:boolean.
+
+vcslam:Location vcslam:locatedAt vcslam:Neighbourhood;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Neighbourhood vcslam:name xsd:string;
+                     vcslam:link xsd:anyURI.
+
+vcslam:Street vcslam:name xsd:string;
+    vcslam:number xsd:int.
+
+vcslam:Area vcslam:measurement_unit_area vcslam:Hectare;
+    vcslam:value xsd:decimal.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.
+

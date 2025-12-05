@@ -1,0 +1,31 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Business vcslam:trade_name "trade_name".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Permit vcslam:status "status".
+
+vcslam:Permit vcslam:date_time_issued "date_of_issues".
+
+vcslam:Permit vcslam:date_time_expiration "expiry_date".
+
+vcslam:Neighbourhood vcslam:id "neighbourhood_id".
+
+vcslam:Neighbourhood vcslam:name "neighbourhood".
+
+vcslam:Ward vcslam:information "ward".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Business vcslam:type "business_category".

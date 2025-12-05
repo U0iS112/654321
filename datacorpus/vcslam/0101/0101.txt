@@ -1,0 +1,123 @@
+Description:
+
+This dataset comprises the public schools in the Buffalo Public Schools system for the 2018-2019 school year.
+
+Column Name
+Description
+Type
+
+School	
+The name of the school
+Plain Text
+
+School Number	
+The identification number associated with a school
+Number
+
+School Type	
+The type of school (elementary/secondary)
+Plain Text
+
+Minimum Grade	
+The minimum grade offered at the school
+Plain Text
+
+Maximum Grade	
+The maximum grade offered at the school
+Plain Text
+
+Start Time	
+The school start time
+Date & Time
+
+End Time	
+The school end time
+Date & Time
+
+Telephone	
+The phone number of the school
+Plain Text
+
+Fax	
+The fax number of the school
+Plain Text
+
+Principal	
+The principal of the school
+Plain Text
+
+Assistant Principal 1	
+The first assistant principal of the school
+Plain Text
+
+Assistant Principal 2	
+The third assistant principal of the school
+Plain Text
+
+Assistant Principal 3	
+The second assistant principal of the school
+Plain Text
+
+Assistant Principal 4	
+The forth assistant principal of the school
+Plain Text
+
+Associate Supt. / Board of Ed. Member 1	
+The first associate superintendent/board of education member for the school
+Plain Text
+
+Associate Supt. / Board of Ed. Member 2	
+The second associate superintendent/board of education member for the school
+Plain Text
+
+Address Number	
+The address number of the school
+Plain Text
+
+Street	
+The street of the school
+Plain Text
+
+City	
+The city of the school
+Plain Text
+
+State	
+The state of the school
+Plain Text
+
+Zip Code	
+The zip code of the school
+Plain Text
+
+Council DIstrict	
+The council district of the school
+Plain Text
+
+Police District	
+The police district of the school
+Plain Text
+
+Census Tract	
+The census tract of the school
+Plain Text
+
+Census Block	
+The census block of the school
+Plain Text
+
+Census Block Group	
+The census block group of the school
+Plain Text
+
+Latitude	
+The latitude of the school
+Number
+
+Longitude	
+The longitude of the school
+Number
+
+Location	
+The geographic location of the school
+Point

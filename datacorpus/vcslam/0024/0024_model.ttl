@@ -1,0 +1,42 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Parking
+    vcslam:involves vcslam:Transaction;
+    vcslam:includes vcslam:Parking_meter ;
+    vcslam:includes vcslam:Duration;
+    vcslam:includes vcslam:Payment_methods ;
+    vcslam:spaces xsd:int;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Payment_methods
+    vcslam:description xsd:string. 
+
+vcslam:Duration 
+    vcslam:number xsd:int;
+    vcslam:measurement_unit_time xsd:Minute.
+
+vcslam:Parking_meter
+    vcslam:code xsd:string.
+
+vcslam:Transaction
+    vcslam:id xsd:string;
+    vcslam:amount xsd:decimal ;
+    vcslam:datetime xsd:dateTime.
+
+vcslam:Street
+    vcslam:side_of xsd:string.
+
+vcslam: Block
+    vcslam:name xsd:string.    
+
+vcslam:Location
+    vcslam:includes vcslam:Block;
+    vcslam:includes vcslam:Street;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Lane vcslam:compass_direction "direction".
+
+vcslam:Lane vcslam:information "lanes".
+
+vcslam:County vcslam:name "county".
+
+vcslam:Incident vcslam:link "link".
+
+vcslam:Incident vcslam:information "incident".

@@ -1,0 +1,38 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+vcslam:Pet
+   vcslam:refers_to vcslam:License
+   
+vcslam:License
+    vcslam:month xsd:gMonth;
+    vcslam:year xsd:gYear;
+    vcslam:datetime xsd:dateTime;
+    vcslam:identifier xsd:string.
+
+
+vcslam:Pet 
+    vcslam:includes vcslam:License;
+    vcslam:refers_to vcslam:Breed;
+    vcslam:type xsd:string ;
+    vcslam:gender xsd:string;
+    vcslam:is_sterilized xsd:boolean;
+    vcslam:locatedAt vcslam:Neighbourhood.
+
+vcslam:Breed
+    vcslam:description xsd:string.
+
+
+vcslam:Neighbourhood 
+    vcslam:name xsd:string;
+    vcslam:locatedAt vcslam:Location.
+    vcslam:id xsd:string.
+
+vcslam:Location
+    vcslam:address xsd:string;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal;
+    vcslam:geometry_type xsd:string .

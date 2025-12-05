@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "location_state": {
+            "key": "location_state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"location_state\"."
+        },
+        "zip_code": {
+            "key": "zip_code",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip_code\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.type": {
+            "key": "type",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"location.type\"."
+        },
+        "location.coordinates": {
+            "key": "coordinates",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"location.coordinates\"."
+        },
+        "url": {
+            "key": "url",
+            "Path": null,
+            "mapping": "vcslam:Post_office vcslam:link \"url\"."
+        },
+        "phone": {
+            "key": "phone",
+            "Path": null,
+            "mapping": "vcslam:Post_office vcslam:phone_number \"phone\"."
+        },
+        "name": {
+            "key": "name",
+            "Path": null,
+            "mapping": "vcslam:Post_office vcslam:name \"name\"."
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Company vcslam:offers vcslam:Sumd;
+               vcslam:link vcslam:url;
+               vcslam:phone_number xsd:string.
+
+vcslam:Sumd vcslam:id xsd:string;
+    vcslam:type xsd:string;
+    vcslam:includes vcslam:Group;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Fare;
+    vcslam:is vcslam:Available.
+
+vcslam:Available vcslam:start_date xsd:date;
+    vcslam:start_time xsd:time;
+    vcslam:includes vcslam:Duration.
+
+vcslam:Duration vcslam:value xsd:string.
+
+vcslam:Group vcslam:information xsd:string.
+
+vcslam:Fare vcslam:value xsd:string.
+
+vcslam:Location vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:positionAt vcslam:Gps.
+
+vcslam:Gps vcslam:latitude xsd:decimal;
+    vcslam:longitude xsd:decimal.

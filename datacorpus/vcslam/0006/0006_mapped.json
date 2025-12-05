@@ -1,0 +1,40 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "facility": {
+            "key": "facility",
+            "Path": null,
+            "mapping": "vcslam:Police_facility vcslam:name \"facility\"."
+        },
+        "address": {
+            "key": "address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"address\"."
+        },
+        "zip4": {
+            "key": "zip4",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code_4 \"zip4\"."
+        },
+        "zip": {
+            "key": "zip",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"zip\"."
+        },
+        "city_state": {
+            "key": "city_state",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"city_state\"."
+        },
+        "the_geom.type": {
+            "key": "type",
+            "Path": "the_geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"the_geom.type\"."
+        },
+        "the_geom.coordinates": {
+            "key": "coordinates",
+            "Path": "the_geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"the_geom.coordinates\"."
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Trade_permit vcslam:type "permittype".
+
+vcslam:Trade_permit vcslam:link "link".
+
+vcslam:Registration vcslam:status "statuscurrent".
+
+vcslam:Trade_permit vcslam:status "statuscurrent".
+
+vcslam:Location vcslam:address "originaladdress1".
+
+vcslam:City vcslam:name "originalcity".
+
+vcslam:State vcslam:name "originalstate".
+
+vcslam:Location vcslam:zip_code "originalzip".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location1.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location1.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location1.longitude".
+
+vcslam:Company vcslam:name "contractorcompanyname".
+
+vcslam:Trade_permit vcslam:identifier "permitnum".

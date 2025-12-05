@@ -1,0 +1,46 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:Community_garden;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Community_garden
+    vcslam:managed_by vcslam:Organization;
+    vcslam:created_at_year xsd:gYear;
+    vcslam:id xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:jurisdiction xsd:string;
+    vcslam:plot  vcslam:Plot;
+    vcslam:food_tree  vcslam:Food_tree;
+    vcslam:digital_representation vcslam:Website;
+    vcslam:contact vcslam:Email;
+    vcslam:name xsd:string.
+
+
+vcslam:Organization vcslam:name xsd:string.
+
+vcslam:Plot vcslam:count xsd:int.
+
+vcslam:Food_tree vcslam:count xsd:int;
+                 vcslam:type xsd:string.
+
+vcslam:Website vcslam:url xsd:anyURI.
+
+vcslam:Email vcslam:information xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Street ;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:address xsd:string;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Street vcslam:type xsd:string;
+    vcslam:number xsd:int;
+    vcslam:name xsd:string.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.
+
+vcslam:Planning_area vcslam:name xsd:string.

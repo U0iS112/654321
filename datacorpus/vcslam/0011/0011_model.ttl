@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Parking_ticket
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:issued_by vcslam:Department ;
+    vcslam:date xsd:date ;
+    vcslam:time xsd:time ;
+    vcslam:identifier xsd:string ;
+    vcslam:involves vcslam:Violation.
+
+vcslam:Violation 
+    vcslam:description xsd:string.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position ;
+    vcslam:information xsd:string .
+
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Department
+    vcslam:name xsd:string .
+
+

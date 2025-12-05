@@ -1,0 +1,33 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Rental_property vcslam:official_representation vcslam:Website;
+    vcslam:includes vcslam:Housing_unit;
+    vcslam:issue  vcslam:Issue;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:operated_by vcslam:Organization.
+
+vcslam:Issue vcslam:outstanding_amount xsd:int.
+
+vcslam:Housing_unit vcslam:total xsd:int.
+
+vcslam:Website vcslam:url xsd:anyURI.
+
+vcslam:Record vcslam:id xsd:string;
+    vcslam:of vcslam:Rental_property;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Organization vcslam:name xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+    vcslam:geometry_type xsd:string.
+
+vcslam:Street vcslam:name xsd:string;
+    vcslam:number xsd:int.
+
+vcslam:Planning_area vcslam:name xsd:string.

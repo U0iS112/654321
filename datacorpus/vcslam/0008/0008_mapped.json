@@ -1,0 +1,120 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "ticket_description": {
+            "key": "ticket_description",
+            "Path": null,
+            "mapping": "vcslam:Parking_ticket vcslam:description \"ticket_description\"."
+        },
+        "controlled_parking_zone_area": {
+            "key": "controlled_parking_zone_area",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"controlled_parking_zone_area\"."
+        },
+        "status_of_case": {
+            "key": "status_of_case",
+            "Path": null,
+            "mapping": "vcslam:Case vcslam:status \"status_of_case\"."
+        },
+        "country_vehicle_registered_to": {
+            "key": "country_vehicle_registered_to",
+            "Path": null,
+            "mapping": "vcslam:Registration vcslam:value \"country_vehicle_registered_to\"."
+        },
+        "vehicle_removed": {
+            "key": "vehicle_removed",
+            "Path": null,
+            "mapping": "vcslam:Vehicle vcslam:removed \"vehicle_removed\"."
+        },
+        "foreign_vehicle": {
+            "key": "foreign_vehicle",
+            "Path": null,
+            "mapping": "vcslam:Vehicle vcslam:foreign \"foreign_vehicle\"."
+        },
+        "contravention_code": {
+            "key": "contravention_code",
+            "Path": null,
+            "mapping": "vcslam:Contravention vcslam:code \"contravention_code\"."
+        },
+        "contravention_code_suffix": {
+            "key": "contravention_code_suffix",
+            "Path": null,
+            "mapping": "vcslam:Contravention vcslam:suffix \"contravention_code_suffix\"."
+        },
+        "contravention_date": {
+            "key": "contravention_date",
+            "Path": null,
+            "mapping": "vcslam:Contravention vcslam:date_time \"contravention_date\"."
+        },
+        "contravention_in_last_7_days": {
+            "key": "contravention_in_last_7_days",
+            "Path": null,
+            "mapping": "vcslam:Contravention vcslam:in_last_7_days \"contravention_in_last_7_days\"."
+        },
+        "cancellation_reason": {
+            "key": "cancellation_reason",
+            "Path": null,
+            "mapping": "vcslam:Cancel vcslam:reason \"cancellation_reason\"."
+        },
+        "ward_code": {
+            "key": "ward_code",
+            "Path": null,
+            "mapping": "vcslam:Ward vcslam:code \"ward_code\"."
+        },
+        "ward_name": {
+            "key": "ward_name",
+            "Path": null,
+            "mapping": "vcslam:Ward vcslam:name \"ward_name\"."
+        },
+        "street": {
+            "key": "street",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"street\"."
+        },
+        "spatial_accuracy": {
+            "key": "spatial_accuracy",
+            "Path": null,
+            "mapping": "vcslam:Coordinates vcslam:spatial_accuracy \"spatial_accuracy\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "easting": {
+            "key": "easting",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:easting \"easting\"."
+        },
+        "northing": {
+            "key": "northing",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:northing \"northing\"."
+        },
+        "vehicle_category": {
+            "key": "vehicle_category",
+            "Path": null,
+            "mapping": "vcslam:Category vcslam:information \"vehicle_category\"."
+        },
+        "ticket_type": {
+            "key": "ticket_type",
+            "Path": null,
+            "mapping": "vcslam:Parking_ticket vcslam:type \"ticket_type\"."
+        }
+    }
+}

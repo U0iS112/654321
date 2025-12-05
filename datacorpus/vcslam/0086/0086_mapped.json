@@ -1,0 +1,40 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "accident_cnt": {
+            "key": "accident_cnt",
+            "Path": null,
+            "mapping": "vcslam:Account vcslam:count \"accident_cnt\"."
+        },
+        "injury_cnt": {
+            "key": "injury_cnt",
+            "Path": null,
+            "mapping": "vcslam:Injury vcslam:count \"injury_cnt\"."
+        },
+        "death_cnt": {
+            "key": "death_cnt",
+            "Path": null,
+            "mapping": "vcslam:Death vcslam:count \"death_cnt\"."
+        },
+        "geocoded_column.type": {
+            "key": "type",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geocoded_column.type\"."
+        },
+        "geocoded_column.coordinates": {
+            "key": "coordinates",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"geocoded_column.coordinates\"."
+        },
+        "street_name_2": {
+            "key": "street_name_2",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"street_name_2\"."
+        },
+        "street_name": {
+            "key": "street_name",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"street_name\"."
+        }
+    }
+}

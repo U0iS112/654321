@@ -1,0 +1,31 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Building vcslam:built_year "properties.YR_BUILT".
+
+vcslam:Building vcslam:type "properties.BLD_TYPO".
+
+vcslam:Building vcslam:form "properties.BLD_FORM".
+
+ vcslam:Building vcslam:description "properties.BLD_DESC".
+
+vcslam:Market_unit vcslam:amount "properties.MRKT_UNIT".
+
+vcslam:Division vcslam:number "properties.POLICE_DIV".
+
+vcslam:Postal vcslam:code "properties.PSTL_CODE".
+
+vcslam:Neighbourhood vcslam:number "properties.NGHBRHD_NUM".
+
+vcslam:Development vcslam:id "properties.DEV_ID".
+
+vcslam:Development vcslam:name "properties.DEV_NAME".
+
+vcslam:Coordinates vcslam:geometry_type "geometry.type".
+
+vcslam:Coordinate_pair vcslam:latitude "geometry.coordinate.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "geometry.coordinate.longitude".
+
+vcslam:Building vcslam:id "properties.BLD_ID".

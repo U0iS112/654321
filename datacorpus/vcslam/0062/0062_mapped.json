@@ -1,0 +1,85 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.parkid": {
+            "key": "parkid",
+            "Path": "fields",
+            "mapping": "vcslam:Park vcslam:id \"fields.parkid\"."
+        },
+        "fields.official": {
+            "key": "official",
+            "Path": "fields",
+            "mapping": "vcslam:Park vcslam:is_official \"fields.official\"."
+        },
+        "fields.facilities": {
+            "key": "facilities",
+            "Path": "fields",
+            "mapping": "vcslam:Facility vcslam:is_present \"fields.facilities\"."
+        },
+        "fields.washrooms": {
+            "key": "washrooms",
+            "Path": "fields",
+            "mapping": "vcslam:Washroom vcslam:is_present \"fields.washrooms\"."
+        },
+        "fields.hectare": {
+            "key": "hectare",
+            "Path": "fields",
+            "mapping": "vcslam:Area vcslam:value \"fields.hectare\"."
+        },
+        "fields.googlemapdest": {
+            "key": "googlemapdest",
+            "Path": "fields",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.googlemapdest\"."
+        },
+        "fields.streetnumber": {
+            "key": "streetnumber",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:number \"fields.streetnumber\"."
+        },
+        "fields.streetname": {
+            "key": "streetname",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:name \"fields.streetname\"."
+        },
+        "fields.neighbourhoodname": {
+            "key": "neighbourhoodname",
+            "Path": "fields",
+            "mapping": "vcslam:Neighbourhood vcslam:name \"fields.neighbourhoodname\"."
+        },
+        "fields.neighbourhoodurl": {
+            "key": "neighbourhoodurl",
+            "Path": "fields",
+            "mapping": "vcslam:Neighbourhood vcslam:link \"fields.neighbourhoodurl\"."
+        },
+        "fields.name": {
+            "key": "name",
+            "Path": "fields",
+            "mapping": "vcslam:Park vcslam:name \"fields.name\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "geometry.type": {
+            "key": "type",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geometry.type\"."
+        },
+        "geometry.coordinates": {
+            "key": "coordinates",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"geometry.coordinates\"."
+        }
+    }
+}

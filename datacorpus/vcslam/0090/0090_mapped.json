@@ -1,0 +1,90 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "cpl_size": {
+            "key": "cpl_size",
+            "Path": null,
+            "mapping": "vcslam:Size vcslam:is_compliant \"cpl_size\"."
+        },
+        "cpl_ctrst": {
+            "key": "cpl_ctrst",
+            "Path": null,
+            "mapping": "vcslam:Contrast vcslam:is_compliant \"cpl_ctrst\"."
+        },
+        "cpl_force": {
+            "key": "cpl_force",
+            "Path": null,
+            "mapping": "vcslam:Force vcslam:is_compliant \"cpl_force\"."
+        },
+        "cpl_place": {
+            "key": "cpl_place",
+            "Path": null,
+            "mapping": "vcslam:Placement vcslam:is_compliant \"cpl_place\"."
+        },
+        "cpl_aud": {
+            "key": "cpl_aud",
+            "Path": null,
+            "mapping": "vcslam:Audio_indicator vcslam:is_compliant \"cpl_aud\"."
+        },
+        "cpl_vis": {
+            "key": "cpl_vis",
+            "Path": null,
+            "mapping": "vcslam:Visual_indicator vcslam:is_compliant \"cpl_vis\"."
+        },
+        "date": {
+            "key": "date",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:date_time \"date\"."
+        },
+        "cmnt_1": {
+            "key": "cmnt_1",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:comment \"cmnt_1\"."
+        },
+        "cmnt_2": {
+            "key": "cmnt_2",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:comment \"cmnt_2\"."
+        },
+        "oa_cmnt": {
+            "key": "oa_cmnt",
+            "Path": null,
+            "mapping": "vcslam:Inspection vcslam:comment \"oa_cmnt\"."
+        },
+        "mapped_location.type": {
+            "key": "type",
+            "Path": "mapped_location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"mapped_location.type\"."
+        },
+        "mapped_location.coordinates": {
+            "key": "coordinates",
+            "Path": "mapped_location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"mapped_location.coordinates\"."
+        },
+        "evnt_lat": {
+            "key": "evnt_lat",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"evnt_lat\"."
+        },
+        "intersectionid": {
+            "key": "intersectionid",
+            "Path": null,
+            "mapping": "vcslam:Intersection vcslam:id \"intersectionid\"."
+        },
+        "evnt_type": {
+            "key": "evnt_type",
+            "Path": null,
+            "mapping": "vcslam:Event vcslam:type \"evnt_type\"."
+        },
+        "evnt_map": {
+            "key": "evnt_map",
+            "Path": null,
+            "mapping": "vcslam:Event vcslam:identifier \"evnt_map\"."
+        },
+        "inspector": {
+            "key": "inspector",
+            "Path": null,
+            "mapping": "vcslam:Person vcslam:name \"inspector\"."
+        }
+    }
+}

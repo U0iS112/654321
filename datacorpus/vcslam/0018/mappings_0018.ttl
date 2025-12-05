@@ -1,0 +1,42 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Incident vcslam:id "FRB #".
+
+vcslam:Incident vcslam:number "Incident Number".
+
+vcslam:Incident vcslam:description "Summary".
+
+vcslam:Coordinate_pair vcslam:latitude "Latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "Longitude".
+
+vcslam:City vcslam:name "City".
+
+vcslam:State vcslam:name "State".
+
+vcslam:Officer vcslam:rank "Rank".
+
+vcslam:Officer vcslam:gender "Officer Gender".
+
+vcslam:Officer vcslam:race "Officer Race".
+
+vcslam:Officer vcslam:on_duty "On-duty".
+
+vcslam:Officer vcslam:is_injured "Officer Injured".
+
+vcslam:Officer vcslam:is_disciplined "Officer Disciplined?".
+
+vcslam:Subject vcslam:gender "Subject Gender".
+
+vcslam:Subject vcslam:race "Subject Race".
+
+vcslam:Subject vcslam:date_of_birth "Subject DOB".
+
+vcslam:Subject vcslam:age "Subject Age".
+
+vcslam:Weapon vcslam:type "Type of Weapon".
+
+vcslam:Weapon vcslam:is_present "Subject Weapon".
+

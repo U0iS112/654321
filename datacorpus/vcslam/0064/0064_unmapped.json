@@ -1,0 +1,10 @@
+{
+    "fields.website": {
+        "key": "website",
+        "Path": "fields"
+    },
+    "fields.active_space": {
+        "key": "active_space",
+        "Path": "fields"
+    }
+}

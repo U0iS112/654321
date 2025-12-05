@@ -1,0 +1,46 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Building
+    vcslam:includes vcslam:Risk;
+    vcslam:built_year xsd:gYear ;
+    vcslam:includes vcslam:Floor ;
+    vcslam:retrofit_level xsd:string ;
+    vcslam:use xsd:string ;
+    vcslam:contains vcslam:Occupant;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Occupant
+    vcslam:estimated_number xsd:decimal.
+
+vcslam:Floor
+    vcslam:total xsd:decimal.    
+
+vcslam:Risk
+    vcslam:includes vcslam:Category.
+
+vcslam:Category
+    vcslam:description xsd:string.
+
+vcslam:Location
+    vcslam:includes vcslam:Neighbourhood;
+    vcslam:information xsd:string ;
+    vcslam:includes vcslam:City;
+    vcslam:includes vcslam:State;
+    vcslam:zip_code xsd:string ;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Neighbourhood
+    vcslam:name xsd:string.
+
+vcslam:City
+    vcslam:name xsd:string.  
+
+vcslam:State
+    vcslam:abbreviation xsd:string.      
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

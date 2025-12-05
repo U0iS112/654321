@@ -1,0 +1,50 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "stop_abbreviation": {
+            "key": "stop_abbreviation",
+            "Path": null,
+            "mapping": "vcslam:Bus_stop vcslam:abbreviation \"stop_abbreviation\"."
+        },
+        "stopname": {
+            "key": "stopname",
+            "Path": null,
+            "mapping": "vcslam:Bus_stop vcslam:name \"stopname\"."
+        },
+        "shelter": {
+            "key": "shelter",
+            "Path": null,
+            "mapping": "vcslam:Shelter vcslam:is_present \"shelter\"."
+        },
+        "bench": {
+            "key": "bench",
+            "Path": null,
+            "mapping": "vcslam:Bench vcslam:is_present \"bench\"."
+        },
+        "route_number": {
+            "key": "route_number",
+            "Path": null,
+            "mapping": "vcslam:Route vcslam:number \"route_number\"."
+        },
+        "route_name": {
+            "key": "route_name",
+            "Path": null,
+            "mapping": "vcslam:Route vcslam:name \"route_name\"."
+        },
+        "geocoded_column.latitude": {
+            "key": "latitude",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geocoded_column.latitude\"."
+        },
+        "geocoded_column.longitude": {
+            "key": "longitude",
+            "Path": "geocoded_column",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geocoded_column.longitude\"."
+        },
+        "stop_id_number": {
+            "key": "stop_id_number",
+            "Path": null,
+            "mapping": "vcslam:Bus_stop vcslam:id \"stop_id_number\"."
+        }
+    }
+}

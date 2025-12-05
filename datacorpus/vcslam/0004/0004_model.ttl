@@ -1,0 +1,42 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Bridge 
+    vcslam:contains vcslam:Restriction;    
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Restriction
+    vcslam:consists_of vcslam:Height.
+
+vcslam:Height
+    vcslam:measurement_unit_distance vcslam:Meter;
+    vcslam:information xsd:string.      
+
+
+vcslam:Borough 
+    vcslam:name xsd:string.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position;
+    vcslam:includes vcslam:Borough;
+    vcslam:includes vcslam:Geo_grid;
+    vcslam:includes vcslam:Road.
+
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal ;
+    vcslam:easting xsd:decimal;
+    vcslam:northing xsd:decimal.
+
+vcslam:Road 
+    vcslam:name xsd:string;
+    vcslam:number xsd:int;
+    vcslam:is_red_route xsd:boolean.
+
+vcslam:Geo_grid 
+    vcslam:reference xsd:string.
+
+
+

@@ -1,0 +1,52 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+
+vcslam:Pedestrian_signal vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Inspection.
+
+vcslam:Inspection vcslam:by vcslam:Person;
+                  vcslam:date_time xsd:dateTime;
+                  vcslam:for vcslam:Compliance_assessment.
+
+vcslam:Compliance_assessment vcslam:for vcslam:Size;
+                             vcslam:for vcslam:Contrast;
+                             vcslam:for vcslam:Force;
+                             vcslam:for vcslam:Placement;
+                             vcslam:for vcslam:Audio_indicator;
+                             vcslam:for vcslam:Visual_indicator;
+                             rdfs:comment xsd:string.
+
+vcslam:Size vcslam:is_compliant xsd:boolean.
+
+vcslam:Contrast vcslam:is_compliant xsd:boolean.
+
+vcslam:Force vcslam:is_compliant xsd:boolean.
+
+vcslam:Placement vcslam:is_compliant xsd:boolean.
+
+vcslam:Audio_indicator vcslam:is_compliant xsd:boolean.
+
+vcslam:Visual_indicator vcslam:is_compliant xsd:boolean.
+
+vcslam:Person vcslam:name xsd:string.
+
+vcslam:Location
+    vcslam:locatedAt vcslam:Intersection;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Intersection vcslam:id xsd:string;
+                    vcslam:includes vcslam:Corner.
+
+vcslam:Corner vcslam:identifier xsd:string.
+
+vcslam:Street vcslam:name xsd:string;
+              vcslam:cross_street xsd:string.
+
+vcslam:Position vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal ;
+    vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

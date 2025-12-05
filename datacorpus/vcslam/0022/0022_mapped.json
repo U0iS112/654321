@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "sourceelementkey": {
+            "key": "sourceelementkey",
+            "Path": null,
+            "mapping": "vcslam:Segment vcslam:id \"sourceelementkey\"."
+        },
+        "sideofstreet": {
+            "key": "sideofstreet",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:compass_direction \"sideofstreet\"."
+        },
+        "parkingspacecount": {
+            "key": "parkingspacecount",
+            "Path": null,
+            "mapping": "vcslam:Parking_space vcslam:amount \"parkingspacecount\"."
+        },
+        "parkingcategory": {
+            "key": "parkingcategory",
+            "Path": null,
+            "mapping": "vcslam:Parking vcslam:type \"parkingcategory\"."
+        },
+        "paidparkingarea": {
+            "key": "paidparkingarea",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"paidparkingarea\"."
+        },
+        "paidparkingsubarea": {
+            "key": "paidparkingsubarea",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:information \"paidparkingsubarea\"."
+        },
+        "blockfacename": {
+            "key": "blockfacename",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"blockfacename\"."
+        },
+        "location.type": {
+            "key": "type",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"location.type\"."
+        },
+        "location.coordinates": {
+            "key": "coordinates",
+            "Path": "location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"location.coordinates\"."
+        },
+        "occupancydatetime": {
+            "key": "occupancydatetime",
+            "Path": null,
+            "mapping": "vcslam:Occupancy vcslam:date_time \"occupancydatetime\"."
+        }
+    }
+}

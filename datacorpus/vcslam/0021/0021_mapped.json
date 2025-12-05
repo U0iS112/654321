@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "medium": {
+            "key": "medium",
+            "Path": null,
+            "mapping": "vcslam:Artwork vcslam:medium \"medium\"."
+        },
+        "type": {
+            "key": "type",
+            "Path": null,
+            "mapping": "vcslam:Artwork vcslam:type \"type\"."
+        },
+        "description": {
+            "key": "description",
+            "Path": null,
+            "mapping": "vcslam:Artwork vcslam:description \"description\"."
+        },
+        "title": {
+            "key": "title",
+            "Path": null,
+            "mapping": "vcslam:Artwork vcslam:title \"title\"."
+        },
+        "first_name": {
+            "key": "first_name",
+            "Path": null,
+            "mapping": "vcslam:Artist vcslam:first_name \"first_name\"."
+        },
+        "last_name": {
+            "key": "last_name",
+            "Path": null,
+            "mapping": "vcslam:Artist vcslam:last_name \"last_name\"."
+        },
+        "mapped_location.latitude": {
+            "key": "latitude",
+            "Path": "mapped_location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"mapped_location.latitude\"."
+        },
+        "mapped_location.longitude": {
+            "key": "longitude",
+            "Path": "mapped_location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"mapped_location.longitude\"."
+        },
+        "location": {
+            "key": "location",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"location\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        }
+    }
+}

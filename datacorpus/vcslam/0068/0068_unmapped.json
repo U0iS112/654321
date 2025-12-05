@@ -1,0 +1,22 @@
+{
+    "time_occ": {
+        "key": "time_occ",
+        "Path": null
+    },
+    "part_1_2": {
+        "key": "part_1_2",
+        "Path": null
+    },
+    "mocodes": {
+        "key": "mocodes",
+        "Path": null
+    },
+    "status": {
+        "key": "status",
+        "Path": null
+    },
+    "cross_street": {
+        "key": "cross_street",
+        "Path": null
+    }
+}

@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location vcslam:address "properties.ADDRESS_FULL".
+
+vcslam:Postal vcslam:code "properties.POSTAL_CODE".
+
+vcslam:Municipality vcslam:name "properties.MUNICIPALITY".
+
+vcslam:Coordinates vcslam:geometry_type "geometry.type".
+
+vcslam:Coordinate_pair vcslam:latitude "geometry.coordinate.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "geometry.coordinate.longitude".
+
+vcslam:School vcslam:id "properties.OBJECTID".
+
+vcslam:School vcslam:status "properties.STATUS".
+
+vcslam:School vcslam:code "properties.TCDSB_CODE".
+
+vcslam:School vcslam:name "properties.SCH_NAME".

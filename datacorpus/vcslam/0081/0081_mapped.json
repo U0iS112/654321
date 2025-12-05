@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.memorial_tree": {
+            "key": "memorial_tree",
+            "Path": "fields",
+            "mapping": "vcslam:Tree vcslam:is_memorial \"fields.memorial_tree\"."
+        },
+        "fields.number_of_stems": {
+            "key": "number_of_stems",
+            "Path": "fields",
+            "mapping": "vcslam:Stem vcslam:amount \"fields.number_of_stems\"."
+        },
+        "fields.common_name": {
+            "key": "common_name",
+            "Path": "fields",
+            "mapping": "vcslam:Tree vcslam:common_name \"fields.common_name\"."
+        },
+        "fields.scientific_name": {
+            "key": "scientific_name",
+            "Path": "fields",
+            "mapping": "vcslam:Tree vcslam:scientific_name \"fields.scientific_name\"."
+        },
+        "fields.park": {
+            "key": "park",
+            "Path": "fields",
+            "mapping": "vcslam:Park vcslam:name \"fields.park\"."
+        },
+        "fields.trunk_diameter": {
+            "key": "trunk_diameter",
+            "Path": "fields",
+            "mapping": "vcslam:Diameter vcslam:value \"fields.trunk_diameter\"."
+        },
+        "fields.owner": {
+            "key": "owner",
+            "Path": "fields",
+            "mapping": "vcslam:Tree vcslam:ownership \"fields.owner\"."
+        },
+        "fields.date_installed": {
+            "key": "date_installed",
+            "Path": "fields",
+            "mapping": "vcslam:Installation vcslam:date \"fields.date_installed\"."
+        },
+        "fields.geo_point_2d": {
+            "key": "geo_point_2d",
+            "Path": "fields",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geo_point_2d\"."
+        },
+        "fields.geojson.type": {
+            "key": "type",
+            "Path": "fields.geojson",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geojson.type\"."
+        },
+        "fields.geojson.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geojson",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geojson.coordinates\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        }
+    }
+}

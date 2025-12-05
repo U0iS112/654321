@@ -1,0 +1,86 @@
+{
+    "fields.design_accessible_4br": {
+        "key": "design_accessible_4br",
+        "Path": "fields"
+    },
+    "fields.design_accessible_2br": {
+        "key": "design_accessible_2br",
+        "Path": "fields"
+    },
+    "fields.design_accessible_3br": {
+        "key": "design_accessible_3br",
+        "Path": "fields"
+    },
+    "fields.design_accessible_room": {
+        "key": "design_accessible_room",
+        "Path": "fields"
+    },
+    "fields.design_standard_room": {
+        "key": "design_standard_room",
+        "Path": "fields"
+    },
+    "fields.design_adaptable_1br": {
+        "key": "design_adaptable_1br",
+        "Path": "fields"
+    },
+    "fields.design_standard_4br": {
+        "key": "design_standard_4br",
+        "Path": "fields"
+    },
+    "fields.design_standard_2br": {
+        "key": "design_standard_2br",
+        "Path": "fields"
+    },
+    "fields.index_number": {
+        "key": "index_number",
+        "Path": "fields"
+    },
+    "fields.design_standard_3br": {
+        "key": "design_standard_3br",
+        "Path": "fields"
+    },
+    "fields.design_adaptable_4br": {
+        "key": "design_adaptable_4br",
+        "Path": "fields"
+    },
+    "fields.address": {
+        "key": "address",
+        "Path": "fields"
+    },
+    "fields.design_accessible_studio": {
+        "key": "design_accessible_studio",
+        "Path": "fields"
+    },
+    "fields.design_standard_1br": {
+        "key": "design_standard_1br",
+        "Path": "fields"
+    },
+    "fields.design_adaptable_3br": {
+        "key": "design_adaptable_3br",
+        "Path": "fields"
+    },
+    "fields.design_adaptable_2br": {
+        "key": "design_adaptable_2br",
+        "Path": "fields"
+    },
+    "fields.design_standard_studio": {
+        "key": "design_standard_studio",
+        "Path": "fields"
+    },
+    "fields.clientele_families": {
+        "key": "clientele_families",
+        "Path": "fields"
+    },
+    "fields.design_accessible_1br": {
+        "key": "design_accessible_1br",
+        "Path": "fields"
+    },
+    "fields.clientele_seniors": {
+        "key": "clientele_seniors",
+        "Path": "fields"
+    },
+    "fields.clientele_other": {
+        "key": "clientele_other",
+        "Path": "fields"
+    }
+}

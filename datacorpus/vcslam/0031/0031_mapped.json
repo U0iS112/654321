@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "row_id": {
+            "key": "row_id",
+            "Path": null,
+            "mapping": "vcslam:Measurement vcslam:id \"row_id\"."
+        },
+        "date_and_time": {
+            "key": "date_and_time",
+            "Path": null,
+            "mapping": "vcslam:Measurement vcslam:date_time \"date_and_time\"."
+        },
+        "water_flow_cu_meter_per_sec": {
+            "key": "water_flow_cu_meter_per_sec",
+            "Path": null,
+            "mapping": "vcslam:Flow vcslam:value \"water_flow_cu_meter_per_sec\"."
+        },
+        "water_level_m": {
+            "key": "water_level_m",
+            "Path": null,
+            "mapping": "vcslam:Level vcslam:value \"water_level_m\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "station_location.human_address": {
+            "key": "human_address",
+            "Path": "station_location",
+            "mapping": "vcslam:Location vcslam:human_address \"station_location.human_address\"."
+        },
+        "station_location.latitude": {
+            "key": "latitude",
+            "Path": "station_location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"station_location.latitude\"."
+        },
+        "station_location.longitude": {
+            "key": "longitude",
+            "Path": "station_location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"station_location.longitude\"."
+        },
+        "station_description": {
+            "key": "station_description",
+            "Path": null,
+            "mapping": "vcslam:Monitoring_station vcslam:description \"station_description\"."
+        },
+        "station_number": {
+            "key": "station_number",
+            "Path": null,
+            "mapping": "vcslam:Monitoring_station vcslam:id \"station_number\"."
+        }
+    }
+}

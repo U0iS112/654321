@@ -1,0 +1,105 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.street_number": {
+            "key": "street_number",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:number \"fields.street_number\"."
+        },
+        "fields.street_name": {
+            "key": "street_name",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:name \"fields.street_name\"."
+        },
+        "fields.street_type": {
+            "key": "street_type",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:type \"fields.street_type\"."
+        },
+        "fields.street_direction": {
+            "key": "street_direction",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:compass_direction \"fields.street_direction\"."
+        },
+        "fields.geo_local_area": {
+            "key": "geo_local_area",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_local_area\"."
+        },
+        "fields.public_e_mail": {
+            "key": "public_e_mail",
+            "Path": "fields",
+            "mapping": "vcslam:Community_garden vcslam:email_address \"fields.public_e_mail\"."
+        },
+        "fields.merged_address": {
+            "key": "merged_address",
+            "Path": "fields",
+            "mapping": "vcslam:Location vcslam:address \"fields.merged_address\"."
+        },
+        "fields.website": {
+            "key": "website",
+            "Path": "fields",
+            "mapping": "vcslam:Community_garden vcslam:link \"fields.website\"."
+        },
+        "fields.mapid": {
+            "key": "mapid",
+            "Path": "fields",
+            "mapping": "vcslam:Community_garden vcslam:id \"fields.mapid\"."
+        },
+        "fields.year_created": {
+            "key": "year_created",
+            "Path": "fields",
+            "mapping": "vcslam:Community_garden vcslam:created_at_year \"fields.year_created\"."
+        },
+        "fields.number_of_plots": {
+            "key": "number_of_plots",
+            "Path": "fields",
+            "mapping": "vcslam:Plot vcslam:amount \"fields.number_of_plots\"."
+        },
+        "fields.steward_or_managing_organization": {
+            "key": "steward_or_managing_organization",
+            "Path": "fields",
+            "mapping": "vcslam:Organization vcslam:name \"fields.steward_or_managing_organization\"."
+        },
+        "fields.number_of_food_trees": {
+            "key": "number_of_food_trees",
+            "Path": "fields",
+            "mapping": "vcslam:Food_tree vcslam:amount \"fields.number_of_food_trees\"."
+        },
+        "fields.food_tree_varieties": {
+            "key": "food_tree_varieties",
+            "Path": "fields",
+            "mapping": "vcslam:Food_tree vcslam:type \"fields.food_tree_varieties\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        },
+        "fields.name": {
+            "key": "name",
+            "Path": "fields",
+            "mapping": "vcslam:Community_garden vcslam:name \"fields.name\"."
+        }
+    }
+}

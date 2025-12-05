@@ -1,0 +1,52 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:School 
+    vcslam:name xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Website;
+    vcslam:includes vcslam:Phone ;
+    vcslam:includes vcslam:Fax;
+    vcslam:includes vcslam:Email;
+    vcslam:includes vcslam:Grade;
+    vcslam:offers vcslam:Program.
+
+vcslam:Grade
+    vcslam:refers_to vcslam:Level;
+    vcslam:range xsd:string.
+
+vcslam:Program
+    vcslam:information xsd:string.
+
+vcslam:Level
+    vcslam:information xsd:string.
+
+vcslam:Website 
+    vcslam:url xsd:anyURI.
+
+vcslam:Phone
+    vcslam:number xsd:int.
+
+vcslam:Fax
+    vcslam:number xsd:int.
+
+vcslam:Email
+    vcslam:address xsd:string.    
+
+vcslam:Location
+    vcslam:includes vcslam:Postal;
+    vcslam:includes vcslam:Ward;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Postal
+    vcslam:code xsd:string.
+
+vcslam:Ward
+    vcslam:information xsd:string.
+
+

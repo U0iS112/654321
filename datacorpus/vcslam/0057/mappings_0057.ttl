@@ -1,0 +1,43 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Street vcslam:number "fields.street_number".
+
+vcslam:Street vcslam:name "fields.street_name".
+
+vcslam:Street vcslam:type "fields.street_type".
+
+vcslam:Street vcslam:compass_direction "fields.street_direction".
+
+vcslam:Local_area vcslam:name "fields.geo_local_area".
+
+vcslam:Community_garden vcslam:email_address "fields.public_e_mail".
+
+vcslam:Location vcslam:address "fields.merged_address".
+
+vcslam:Community_garden vcslam:link "fields.website".
+
+vcslam:Community_garden vcslam:id "fields.mapid".
+
+vcslam:Community_garden vcslam:created_at_year "fields.year_created".
+
+vcslam:Plot vcslam:amount "fields.number_of_plots".
+
+vcslam:Organization vcslam:name "fields.steward_or_managing_organization".
+
+vcslam:Food_tree vcslam:amount "fields.number_of_food_trees".
+
+vcslam:Food_tree vcslam:type "fields.food_tree_varieties".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".
+
+vcslam:Community_garden vcslam:name "fields.name".

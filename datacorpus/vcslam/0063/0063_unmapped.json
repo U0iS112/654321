@@ -1,0 +1,10 @@
+{
+    "fields.location_2": {
+        "key": "location_2",
+        "Path": "fields"
+    },
+    "fields.location_1": {
+        "key": "location_1",
+        "Path": "fields"
+    }
+}

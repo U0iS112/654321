@@ -1,0 +1,110 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.licencersn": {
+            "key": "licencersn",
+            "Path": "fields",
+            "mapping": "vcslam:License vcslam:id \"fields.licencersn\"."
+        },
+        "fields.status": {
+            "key": "status",
+            "Path": "fields",
+            "mapping": "vcslam:License vcslam:status \"fields.status\"."
+        },
+        "fields.expireddate": {
+            "key": "expireddate",
+            "Path": "fields",
+            "mapping": "vcslam:License vcslam:date_expiration \"fields.expireddate\"."
+        },
+        "fields.issueddate": {
+            "key": "issueddate",
+            "Path": "fields",
+            "mapping": "vcslam:License vcslam:date_time_issued \"fields.issueddate\"."
+        },
+        "fields.localarea": {
+            "key": "localarea",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.localarea\"."
+        },
+        "fields.country": {
+            "key": "country",
+            "Path": "fields",
+            "mapping": "vcslam:Country vcslam:name \"fields.country\"."
+        },
+        "fields.postalcode": {
+            "key": "postalcode",
+            "Path": "fields",
+            "mapping": "vcslam:Postal vcslam:code \"fields.postalcode\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        },
+        "fields.province": {
+            "key": "province",
+            "Path": "fields",
+            "mapping": "vcslam:Province vcslam:information \"fields.province\"."
+        },
+        "fields.street": {
+            "key": "street",
+            "Path": "fields",
+            "mapping": "vcslam:Street vcslam:name \"fields.street\"."
+        },
+        "fields.city": {
+            "key": "city",
+            "Path": "fields",
+            "mapping": "vcslam:City vcslam:name \"fields.city\"."
+        },
+        "fields.house": {
+            "key": "house",
+            "Path": "fields",
+            "mapping": "vcslam:House vcslam:number \"fields.house\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.unittype": {
+            "key": "unittype",
+            "Path": "fields",
+            "mapping": "vcslam:Unit vcslam:type \"fields.unittype\"."
+        },
+        "fields.unit": {
+            "key": "unit",
+            "Path": "fields",
+            "mapping": "vcslam:Unit vcslam:number \"fields.unit\"."
+        },
+        "fields.businesstype": {
+            "key": "businesstype",
+            "Path": "fields",
+            "mapping": "vcslam:Business vcslam:type \"fields.businesstype\"."
+        },
+        "fields.businesstradename": {
+            "key": "businesstradename",
+            "Path": "fields",
+            "mapping": "vcslam:Business vcslam:trade_name \"fields.businesstradename\"."
+        },
+        "fields.businessname": {
+            "key": "businessname",
+            "Path": "fields",
+            "mapping": "vcslam:Business vcslam:name \"fields.businessname\"."
+        }
+    }
+}

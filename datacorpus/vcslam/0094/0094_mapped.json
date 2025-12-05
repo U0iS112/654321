@@ -1,0 +1,100 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "viodesc": {
+            "key": "viodesc",
+            "Path": null,
+            "mapping": "vcslam:Violation vcslam:description \"viodesc\"."
+        },
+        "origfine": {
+            "key": "origfine",
+            "Path": null,
+            "mapping": "vcslam:Fine vcslam:value \"origfine\"."
+        },
+        "violation_address_number": {
+            "key": "violation_address_number",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"violation_address_number\"."
+        },
+        "violation_full_address": {
+            "key": "violation_full_address",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"violation_full_address\"."
+        },
+        "violation_street": {
+            "key": "violation_street",
+            "Path": null,
+            "mapping": "vcslam:Street vcslam:name \"violation_street\"."
+        },
+        "city": {
+            "key": "city",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"city\"."
+        },
+        "state": {
+            "key": "state",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"state\"."
+        },
+        "census_tract": {
+            "key": "census_tract",
+            "Path": null,
+            "mapping": "vcslam:Census_tract vcslam:identifier \"census_tract\"."
+        },
+        "census_block": {
+            "key": "census_block",
+            "Path": null,
+            "mapping": "vcslam:Census_Block vcslam:identifier \"census_block\"."
+        },
+        "census_block_group": {
+            "key": "census_block_group",
+            "Path": null,
+            "mapping": "vcslam:Group vcslam:identifier \"census_block_group\"."
+        },
+        "council_district": {
+            "key": "council_district",
+            "Path": null,
+            "mapping": "vcslam:Council_district vcslam:name \"council_district\"."
+        },
+        "police_district": {
+            "key": "police_district",
+            "Path": null,
+            "mapping": "vcslam:police_district vcslam:identifier \"police_district\"."
+        },
+        "location_2.human_address": {
+            "key": "human_address",
+            "Path": "location_2",
+            "mapping": "vcslam:Location vcslam:human_address \"location_2.human_address\"."
+        },
+        "location_2.latitude": {
+            "key": "latitude",
+            "Path": "location_2",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location_2.latitude\"."
+        },
+        "location_2.longitude": {
+            "key": "longitude",
+            "Path": "location_2",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location_2.longitude\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "summdt": {
+            "key": "summdt",
+            "Path": null,
+            "mapping": "vcslam:Summon vcslam:date_time \"summdt\"."
+        },
+        "summno": {
+            "key": "summno",
+            "Path": null,
+            "mapping": "vcslam:Summon vcslam:id \"summno\"."
+        }
+    }
+}

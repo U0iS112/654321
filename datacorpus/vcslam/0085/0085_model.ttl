@@ -1,0 +1,55 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Record vcslam:of vcslam:Bill;
+              vcslam:id xsd:string.
+
+vcslam:Bill vcslam:involves vcslam:Customer;
+            vcslam:involves vcslam:Utility;
+            vcslam:code xsd:string;
+            vcslam:date_time xsd:dateTime;
+            vcslam:includes vcslam:Charge;
+            vcslam:is_part_of vcslam:Batch.
+
+vcslam:Charge vcslam:amount_net xsd:decimal.
+
+vcslam:Batch vcslam:number xsd:int.
+
+vcslam:Customer
+    vcslam:locatedAt vcslam:Location ;
+    vcslam:identifier xsd:string ;
+    vcslam:is vcslam:Occupant;
+    vcslam:includes vcslam:Category .
+
+
+vcslam:Occupant vcslam:code xsd:string.
+
+vcslam:Category vcslam:code xsd:string;
+                vcslam:description xsd:string.
+
+vcslam:Utility vcslam:type xsd:string;
+               vcslam:usage vcslam:Water;
+               vcslam:start_date_time  xsd:dateTime;
+               vcslam:end_date_time  xsd:dateTime;
+               vcslam:date_time  xsd:dateTime.
+
+vcslam:Water vcslam:measurement_unit_volume vcslam:Gallon_US;
+             vcslam:amount xsd:string.
+
+vcslam:Location
+    vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Block;
+    vcslam:locatedAt vcslam:Census_Block;
+    vcslam:zip_code xsd:int;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Street vcslam:name xsd:string.
+
+vcslam:Census_Block vcslam:id xsd:string.
+
+vcslam:Block vcslam:address xsd:string.
+
+vcslam:Position vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

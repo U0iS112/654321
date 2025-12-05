@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Parking_meter vcslam:identifier "meter".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Department vcslam:name "department".
+
+vcslam:Violation vcslam:description "violation_description".
+
+vcslam:Parking_ticket vcslam:date_time "ticket_issue_date".
+
+vcslam:Parking_ticket vcslam:time "issue_time".

@@ -1,0 +1,44 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+vcslam:Business vcslam:id xsd:string;
+    vcslam:legal_name xsd:string;
+    vcslam:dba_name xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:contact vcslam:Mail.
+
+vcslam:Location vcslam:description xsd:string;
+                vcslam:locatedAt vcslam:City;
+                vcslam:zip_code xsd:string;
+                vcslam:locatedAt vcslam:Street;
+                vcslam:locatedAt vcslam:Council_district ;
+                vcslam:account  vcslam:Account;
+                vcslam:date_time xsd:dateTime;
+                vcslam:human_address xsd:string;
+                vcslam:positionAt vcslam:Position.
+
+vcslam:City vcslam:name xsd:string.
+
+vcslam:Account vcslam:information xsd:string.
+
+vcslam:Council_district vcslam:information xsd:string.
+
+vcslam:Street vcslam:address xsd:string.
+
+vcslam:Position vcslam:latitude xsd:decimal;
+                vcslam:longitude xsd:decimal.
+
+vcslam:Naics vcslam:of vcslam:Business;
+    vcslam:code xsd:string;
+    vcslam:description xsd:string.
+
+
+vcslam:Mail vcslam:locatedAt vcslam:Location.
+
+vcslam:Location_2 vcslam:locatedAt vcslam:City_1;
+    vcslam:zip_code xsd:string.
+
+vcslam:City_1 vcslam:name xsd:string.

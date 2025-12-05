@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Coordinate_pair vcslam:latitude "lat_lon.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "lat_lon.longitude".
+
+vcslam:Permit vcslam:identifier "permit".
+
+vcslam:Permit vcslam:status "permit_status".
+
+vcslam:Inspection vcslam:result_DP "inspection_result".
+
+vcslam:Inspection vcslam:information "inspection".
+
+vcslam:Inspection vcslam:date_time "inspection_date".

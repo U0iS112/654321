@@ -1,0 +1,67 @@
+Description
+
+This dataset lists all currently active (open) and inactive (closed) Community Planning applications, Committee of Adjustment applications and Toronto Local Appeal Body appeals received by the City between January 1st 2008 till present.
+
+For more info, see: Application Information Centre
+
+Development Applications - Development Projects
+
+Limitations
+Visualization restriction: the visualization tool is not compatible with X,Y coordinates. It will not work, unless you covert them into Lat,Long.
+
+
+Column	Description
+_id	
+Unique row identifier for Open Data database
+
+APPLICATION#	
+Development application file number. Example: 19 123456 STE 01 OZ
+
+APPLICATION_TYPE	
+Type of application. Example:
+
+CD - Condominium
+OZ - Official Plan/Rezoning
+PL - Part Lot
+SA - Site Plan Application
+SB - Sub Division
+CO - Consent
+MV - Minor Variance
+DATE_SUBMITTED	
+Date that the application was accepted by the City. Example: 06/29/2018 (mm/dd/yyyy)
+
+DESCRIPTION	
+Brief description of the application
+
+HEARING_DATE	
+Hearing date of the Committee of Adjustment application. Example: 01/05/2019 (mm/dd/yyyy)
+
+POSTAL	
+First 3 digits of postal code. Example: M5V
+
+REFERENCE_FILE#	
+Committee of Adjustment or Toronto Local Appeal Body specific reference file number. Example: Used only for the following Application Types:
+
+MV: A52/08EYK
+CO: B0023/08TEY
+TLAB: 17-168128
+STATUS	
+Current status of the application. Example: Under Review
+
+STREET_DIRECTION	
+Address – street direction. Example: E
+
+STREET_NAME	
+Address – street name. Example: Bloor
+
+STREET_NUM	
+Address – street number. Example: 1
+
+STREET_TYPE	
+Address – street type. Example: Street
+
+X	
+X coordinates. Example: 314085.95
+
+Y	
+Y coordinates. Example: 4387731.64

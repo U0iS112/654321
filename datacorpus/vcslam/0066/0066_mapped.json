@@ -1,0 +1,70 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.mapid": {
+            "key": "mapid",
+            "Path": "fields",
+            "mapping": "vcslam:Project vcslam:id \"fields.mapid\"."
+        },
+        "fields.name": {
+            "key": "name",
+            "Path": "fields",
+            "mapping": "vcslam:Project vcslam:name \"fields.name\"."
+        },
+        "fields.url": {
+            "key": "url",
+            "Path": "fields",
+            "mapping": "vcslam:Project vcslam:link \"fields.url\"."
+        },
+        "fields.short_description": {
+            "key": "short_description",
+            "Path": "fields",
+            "mapping": "vcslam:Project vcslam:description \"fields.short_description\"."
+        },
+        "fields.category1": {
+            "key": "category1",
+            "Path": "fields",
+            "mapping": "vcslam:Category vcslam:type \"fields.category1\"."
+        },
+        "fields.category2": {
+            "key": "category2",
+            "Path": "fields",
+            "mapping": "vcslam:Category vcslam:type \"fields.category2\"."
+        },
+        "fields.address": {
+            "key": "address",
+            "Path": "fields",
+            "mapping": "vcslam:Location vcslam:add \"fields.address\"."
+        },
+        "fields.geo_local_area": {
+            "key": "geo_local_area",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_local_area\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        }
+    }
+}

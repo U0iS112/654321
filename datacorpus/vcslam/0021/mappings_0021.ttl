@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Artwork vcslam:medium "medium".
+
+vcslam:Artwork vcslam:type "type".
+
+vcslam:Artwork vcslam:description "description".
+
+vcslam:Artwork vcslam:title "title".
+
+vcslam:Artist vcslam:first_name "first_name".
+
+vcslam:Artist vcslam:last_name "last_name".
+
+vcslam:Coordinate_pair vcslam:latitude "mapped_location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "mapped_location.longitude".
+
+vcslam:Location vcslam:address "location".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".

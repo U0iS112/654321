@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Crime    
+    vcslam:includes vcslam:Offense.
+
+vcslam:Location
+    vcslam:mcpp xsd:string ;
+    vcslam:precinct xsd:string ;
+    vcslam:includes vcslam:Block; 
+    vcslam:positionAt vcslam:Position;
+    vcslam:includes vcslam:Sector.
+
+vcslam:Sector
+    vcslam:abbreviation xsd:string.    
+
+vcslam:Block  
+    vcslam:address xsd:string.
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Offense
+    vcslam:includes vcslam:Start;
+    vcslam:includes vcslam:End;
+    vcslam:description xsd:string;
+    vcslam:against vcslam:Category;
+    vcslam:code xsd:string ;
+    vcslam:id xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Group.
+
+vcslam:Category
+    vcslam:description xsd:string .
+
+vcslam:Group
+    vcslam:description xsd:string .    
+
+vcslam:Start
+    vcslam:date_time xsd:dateTime.    
+
+vcslam:End
+    vcslam:date_time xsd:dateTime. 
+
+vcslam:Report
+    vcslam:date_time xsd:dateTime;
+    vcslam:number xsd:int;
+    vcslam:refers_to vcslam:Crime .

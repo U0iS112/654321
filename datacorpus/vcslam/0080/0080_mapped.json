@@ -1,0 +1,50 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "Latitude": {
+            "key": "Latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"Latitude\"."
+        },
+        "Longitude": {
+            "key": "Longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"Longitude\"."
+        },
+        "Battery": {
+            "key": "Battery",
+            "Path": null,
+            "mapping": "vcslam:Electric_charge vcslam:percentage \"Battery\"."
+        },
+        "BikeID": {
+            "key": "BikeID",
+            "Path": null,
+            "mapping": "vcslam:Bicycle vcslam:id \"BikeID\"."
+        },
+        "BikeIdentifier": {
+            "key": "BikeIdentifier",
+            "Path": null,
+            "mapping": "vcslam:Bicycle vcslam:identifier \"BikeIdentifier\"."
+        },
+        "BikeTypeName": {
+            "key": "BikeTypeName",
+            "Path": null,
+            "mapping": "vcslam:Bicycle vcslam:type \"BikeTypeName\"."
+        },
+        "IsEBike": {
+            "key": "IsEBike",
+            "Path": null,
+            "mapping": "vcslam:Bicycle vcslam:is_electric \"IsEBike\"."
+        },
+        "IsMotor": {
+            "key": "IsMotor",
+            "Path": null,
+            "mapping": "vcslam:Bicycle vcslam:is_motorized \"IsMotor\"."
+        },
+        "LastRentalStart": {
+            "key": "LastRentalStart",
+            "Path": null,
+            "mapping": "vcslam:Rental vcslam:start_date_time \"LastRentalStart\"."
+        }
+    }
+}

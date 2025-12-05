@@ -1,0 +1,18 @@
+{
+    "neighbourhood_id": {
+        "key": "neighbourhood_id",
+        "Path": null
+    },
+    "neighbourhood_name": {
+        "key": "neighbourhood_name",
+        "Path": null
+    },
+    "day_of_week": {
+        "key": "day_of_week",
+        "Path": null
+    },
+    ":@computed_region_da6r_6gkw": {
+        "key": ":@computed_region_da6r_6gkw",
+        "Path": null
+    }
+}

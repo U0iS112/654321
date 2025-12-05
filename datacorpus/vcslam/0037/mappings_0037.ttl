@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Grade vcslam:range "grades_offered".
+
+vcslam:School vcslam:type "grade_level".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Postal vcslam:code "postal_code".
+
+vcslam:Program vcslam:information "programs".
+
+vcslam:Ward vcslam:identifier "ward".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:School vcslam:fax_number "fax_number".
+
+vcslam:School vcslam:email_address "email_address".
+
+vcslam:School vcslam:phone_number "phone_number".
+
+vcslam:School vcslam:number "ab_education_school_number".
+
+vcslam:School vcslam:link "website.url".
+
+vcslam:School vcslam:name "school_name".

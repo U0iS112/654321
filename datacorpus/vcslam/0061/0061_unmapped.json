@@ -1,0 +1,78 @@
+{
+    "fields.r_mf_6p_10": {
+        "key": "r_mf_6p_10",
+        "Path": "fields"
+    },
+    "fields.t_su_6p_10": {
+        "key": "t_su_6p_10",
+        "Path": "fields"
+    },
+    "fields.r_su_6p_10": {
+        "key": "r_su_6p_10",
+        "Path": "fields"
+    },
+    "fields.r_sa_6p_10": {
+        "key": "r_sa_6p_10",
+        "Path": "fields"
+    },
+    "fields.rate_misc": {
+        "key": "rate_misc",
+        "Path": "fields"
+    },
+    "fields.intersectn": {
+        "key": "intersectn",
+        "Path": "fields"
+    },
+    "fields.t_su_9a_6p": {
+        "key": "t_su_9a_6p",
+        "Path": "fields"
+    },
+    "fields.r_mf_9a_6p": {
+        "key": "r_mf_9a_6p",
+        "Path": "fields"
+    },
+    "fields.geo_local_area": {
+        "key": "geo_local_area",
+        "Path": "fields"
+    },
+    "fields.time_misc": {
+        "key": "time_misc",
+        "Path": "fields"
+    },
+    "fields.t_sa_6p_10": {
+        "key": "t_sa_6p_10",
+        "Path": "fields"
+    },
+    "fields.t_sa_9a_6p": {
+        "key": "t_sa_9a_6p",
+        "Path": "fields"
+    },
+    "fields.t_mf_9a_6p": {
+        "key": "t_mf_9a_6p",
+        "Path": "fields"
+    },
+    "fields.r_su_9a_6p": {
+        "key": "r_su_9a_6p",
+        "Path": "fields"
+    },
+    "fields.r_sa_9a_6p": {
+        "key": "r_sa_9a_6p",
+        "Path": "fields"
+    },
+    "fields.type": {
+        "key": "type",
+        "Path": "fields"
+    },
+    "fields.timeineffe": {
+        "key": "timeineffe",
+        "Path": "fields"
+    },
+    "fields.t_mf_6p_10": {
+        "key": "t_mf_6p_10",
+        "Path": "fields"
+    },
+    "fields.rush_hr": {
+        "key": "rush_hr",
+        "Path": "fields"
+    }
+}

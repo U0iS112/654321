@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Parking_meter vcslam:id "meter_code".
+
+vcslam:Transaction vcslam:date_time "transactiondatetime".
+
+vcslam:Payment vcslam:amount "amount_paid".
+
+vcslam:Segment vcslam:identifier "elementkey".
+
+vcslam:Street vcslam:compass_direction "sideofstreet".
+
+vcslam:Payment_methods vcslam:information "payment_mean".
+
+vcslam:Duration vcslam:value "durationinminutes".
+
+vcslam:Location vcslam:address "blockface_name".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Transaction vcslam:id "transaction_id".

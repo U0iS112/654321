@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "totalparkingspaces": {
+            "key": "totalparkingspaces",
+            "Path": null,
+            "mapping": "vcslam:Parking_space vcslam:total \"totalparkingspaces\"."
+        },
+        "occupied": {
+            "key": "occupied",
+            "Path": null,
+            "mapping": "vcslam:Parking_space vcslam:amount_occupied \"occupied\"."
+        },
+        "freespaces": {
+            "key": "freespaces",
+            "Path": null,
+            "mapping": "vcslam:Parking_space vcslam:amount_free \"freespaces\"."
+        },
+        "fullcapacity": {
+            "key": "fullcapacity",
+            "Path": null,
+            "mapping": "vcslam:Percent vcslam:value \"fullcapacity\"."
+        },
+        "color": {
+            "key": "color",
+            "Path": null,
+            "mapping": "vcslam:Percent vcslam:colour \"color\"."
+        },
+        "lat": {
+            "key": "lat",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"lat\"."
+        },
+        "long": {
+            "key": "long",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"long\"."
+        },
+        "key_value": {
+            "key": "key_value",
+            "Path": null,
+            "mapping": "vcslam:Parking_lot vcslam:identifier \"key_value\"."
+        },
+        "lotdescription": {
+            "key": "lotdescription",
+            "Path": null,
+            "mapping": "vcslam:Parking_lot vcslam:description \"lotdescription\"."
+        },
+        "parkingname": {
+            "key": "parkingname",
+            "Path": null,
+            "mapping": "vcslam:Parking_lot vcslam:name \"parkingname\"."
+        },
+        "parkingid": {
+            "key": "parkingid",
+            "Path": null,
+            "mapping": "vcslam:Parking_lot vcslam:id \"parkingid\"."
+        }
+    }
+}

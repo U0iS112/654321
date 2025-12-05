@@ -1,0 +1,17 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Station vcslam:name "stationname".
+
+vcslam:Coordinates vcslam:geometry_type "stationlocation.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "stationlocation.coordinates".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:date_time "datetime".
+
+vcslam:Temperature vcslam:value "roadsurfacetemperature".
+
+vcslam:Temperature vcslam:value "airtemperature".

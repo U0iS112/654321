@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Record vcslam:of vcslam:Wayfinding_stand ;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+
+vcslam:Wayfinding_stand vcslam:includes vcslam:Installation;
+    vcslam:id xsd:string;
+    vcslam:orientation xsd:decimal;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Location vcslam:locatedAt vcslam:Area;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:locatedAt vcslam:Zone;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Position vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal .
+
+vcslam:Planning_area vcslam:name xsd:string.
+
+vcslam:Zone vcslam:information xsd:string.
+
+vcslam:Area vcslam:information xsd:string.
+
+vcslam:Installation vcslam:year xsd:gYear.

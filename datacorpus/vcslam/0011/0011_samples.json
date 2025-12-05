@@ -1,0 +1,56 @@
+[
+    {
+        "ticket_issue_date": "2020-09-02T00:00:00.000",
+        "issue_time": "13:35",
+        "meter": "MASS-1554",
+        "violation_description": "METER EXP",
+        "location": {
+            "latitude": "42.37846600900008",
+            "longitude": "-71.12073602699996",
+            "human_address": "{\"address\": \"1558 MASS AVE\", \"city\": \"Cambridge\", \"state\": \"MA\", \"zip\": \"\"}"
+        },
+        "department": "Traffic & Parking",
+        ":@computed_region_e4yd_rwk4": "547",
+        ":@computed_region_guic_hr4a": "8",
+        ":@computed_region_v7jj_366k": "28",
+        ":@computed_region_rffn_qbt6": "2",
+        ":@computed_region_swkg_bavi": "228",
+        ":@computed_region_rcj3_ccgu": "1637"
+    },
+    {
+        "ticket_issue_date": "2020-09-02T00:00:00.000",
+        "issue_time": "11:28",
+        "meter": "VAS-0219",
+        "violation_description": "METER EXP",
+        "location": {
+            "latitude": "42.35763199300004",
+            "longitude": "-71.10055701399995",
+            "human_address": "{\"address\": \"219 VASSAR ST\", \"city\": \"Cambridge\", \"state\": \"MA\", \"zip\": \"\"}"
+        },
+        "department": "Traffic & Parking",
+        ":@computed_region_e4yd_rwk4": "125",
+        ":@computed_region_guic_hr4a": "5",
+        ":@computed_region_v7jj_366k": "86",
+        ":@computed_region_rffn_qbt6": "3",
+        ":@computed_region_swkg_bavi": "148",
+        ":@computed_region_rcj3_ccgu": "1010"
+    },
+    {
+        "ticket_issue_date": "2020-09-02T00:00:00.000",
+        "issue_time": "14:10",
+        "meter": "ALB-0148",
+        "violation_description": "METER EXP",
+        "location": {
+            "latitude": "42.35899501600005",
+            "longitude": "-71.09928195899994",
+            "human_address": "{\"address\": \"190 ALBANY ST\", \"city\": \"Cambridge\", \"state\": \"MA\", \"zip\": \"\"}"
+        },
+        "department": "Traffic & Parking",
+        ":@computed_region_e4yd_rwk4": "240",
+        ":@computed_region_guic_hr4a": "11",
+        ":@computed_region_v7jj_366k": "117",
+        ":@computed_region_rffn_qbt6": "4",
+        ":@computed_region_swkg_bavi": "148",
+        ":@computed_region_rcj3_ccgu": "1010"
+    }
+]

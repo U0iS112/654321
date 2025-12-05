@@ -1,0 +1,95 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "permittypedesc": {
+            "key": "permittypedesc",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:description \"permittypedesc\"."
+        },
+        "permittypemapped": {
+            "key": "permittypemapped",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:type \"permittypemapped\"."
+        },
+        "link.url": {
+            "key": "url",
+            "Path": "link",
+            "mapping": "vcslam:Permit vcslam:link \"link.url\"."
+        },
+        "statuscurrent": {
+            "key": "statuscurrent",
+            "Path": null,
+            "mapping": "vcslam:Registration vcslam:status \"statuscurrent\"."
+        },
+        "registereddate": {
+            "key": "registereddate",
+            "Path": null,
+            "mapping": "vcslam:Registration vcslam:date \"registereddate\"."
+        },
+        "propertyname": {
+            "key": "propertyname",
+            "Path": null,
+            "mapping": "vcslam:Property vcslam:name \"propertyname\"."
+        },
+        "rentalhousingunits": {
+            "key": "rentalhousingunits",
+            "Path": null,
+            "mapping": "vcslam:Housing_unit vcslam:amount \"rentalhousingunits\"."
+        },
+        "originaladdress1": {
+            "key": "originaladdress1",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"originaladdress1\"."
+        },
+        "originalcity": {
+            "key": "originalcity",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"originalcity\"."
+        },
+        "originalstate": {
+            "key": "originalstate",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"originalstate\"."
+        },
+        "originalzip": {
+            "key": "originalzip",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:zip_code \"originalzip\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location1.human_address": {
+            "key": "human_address",
+            "Path": "location1",
+            "mapping": "vcslam:Location vcslam:human_address \"location1.human_address\"."
+        },
+        "location1.latitude": {
+            "key": "latitude",
+            "Path": "location1",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location1.latitude\"."
+        },
+        "location1.longitude": {
+            "key": "longitude",
+            "Path": "location1",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location1.longitude\"."
+        },
+        "propertycontactname": {
+            "key": "propertycontactname",
+            "Path": null,
+            "mapping": "vcslam:Property vcslam:contact_information \"propertycontactname\"."
+        },
+        "permitnum": {
+            "key": "permitnum",
+            "Path": null,
+            "mapping": "vcslam:Permit vcslam:identifier \"permitnum\"."
+        }
+    }
+}

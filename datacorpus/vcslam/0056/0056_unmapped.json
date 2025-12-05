@@ -1,0 +1,22 @@
+{
+    "type": {
+        "key": "type",
+        "Path": null
+    },
+    "geometry.line": {
+        "key": "line",
+        "Path": "geometry"
+    },
+    "properties.status": {
+        "key": "status",
+        "Path": "properties"
+    },
+    "geometry.line.latitude": {
+        "key": "latitude",
+        "Path": "geometry.line"
+    },
+    "geometry.line.longitude": {
+        "key": "longitude",
+        "Path": "geometry.line"
+    }
+}

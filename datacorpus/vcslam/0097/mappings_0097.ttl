@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Tree vcslam:scientific_name "botanical_name".
+
+vcslam:Tree vcslam:common_name "common_name".
+
+vcslam:Diameter_at_breast_height vcslam:value "dbh".
+
+vcslam:Area vcslam:value "leaf_surface_area_in_sq_ft".
+
+vcslam:Location vcslam:address "address".
+
+vcslam:Street vcslam:name "street".
+
+vcslam:Site vcslam:identifier "site".
+
+vcslam:Site vcslam:id "site_id".
+
+vcslam:Parcel vcslam:side_of "side".
+
+vcslam:Park vcslam:name "park_name".
+
+vcslam:Council_district vcslam:name "council_district".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude" .
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "geocoded_column.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "geocoded_column.longitude".
+
+vcslam:Organization vcslam:name "editing".

@@ -1,0 +1,38 @@
+{
+    "fields.photourl.mimetype": {
+        "key": "mimetype",
+        "Path": "fields.photourl"
+    },
+    "fields.photourl.format": {
+        "key": "format",
+        "Path": "fields.photourl"
+    },
+    "fields.photourl.filename": {
+        "key": "filename",
+        "Path": "fields.photourl"
+    },
+    "fields.photourl.width": {
+        "key": "width",
+        "Path": "fields.photourl"
+    },
+    "fields.photourl.id": {
+        "key": "id",
+        "Path": "fields.photourl"
+    },
+    "fields.photourl.height": {
+        "key": "height",
+        "Path": "fields.photourl"
+    },
+    "fields.photourl.thumbnail": {
+        "key": "thumbnail",
+        "Path": "fields.photourl"
+    },
+    "fields.photocredits": {
+        "key": "photocredits",
+        "Path": "fields"
+    },
+    "fields.siteaddress": {
+        "key": "siteaddress",
+        "Path": "fields"
+    }
+}

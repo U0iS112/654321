@@ -1,0 +1,22 @@
+{
+    "zip_code": {
+        "key": "zip_code",
+        "Path": null
+    },
+    "cafv_type": {
+        "key": "cafv_type",
+        "Path": null
+    },
+    ":@computed_region_fny7_vc3j": {
+        "key": ":@computed_region_fny7_vc3j",
+        "Path": null
+    },
+    ":@computed_region_8ddd_yn5v": {
+        "key": ":@computed_region_8ddd_yn5v",
+        "Path": null
+    },
+    ":@computed_region_x4ys_rtnd": {
+        "key": ":@computed_region_x4ys_rtnd",
+        "Path": null
+    }
+}

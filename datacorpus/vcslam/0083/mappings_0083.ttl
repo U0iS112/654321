@@ -1,0 +1,33 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Construction_project vcslam:description "fields.project_description".
+
+vcslam:Construction_project vcslam:title "fields.project_title".
+
+vcslam:Construction_project vcslam:status "fields.project_status".
+
+vcslam:Construction_project vcslam:type "fields.capital_program_poly".
+
+vcslam:Construction_project vcslam:sub_type "fields.program_subclass".
+
+vcslam:Construction_project vcslam:planned_start_date_time "fields.planned_construction_from".
+
+vcslam:Construction_project vcslam:planned_end_date_time "fields.planned_construction_to".
+
+vcslam:Construction_project vcslam:id "fields.sde_objectid".
+
+vcslam:Organization vcslam:name "fields.organization".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geo_point_2d".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geometry.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geometry.coordinates".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Dataset vcslam:id "datasetid".

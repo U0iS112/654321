@@ -1,0 +1,39 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location vcslam:information "approximate_location".
+
+vcslam:Dispatch vcslam:date_time "dispatch_date".
+
+vcslam:Dispatch vcslam:time "dispatch_time".
+
+vcslam:Dispatch vcslam:year "dispatch_year".
+
+vcslam:Dispatch vcslam:month_name "dispatch_month_name".
+
+vcslam:Dispatch vcslam:month_number "dispatch_month_number".
+
+vcslam:Dispatch vcslam:day_of_month "dispatch_day_number".
+
+vcslam:Close vcslam:date_time "event_close_date".
+
+vcslam:Close vcslam:time "event_close_time".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Location vcslam:human_address "location.human_address".
+
+vcslam:Coordinate_pair vcslam:latitude "location.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "location.longitude".
+
+vcslam:Fire_event vcslam:count "count".
+
+vcslam:Fire_event vcslam:type "event_type_group".
+
+vcslam:Fire vcslam:description "event_description".
+
+vcslam:Fire_event vcslam:id "event_number".

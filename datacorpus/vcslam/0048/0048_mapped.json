@@ -1,0 +1,55 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "properties.ADDRESS_FULL": {
+            "key": "ADDRESS_FULL",
+            "Path": "properties",
+            "mapping": "vcslam:Location vcslam:address \"properties.ADDRESS_FULL\"."
+        },
+        "properties.POSTAL_CODE": {
+            "key": "POSTAL_CODE",
+            "Path": "properties",
+            "mapping": "vcslam:Postal vcslam:code \"properties.POSTAL_CODE\"."
+        },
+        "properties.MUNICIPALITY": {
+            "key": "MUNICIPALITY",
+            "Path": "properties",
+            "mapping": "vcslam:Municipality vcslam:name \"properties.MUNICIPALITY\"."
+        },
+        "geometry.type": {
+            "key": "type",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geometry.type\"."
+        },
+        "geometry.coordinate.latitude": {
+            "key": "latitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geometry.coordinate.latitude\"."
+        },
+        "geometry.coordinate.longitude": {
+            "key": "longitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geometry.coordinate.longitude\"."
+        },
+        "properties.OBJECTID": {
+            "key": "OBJECTID",
+            "Path": "properties",
+            "mapping": "vcslam:School vcslam:id \"properties.OBJECTID\"."
+        },
+        "properties.STATUS": {
+            "key": "STATUS",
+            "Path": "properties",
+            "mapping": "vcslam:School vcslam:status \"properties.STATUS\"."
+        },
+        "properties.TCDSB_CODE": {
+            "key": "TCDSB_CODE",
+            "Path": "properties",
+            "mapping": "vcslam:School vcslam:code \"properties.TCDSB_CODE\"."
+        },
+        "properties.SCH_NAME": {
+            "key": "SCH_NAME",
+            "Path": "properties",
+            "mapping": "vcslam:School vcslam:name \"properties.SCH_NAME\"."
+        }
+    }
+}

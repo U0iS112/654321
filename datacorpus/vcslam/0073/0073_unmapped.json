@@ -1,0 +1,78 @@
+{
+    "intersection_leg": {
+        "key": "intersection_leg",
+        "Path": null
+    },
+    "awdt": {
+        "key": "awdt",
+        "Path": null
+    },
+    "eb_peak_am_hour": {
+        "key": "eb_peak_am_hour",
+        "Path": null
+    },
+    "eb_peak_am_volume": {
+        "key": "eb_peak_am_volume",
+        "Path": null
+    },
+    "eb_peak_pm_hour": {
+        "key": "eb_peak_pm_hour",
+        "Path": null
+    },
+    "eb_peak_pm_volume": {
+        "key": "eb_peak_pm_volume",
+        "Path": null
+    },
+    "wb_peak_am_hour": {
+        "key": "wb_peak_am_hour",
+        "Path": null
+    },
+    "wb_peak_am_volume": {
+        "key": "wb_peak_am_volume",
+        "Path": null
+    },
+    "wb_peak_pm_hour": {
+        "key": "wb_peak_pm_hour",
+        "Path": null
+    },
+    "wb_peak_pm_volume": {
+        "key": "wb_peak_pm_volume",
+        "Path": null
+    },
+    "nb_peak_am_hour": {
+        "key": "nb_peak_am_hour",
+        "Path": null
+    },
+    "nb_peak_am_volume": {
+        "key": "nb_peak_am_volume",
+        "Path": null
+    },
+    "nb_peak_pm_hour": {
+        "key": "nb_peak_pm_hour",
+        "Path": null
+    },
+    "nb_peak_pm_volume": {
+        "key": "nb_peak_pm_volume",
+        "Path": null
+    },
+    "sb_peak_am_hour": {
+        "key": "sb_peak_am_hour",
+        "Path": null
+    },
+    "sb_peak_am_volume": {
+        "key": "sb_peak_am_volume",
+        "Path": null
+    },
+    "sb_peak_pm_hour": {
+        "key": "sb_peak_pm_hour",
+        "Path": null
+    },
+    "sb_peak_pm_volume": {
+        "key": "sb_peak_pm_volume",
+        "Path": null
+    },
+    ":@computed_region_gvnt_vbhy": {
+        "key": ":@computed_region_gvnt_vbhy",
+        "Path": null
+    }
+}

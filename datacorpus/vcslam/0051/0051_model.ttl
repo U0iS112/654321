@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Artwork
+    vcslam:includes vcslam:Installation;
+    vcslam:type xsd:string;
+    vcslam:consists_of vcslam:Material;
+    vcslam:description xsd:string;
+    vcslam:status xsd:string;
+    vcslam:photo vcslam:Photo;
+    vcslam:ownership xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:link xsd:anyURI;
+    vcslam:comment xsd:string;
+    vcslam:registration  vcslam:Registration;
+    vcslam:created_by vcslam:Artist.
+
+vcslam:Installation vcslam:date xsd:date.
+
+vcslam:Registration vcslam:id xsd:string.
+
+vcslam:Material vcslam:information xsd:string.
+
+vcslam:Artist vcslam:name xsd:string.
+
+vcslam:Photo vcslam:credits xsd:string;
+    vcslam:height vcslam:Height;
+    vcslam:width  vcslam:Width;
+    vcslam:link xsd:anyURI.
+
+vcslam:Width vcslam:measurement_unit vcslam:Pixel;
+             vcslam:value xsd:int.
+
+vcslam:Height vcslam:measurement_unit vcslam:Pixel;
+              vcslam:value xsd:int.
+
+vcslam:Record vcslam:timestamp xsd:dateTimeStamp;
+    vcslam:of vcslam:Artwork;
+    vcslam:id xsd:string.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position ;
+    vcslam:address xsd:string;
+    vcslam:locatedAt vcslam:Neighbourhood;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:locatedAt vcslam:Site.
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+    vcslam:geometry_type xsd:string.
+
+
+vcslam:Neighbourhood vcslam:name xsd:string.
+
+vcslam:Planning_area vcslam:name xsd:string.
+
+vcslam:Site vcslam:name xsd:string;
+    vcslam:address xsd:string.

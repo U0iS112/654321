@@ -1,0 +1,85 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "neighbourhood": {
+            "key": "neighbourhood",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:name \"neighbourhood\"."
+        },
+        "neighbourhood_id": {
+            "key": "neighbourhood_id",
+            "Path": null,
+            "mapping": "vcslam:Neighbourhood vcslam:id \"neighbourhood_id\"."
+        },
+        "pet_type": {
+            "key": "pet_type",
+            "Path": null,
+            "mapping": "vcslam:Pet vcslam:type \"pet_type\"."
+        },
+        "breed": {
+            "key": "breed",
+            "Path": null,
+            "mapping": "vcslam:Breed vcslam:name \"breed\"."
+        },
+        "gender": {
+            "key": "gender",
+            "Path": null,
+            "mapping": "vcslam:Pet vcslam:gender \"gender\"."
+        },
+        "spayed_or_neutered": {
+            "key": "spayed_or_neutered",
+            "Path": null,
+            "mapping": "vcslam:Pet vcslam:is_sterilized \"spayed_or_neutered\"."
+        },
+        "count": {
+            "key": "count",
+            "Path": null,
+            "mapping": "vcslam:Pet vcslam:count \"count\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "point_location.type": {
+            "key": "type",
+            "Path": "point_location",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"point_location.type\"."
+        },
+        "point_location.coordinates": {
+            "key": "coordinates",
+            "Path": "point_location",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"point_location.coordinates\"."
+        },
+        "month": {
+            "key": "month",
+            "Path": null,
+            "mapping": "vcslam:License vcslam:month_name \"month\"."
+        },
+        "month_number": {
+            "key": "month_number",
+            "Path": null,
+            "mapping": "vcslam:License vcslam:month_number \"month_number\"."
+        }
+    }
+}

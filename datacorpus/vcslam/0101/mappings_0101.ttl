@@ -1,0 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:School vcslam:name "school".
+
+vcslam:School vcslam:type "school_type".
+
+vcslam:School vcslam:identifier "school_number".
+
+vcslam:School vcslam:phone_number "telephone".
+
+vcslam:School vcslam:fax_number "fax".
+
+vcslam:School vcslam:start_date_time "start_time".
+
+vcslam:School vcslam:end_date_time "end_time".
+
+vcslam:Principal vcslam:name "principal".
+
+vcslam:Grade vcslam:min "grade_min".
+
+vcslam:Grade vcslam:max "grade_max".
+
+vcslam:City vcslam:name "city".
+
+vcslam:State vcslam:name "state".
+
+vcslam:Location vcslam:zip_code "zip_code".
+
+vcslam:Location vcslam:address_number "address_number".
+
+vcslam:Street vcslam:name "street".
+
+vcslam:Council_district vcslam:name "council_district".
+
+vcslam:Police_district vcslam:identifier "police_district".
+
+vcslam:Census_tract vcslam:identifier "census_tract".
+
+vcslam:Census_Block vcslam:identifier "census_block".
+
+vcslam:Group vcslam:identifier "census_block_group".
+
+vcslam:Coordinates vcslam:geometry_type "geocoded_column.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "geocoded_column.coordinates".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".

@@ -1,0 +1,21 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Location vcslam:address "ADDRESS".
+
+vcslam:Coordinate_pair vcslam:latitude "LATITUDE".
+
+vcslam:Coordinate_pair vcslam:longitude "LONGITUDE".
+
+vcslam:Stand_support vcslam:total "BIKE STANDS".
+
+vcslam:Stand_support vcslam:amount_free "AVAILABLE BIKE STANDS".
+
+vcslam:Bicycle vcslam:amount "AVAILABLE BIKES".
+
+vcslam:Station vcslam:status "STATUS".
+
+vcslam:Station vcslam:name "NAME".
+
+vcslam:Station vcslam:id "STATION ID".

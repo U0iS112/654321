@@ -1,0 +1,10 @@
+{
+    "primary_naics_description": {
+        "key": "primary_naics_description",
+        "Path": null
+    },
+    "location_start_date": {
+        "key": "location_start_date",
+        "Path": null
+    }
+}

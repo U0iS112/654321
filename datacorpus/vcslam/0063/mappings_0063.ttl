@@ -1,0 +1,29 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Wayfinding_stand vcslam:id "fields.key".
+
+vcslam:Wayfinding_stand vcslam:orientation "fields.orientation".
+
+vcslam:Location vcslam:information "fields.location1".
+
+vcslam:Location vcslam:information "fields.location2".
+
+vcslam:Zone vcslam:identifier "fields.zone".
+
+vcslam:Installation vcslam:year "fields.installation".
+
+vcslam:Area vcslam:identifier "fields.bia".
+
+vcslam:Local_area vcslam:name "fields.geo_local_area".
+
+vcslam:Dataset vcslam:id "datasetid".
+
+vcslam:Record vcslam:id "recordid".
+
+vcslam:Record vcslam:timestamp "record_timestamp".
+
+vcslam:Coordinates vcslam:geometry_type "fields.geom.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "fields.geom.coordinates".

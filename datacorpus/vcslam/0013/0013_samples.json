@@ -1,0 +1,44 @@
+[
+    {
+        "stationname": "AlbroPlaceAirportWay",
+        "stationlocation": {
+          "type": "Point",
+          "coordinates": [
+            -122.314114,
+            47.547426
+          ]
+        },
+        "datetime": "2020-05-30T03:26:00.000",
+        "recordid": "819619",
+        "roadsurfacetemperature": "9.25",
+        "airtemperature": "26.73"
+      },
+      {
+        "stationname": "AlbroPlaceAirportWay",
+        "stationlocation": {
+          "type": "Point",
+          "coordinates": [
+            -122.314114,
+            47.547426
+          ]
+        },
+        "datetime": "2020-05-30T03:27:00.000",
+        "recordid": "819620",
+        "roadsurfacetemperature": "9.26",
+        "airtemperature": "26.81"
+      },
+      {
+        "stationname": "AlbroPlaceAirportWay",
+        "stationlocation": {
+          "type": "Point",
+          "coordinates": [
+            -122.314114,
+            47.547426
+          ]
+        },
+        "datetime": "2020-05-30T03:28:00.000",
+        "recordid": "819621",
+        "roadsurfacetemperature": "9.27",
+        "airtemperature": "26.82"
+      }
+]

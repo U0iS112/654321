@@ -1,0 +1,36 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Application vcslam:status xsd:string;
+    vcslam:number xsd:int ;
+    vcslam:description xsd:string;
+    vcslam:type xsd:string;
+    vcslam:includes vcslam:Submission;
+    vcslam:refers_to vcslam:File;
+    vcslam:locatedAt vcslam:Location.
+
+vcslam:Submission
+    vcslam:date xsd:date.
+
+vcslam:File 
+   vcslam:reference xsd:string.
+
+vcslam:Location
+    vcslam:includes vcslam:Street;
+    vcslam:includes vcslam:Postal;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Postal 
+    vcslam:code xsd:string.
+
+vcslam:Street
+    vcslam:name xsd:string ;
+    vcslam:number xsd:int;
+    vcslam:type xsd:string;
+    vcslam:compass_direction xsd:string.
+
+
+vcslam:Position 
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

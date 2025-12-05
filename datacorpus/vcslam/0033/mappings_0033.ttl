@@ -1,0 +1,31 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:House vcslam:number "house_number".
+
+vcslam:House vcslam:description "legal_description".
+
+vcslam:Street vcslam:name "street_name".
+
+vcslam:Neighbourhood vcslam:name "neighbourhood_name".
+
+vcslam:Garage vcslam:is_present "garage".
+
+vcslam:Zone vcslam:identifier "zoning".
+
+vcslam:Assessment vcslam:value "assessed_value".
+
+vcslam:Assessment vcslam:year "assessment_year".
+
+vcslam:Size vcslam:value "lot_size".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinates vcslam:geometry_type "point_location.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "point_location.coordinates".
+
+vcslam:Account vcslam:id "account_number".

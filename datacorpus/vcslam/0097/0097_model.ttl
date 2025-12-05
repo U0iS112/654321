@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+
+vcslam:Organization vcslam:responsible_for vcslam:Tree;
+    vcslam:name xsd:string.
+
+vcslam:Tree vcslam:scientific_name xsd:string;
+    vcslam:common_name xsd:string;
+    vcslam:measurement vcslam:Diameter_at_breast_height;
+    vcslam:includes vcslam:Leaf;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:includes vcslam:Benefit.
+
+
+vcslam:Leaf vcslam:measurement vcslam:Area.
+
+vcslam:Area vcslam:measurement_unit_area vcslam:Square_foot;
+            vcslam:value xsd:string .
+
+vcslam:Diameter_at_breast_height vcslam:measurement_unit_distance vcslam:Inch;
+                                 vcslam:value xsd:string.
+
+vcslam:Site
+    vcslam:number xsd:int;
+            vcslam:id xsd:string.

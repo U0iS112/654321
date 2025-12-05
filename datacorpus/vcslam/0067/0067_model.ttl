@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Post_office vcslam:name xsd:string;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:link xsd:anyURI;
+    vcslam:phone_number xsd:string.
+
+vcslam:Location vcslam:locatedAt vcslam:City;
+    vcslam:locatedAt vcslam:State;
+    vcslam:address xsd:string;
+    vcslam:zip_code xsd:int;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:City vcslam:name xsd:string.
+
+vcslam:State vcslam:abbreviation xsd:string.
+
+vcslam:Position vcslam:longitude xsd:decimal;
+    vcslam:latitude xsd:decimal;
+    vcslam:geometry_type xsd:string;
+    vcslam:coordinates xsd:decimal.

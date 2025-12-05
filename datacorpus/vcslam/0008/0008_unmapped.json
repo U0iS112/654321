@@ -1,0 +1,50 @@
+{
+    "contravention_code_description": {
+        "key": "contravention_code_description",
+        "Path": null
+    },
+    "ticket_issued_via_cctv_camera": {
+        "key": "ticket_issued_via_cctv_camera",
+        "Path": null
+    },
+    "charging_band_description": {
+        "key": "charging_band_description",
+        "Path": null
+    },
+    "civil_enforcement_officer_error": {
+        "key": "civil_enforcement_officer_error",
+        "Path": null
+    },
+    "penalty_charge_notice_cancelled": {
+        "key": "penalty_charge_notice_cancelled",
+        "Path": null
+    },
+    "penalty_charge_notice_written_off": {
+        "key": "penalty_charge_notice_written_off",
+        "Path": null
+    },
+    "has_appeal": {
+        "key": "has_appeal",
+        "Path": null
+    },
+    "formal_representation": {
+        "key": "formal_representation",
+        "Path": null
+    },
+    "last_uploaded": {
+        "key": "last_uploaded",
+        "Path": null
+    },
+    "socrata_id": {
+        "key": "socrata_id",
+        "Path": null
+    },
+    ":@computed_region_hxwp_gyfc": {
+        "key": ":@computed_region_hxwp_gyfc",
+        "Path": null
+    },
+    ":@computed_region_6i9a_26nj": {
+        "key": ":@computed_region_6i9a_26nj",
+        "Path": null
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "FRB #": {
+            "key": "FRB #",
+            "Path": null,
+            "mapping": "vcslam:Incident vcslam:id \"FRB #\"."
+        },
+        "Incident Number": {
+            "key": "Incident Number",
+            "Path": null,
+            "mapping": "vcslam:Incident vcslam:number \"Incident Number\"."
+        },
+        "Summary": {
+            "key": "Summary",
+            "Path": null,
+            "mapping": "vcslam:Incident vcslam:description \"Summary\"."
+        },
+        "Latitude": {
+            "key": "Latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"Latitude\"."
+        },
+        "Longitude": {
+            "key": "Longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"Longitude\"."
+        },
+        "City": {
+            "key": "City",
+            "Path": null,
+            "mapping": "vcslam:City vcslam:name \"City\"."
+        },
+        "State": {
+            "key": "State",
+            "Path": null,
+            "mapping": "vcslam:State vcslam:name \"State\"."
+        },
+        "Rank": {
+            "key": "Rank",
+            "Path": null,
+            "mapping": "vcslam:Officer vcslam:rank \"Rank\"."
+        },
+        "Officer Gender": {
+            "key": "Officer Gender",
+            "Path": null,
+            "mapping": "vcslam:Officer vcslam:gender \"Officer Gender\"."
+        },
+        "Officer Race": {
+            "key": "Officer Race",
+            "Path": null,
+            "mapping": "vcslam:Officer vcslam:race \"Officer Race\"."
+        },
+        "On-duty": {
+            "key": "On-duty",
+            "Path": null,
+            "mapping": "vcslam:Officer vcslam:on_duty \"On-duty\"."
+        },
+        "Officer Injured": {
+            "key": "Officer Injured",
+            "Path": null,
+            "mapping": "vcslam:Officer vcslam:is_injured \"Officer Injured\"."
+        },
+        "Officer Disciplined?": {
+            "key": "Officer Disciplined?",
+            "Path": null,
+            "mapping": "vcslam:Officer vcslam:is_disciplined \"Officer Disciplined?\"."
+        },
+        "Subject Gender": {
+            "key": "Subject Gender",
+            "Path": null,
+            "mapping": "vcslam:Subject vcslam:gender \"Subject Gender\"."
+        },
+        "Subject Race": {
+            "key": "Subject Race",
+            "Path": null,
+            "mapping": "vcslam:Subject vcslam:race \"Subject Race\"."
+        },
+        "Subject DOB": {
+            "key": "Subject DOB",
+            "Path": null,
+            "mapping": "vcslam:Subject vcslam:date_of_birth \"Subject DOB\"."
+        },
+        "Subject Age": {
+            "key": "Subject Age",
+            "Path": null,
+            "mapping": "vcslam:Subject vcslam:age \"Subject Age\"."
+        },
+        "Type of Weapon": {
+            "key": "Type of Weapon",
+            "Path": null,
+            "mapping": "vcslam:Weapon vcslam:type \"Type of Weapon\"."
+        },
+        "Subject Weapon": {
+            "key": "Subject Weapon",
+            "Path": null,
+            "mapping": "vcslam:Weapon vcslam:is_present \"Subject Weapon\"."
+        }
+    }
+}

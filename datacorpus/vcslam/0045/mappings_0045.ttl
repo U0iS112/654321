@@ -1,0 +1,31 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Application vcslam:type "APPLICATION_TYPE".
+
+vcslam:Application vcslam:identifier "APPLICATION#".
+
+vcslam:Application vcslam:description "DESCRIPTION".
+
+vcslam:Submission vcslam:date "DATE_SUBMITTED".
+
+vcslam:Hearing vcslam:date "HEARING_DATE".
+
+vcslam:File vcslam:reference "REFERENCE_FILE#".
+
+vcslam:Postal vcslam:code "POSTAL".
+
+vcslam:Street vcslam:number "STREET_NUM".
+
+vcslam:Street vcslam:type "STREET_TYPE".
+
+vcslam:Street vcslam:compass_direction "STREET_DIRECTION".
+
+vcslam:Street vcslam:name "STREET_NAME".
+
+vcslam:Coordinate_pair vcslam:latitude "Y".
+
+vcslam:Coordinate_pair vcslam:longitude "X".
+
+vcslam:Application vcslam:status "STATUS".

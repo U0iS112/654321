@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Coordinate_pair vcslam:latitude "Latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "Longitude".
+
+vcslam:Gps vcslam:date_time "LastGPTTime".
+
+vcslam:Electric_charge vcslam:percentage "Battery".
+
+vcslam:Bicycle vcslam:id "BikeID".
+
+vcslam:Bicycle vcslam:identifier "BikeIdentifier".
+
+vcslam:Bicycle vcslam:type "BikeTypeName".
+
+vcslam:Bicycle vcslam:is_electric "IsEBike".
+
+vcslam:Bicycle vcslam:is_motorized "IsMotor".
+
+vcslam:Rental vcslam:start_date_time "LastRentalStart".

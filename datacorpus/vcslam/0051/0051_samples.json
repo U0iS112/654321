@@ -1,0 +1,119 @@
+[
+    {
+        "datasetid": "public-art",
+        "recordid": "c3c45fe1acb90e6bbbe3396949fb7855e6cd4ef1",
+        "fields": {
+            "status": "In place",
+            "descriptionofwork": "A sculptural installation consisting of two glass-roofed pavilions separated by approximately 120 metres.  The elliptical roof of each pavilion is supported by two walls made of stainless steel with cutout silhouettes of  industrial and natural forms. A second component of Lookout is a perimeter railing with cantilevered glass panels. The panels are inscribed with sandblasted words, written especially for this site in consultation with poet Robin Blaser. Midway between the two pavilions, the cut-out images are cast into the concrete walkway. As well, the artists have placed 13 simple bronze chairs throughout the site. The art work has an accompanying website at: http://www.lookoutsculpture.com/",
+            "yearofinstallation": "1999",
+            "photourl": {
+                "mimetype": "application/octet-stream",
+                "format": "aspx?AreaId=64&ImageId=49",
+                "filename": "LAW64-1.jpg",
+                "width": 300,
+                "id": "1338d9f168407a1e835320714b12de71",
+                "height": 300,
+                "thumbnail": false
+            },
+            "sitename": "Marinaside Crescent",
+            "registryid": 64,
+            "url": "https://covapp.vancouver.ca/PublicArtRegistry/ArtworkDetail.aspx?ArtworkId=64",
+            "neighbourhood": "Downtown",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -123.119147,
+                    49.273265
+                ]
+            },
+            "photocredits": "Barbara Cole",
+            "ownership": "City of Vancouver",
+            "artists": "80;217",
+            "siteaddress": "",
+            "artistprojectstatement": "\"…As a public quay and access way, Marinaside Crescent is the site of a deep native and non-native knowledge, memories and history. We wanted our work to act as a 'marker' that would reflect the events and cultures of this neighbourhood and, as well, be 'of our time' and of the future. …\r\n\r\nLookout is meant to be many things:\r\n- a shelter from rain\r\n- a viewing portal, an archway\r\n- a framing device\r\n- a 'light projector' that recalls the activities that have occurred here since human occupation\r\n- a celebration of a place.\"",
+            "geo_local_area": "Downtown",
+            "type": "Site-integrated work",
+            "primarymaterial": "stainless steel, glass, bronze",
+            "locationonsite": "False Creek north on the seawall, east of the foot of Davie"
+        },
+        "record_timestamp": "2020-11-09T12:31:46.726+01:00"
+    },
+    {
+        "datasetid": "public-art",
+        "recordid": "e8e1a488cd18f64d690ba37f4af54067caccda40",
+        "fields": {
+            "status": "In place",
+            "descriptionofwork": "The Wa'kas pole is a replica of an Alert Bay pole done by Yuxwayu as a memorial to Chief Wakius (or Wa'kas). The original was a house pole erected in 1893 with a ceremonial entrance through the Raven's mouth. The pole depicts a legend of 3 sons of a Nimpkish chief who outwit a mythical cannibal-at-the-north-end-of-the-world who had been stealing members of the tribe.",
+            "yearofinstallation": "1987",
+            "photourl": {
+                "mimetype": "application/octet-stream",
+                "format": "aspx?AreaId=91&ImageId=879",
+                "filename": "LPhoto by Maxime Cyr-Morton - 2013.JPG",
+                "width": 300,
+                "id": "177544f929bb8b31a5fc347113fefa3a",
+                "height": 300,
+                "thumbnail": false
+            },
+            "sitename": "Brockton Point",
+            "registryid": 91,
+            "url": "https://covapp.vancouver.ca/PublicArtRegistry/ArtworkDetail.aspx?ArtworkId=91",
+            "neighbourhood": "Stanley Park",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -123.120851,
+                    49.299245
+                ]
+            },
+            "photocredits": "Maxime Cyr-Morton",
+            "ownership": "City of Vancouver",
+            "artists": "26",
+            "siteaddress": "Stanley Park",
+            "artistprojectstatement": "The first pole was bought by the Art, Historical and Scientific Association of Vancouver and installed in Stanley Park in 1928. The original was moved to the Canadian Museum of Civilization for their Kwakwaka'wakw house.  (Stewart, Totem Poles, 1990) According to an article in the Vancouver Sun, Oct 31, 1986, the thunderbird head from the top of the pole went missing from the Park Board service yard before it was shipped to Ottawa. Doug Cranmer participated in its restoration.",
+            "type": "Totem pole",
+            "geo_local_area": "",
+            "primarymaterial": "cedar",
+            "locationonsite": "Facing east, rear, second from left"
+        },
+        "record_timestamp": "2020-11-09T12:31:46.726+01:00"
+    },
+    {
+        "datasetid": "public-art",
+        "recordid": "97ac9e9eaf95a4e27e343c9d3b048bc7aba95638",
+        "fields": {
+            "status": "In place",
+            "descriptionofwork": "The large steel sculpture is set on a 26' x 28' plaza of paving stones. The sculpture consists of a 15' square of corten steel. Each side of the square is 15' long by 3'  high by 3' wide. The bottom side appears to be cut apart in the middle and the two parts wrenched apart to form a gate or arch.  The corten steel is designed so that the surface rust forms a protective coating.  There was some adverse reaction from Kits Point residents when the work was installed. Michael Duncan, Chief Curator of the Maritime Museum at the time, called it \"a bloody monstrosity.\" An article in the Globe and Mail teased that it could be \"the world's largest paper clip.\" The article (Mar3, 1981) also quoted from a city planning study which read: \"Vancouver's peerless natural setting is a permanent gift from nature. So massive and close are the North Shore mountains that no amount of human folly can ever obliterate them.\"  But the controversy soon abated and the piece has weathered time and opinion. It was vandalized on July 4th, 1988, when a field of white dots were painted on its surfaces -probably as an art \"intervention\". The dots were soon removed. Since then, the \"Gate to the Northwest Passage\" has become a familiar landmark, an important place marker which stands guard at the entrance to False Creek. The area around the site is a favorite for kite flyers.",
+            "yearofinstallation": "1980",
+            "photourl": {
+                "mimetype": "application/octet-stream",
+                "format": "aspx?AreaId=110&ImageId=88",
+                "filename": "LAW110-1.jpg",
+                "width": 300,
+                "id": "b420e69aa6cd4ff61cdabd3f971e5824",
+                "height": 300,
+                "thumbnail": false
+            },
+            "sitename": "Vanier Park",
+            "registryid": 110,
+            "url": "https://covapp.vancouver.ca/PublicArtRegistry/ArtworkDetail.aspx?ArtworkId=110",
+            "neighbourhood": "Kitsilano",
+            "geom": {
+                "type": "Point",
+                "coordinates": [
+                    -123.144964,
+                    49.278127
+                ]
+            },
+            "photocredits": "Sylvia Grace Borda",
+            "ownership": "City of Vancouver",
+            "artists": "77",
+            "siteaddress": "1100 Chestnut Street",
+            "artistprojectstatement": "The parameters for the juried competition operated by Parks Canada were to create \"a monument in Vanier Park to commemorate Captain George Vancouver,\" the first European to sail into Burrard Inlet, in 1792. The competition guidelines (1979) specified a sculpture made of permanent materials, \"not wood,\" and that it should not be in the likeness of a man. The form of the work takes off from two 18th century navigational instruments: the plane table and David's quadrant.  Chung Hung said that, \"The objective of the sculpture is to create a symbolic image with definite visual expression, awakening an awareness in Captain George Vancouver's contribution to the world, his remarkable and meticulous surveys which included the north Pacific coast.\" The piece frames English Bay from the north view and the Centennial Museum from the south view. The opportunity for a sculpture was offered to the city by Hugh Faulkner, Minister of Indian and Northern Affairs at the time. The project was recommended by the Historic Sites and Monuments Board of Canada.  A five-member jury headed by former parks superintendent Stuart Lefeaux selected Chung Hung's proposal from a local competition and the Parks Board approved the choice. Gordon Smith, a member of the selection panel, said that \"If people think Hung's sculpture is a poor catch, they should have seen the ones that got away.\"  It was originally to be sited at Ferguson Point in Stanley Park.",
+            "geo_local_area": "Kitsilano",
+            "type": "Sculpture",
+            "primarymaterial": "Corten steel",
+            "locationonsite": "N.E. of the Museum of Vancouver, along waterfront"
+        },
+        "record_timestamp": "2020-11-09T12:31:46.726+01:00"
+    }
+]

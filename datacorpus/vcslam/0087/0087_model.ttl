@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Kiosk vcslam:id xsd:string;
+             vcslam:name xsd:string;
+             vcslam:status xsd:string;
+             vcslam:locatedAt vcslam:Location.
+
+vcslam:Location
+    vcslam:positionAt vcslam:Position .
+vcslam:Position vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

@@ -1,0 +1,75 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "properties.YR_BUILT": {
+            "key": "YR_BUILT",
+            "Path": "properties",
+            "mapping": "vcslam:Building vcslam:built_year \"properties.YR_BUILT\"."
+        },
+        "properties.BLD_TYPO": {
+            "key": "BLD_TYPO",
+            "Path": "properties",
+            "mapping": "vcslam:Building vcslam:type \"properties.BLD_TYPO\"."
+        },
+        "properties.BLD_FORM": {
+            "key": "BLD_FORM",
+            "Path": "properties",
+            "mapping": "vcslam:Building vcslam:form \"properties.BLD_FORM\"."
+        },
+        "properties.BLD_DESC": {
+            "key": "BLD_DESC",
+            "Path": "properties",
+            "mapping": "vcslam:Building vcslam:description \"properties.BLD_DESC\"."
+        },
+        "properties.MRKT_UNIT": {
+            "key": "MRKT_UNIT",
+            "Path": "properties",
+            "mapping": "vcslam:Market_unit vcslam:amount \"properties.MRKT_UNIT\"."
+        },
+        "properties.POLICE_DIV": {
+            "key": "POLICE_DIV",
+            "Path": "properties",
+            "mapping": "vcslam:Division vcslam:number \"properties.POLICE_DIV\"."
+        },
+        "properties.PSTL_CODE": {
+            "key": "PSTL_CODE",
+            "Path": "properties",
+            "mapping": "vcslam:Postal vcslam:code \"properties.PSTL_CODE\"."
+        },
+        "properties.NGHBRHD_NUM": {
+            "key": "NGHBRHD_NUM",
+            "Path": "properties",
+            "mapping": "vcslam:Neighbourhood vcslam:number \"properties.NGHBRHD_NUM\"."
+        },
+        "properties.DEV_ID": {
+            "key": "DEV_ID",
+            "Path": "properties",
+            "mapping": "vcslam:Development vcslam:id \"properties.DEV_ID\"."
+        },
+        "properties.DEV_NAME": {
+            "key": "DEV_NAME",
+            "Path": "properties",
+            "mapping": "vcslam:Development vcslam:name \"properties.DEV_NAME\"."
+        },
+        "geometry.type": {
+            "key": "type",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geometry.type\"."
+        },
+        "geometry.coordinate.latitude": {
+            "key": "latitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geometry.coordinate.latitude\"."
+        },
+        "geometry.coordinate.longitude": {
+            "key": "longitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geometry.coordinate.longitude\"."
+        },
+        "properties.BLD_ID": {
+            "key": "BLD_ID",
+            "Path": "properties",
+            "mapping": "vcslam:Building vcslam:id \"properties.BLD_ID\"."
+        }
+    }
+}

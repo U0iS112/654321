@@ -1,0 +1,85 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.winter_hours": {
+            "key": "winter_hours",
+            "Path": "fields",
+            "mapping": "vcslam:Winter vcslam:times_of_operation \"fields.winter_hours\"."
+        },
+        "fields.summer_hours": {
+            "key": "summer_hours",
+            "Path": "fields",
+            "mapping": "vcslam:Summer vcslam:times_of_operation \"fields.summer_hours\"."
+        },
+        "fields.maintainer": {
+            "key": "maintainer",
+            "Path": "fields",
+            "mapping": "vcslam:Maintenance vcslam:information \"fields.maintainer\"."
+        },
+        "fields.geo_local_area": {
+            "key": "geo_local_area",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_local_area\"."
+        },
+        "fields.location": {
+            "key": "location",
+            "Path": "fields",
+            "mapping": "vcslam:Location vcslam:information \"fields.location\"."
+        },
+        "fields.address": {
+            "key": "address",
+            "Path": "fields",
+            "mapping": "vcslam:Location vcslam:address \"fields.address\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.type": {
+            "key": "type",
+            "Path": "fields",
+            "mapping": "vcslam:Washroom vcslam:type \"fields.type\"."
+        },
+        "fields.name": {
+            "key": "name",
+            "Path": "fields",
+            "mapping": "vcslam:Washroom vcslam:name \"fields.name\"."
+        },
+        "fields.note": {
+            "key": "note",
+            "Path": "fields",
+            "mapping": "vcslam:Washroom vcslam:note \"fields.note\"."
+        },
+        "fields.wheel_access": {
+            "key": "wheel_access",
+            "Path": "fields",
+            "mapping": "vcslam:Washroom vcslam:wheelchair_accessible \"fields.wheel_access\"."
+        },
+        "fields.primaryind": {
+            "key": "primaryind",
+            "Path": "fields",
+            "mapping": "vcslam:Washroom vcslam:id \"fields.primaryind\"."
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Sign vcslam:id "properties.sign_id".
+
+vcslam:Sign vcslam:name "properties.sign_name".
+
+vcslam:Sign vcslam:compass_direction "properties.dir".
+
+vcslam:Schedule vcslam:information "properties.schedule".
+
+vcslam:Speed vcslam:min "properties.min_speed".
+
+vcslam:Report vcslam:start_date_time "properties.start_date".
+
+vcslam:Report vcslam:end_date_time "properties.end_date".
+
+vcslam:Location vcslam:address "properties.address".
+
+vcslam:Coordinates vcslam:geometry_type "geometry.point".
+
+vcslam:Coordinate_pair vcslam:latitude "geometry.coordinate.latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "geometry.coordinate.longitude".
+
+vcslam:Ward vcslam:number "properties.ward_no".
+
+vcslam:Speed vcslam:limit "properties.speed_limit".

@@ -1,0 +1,25 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "propertyWard": {
+            "key": "propertyWard",
+            "Path": null,
+            "mapping": "vcslam:Ward vcslam:number \"propertyWard\"."
+        },
+        "propertyAddress": {
+            "key": "propertyAddress",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:address \"propertyAddress\"."
+        },
+        "latitude": {
+            "key": "latitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"latitude\"."
+        },
+        "longitude": {
+            "key": "longitude",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"longitude\"."
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+
+vcslam:Heritage_site vcslam:building vcslam:Building;
+    vcslam:designation  vcslam:Designation;
+    vcslam:locatedAt vcslam:Location;
+    vcslam:registration  vcslam:Registration;
+    vcslam:protection_type xsd:string;
+    vcslam:id xsd:string.
+
+vcslam:Designation vcslam:value xsd:string.
+
+vcslam:Record vcslam:of vcslam:Heritage_site;
+    vcslam:id xsd:string ;
+    vcslam:timestamp xsd:dateTimeStamp.
+
+vcslam:Building vcslam:name xsd:string.
+
+vcslam:Location vcslam:address xsd:string;
+    vcslam:locatedAt vcslam:Street;
+    vcslam:locatedAt vcslam:Planning_area;
+    vcslam:locatedAt vcslam:Zone;
+    vcslam:positionAt vcslam:Position.
+
+vcslam:Street vcslam:name xsd:string;
+    vcslam:number xsd:int.
+
+vcslam:Planning_area vcslam:name xsd:string.
+
+vcslam:Zone vcslam:code xsd:string.
+
+vcslam:Position vcslam:coordinates xsd:decimal;
+        vcslam:geometry_type xsd:string.

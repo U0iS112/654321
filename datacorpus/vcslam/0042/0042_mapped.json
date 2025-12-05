@@ -1,0 +1,60 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "properties.Permit_Holder": {
+            "key": "Permit_Holder",
+            "Path": "properties",
+            "mapping": "vcslam:Owner vcslam:information \"properties.Permit_Holder\"."
+        },
+        "properties.Permit_Address_Street_No": {
+            "key": "Permit_Address_Street_No",
+            "Path": "properties",
+            "mapping": "vcslam:Street vcslam:number \"properties.Permit_Address_Street_No\"."
+        },
+        "properties.Permit_Address_Street_Name": {
+            "key": "Permit_Address_Street_Name",
+            "Path": "properties",
+            "mapping": "vcslam:Street vcslam:name \"properties.Permit_Address_Street_Name\"."
+        },
+        "properties.Permit_Address_Postal_Code": {
+            "key": "Permit_Address_Postal_Code",
+            "Path": "properties",
+            "mapping": "vcslam:Postal vcslam:code \"properties.Permit_Address_Postal_Code\"."
+        },
+        "properties.Permit_Address_Ward": {
+            "key": "Permit_Address_Ward",
+            "Path": "properties",
+            "mapping": "vcslam:Ward vcslam:identifier \"properties.Permit_Address_Ward\"."
+        },
+        "properties.Permit_Contact_Phone_No_": {
+            "key": "Permit_Contact_Phone_No_",
+            "Path": "properties",
+            "mapping": "vcslam:Permit vcslam:contact_information \"properties.Permit_Contact_Phone_No_\"."
+        },
+        "geometry.type": {
+            "key": "type",
+            "Path": "geometry",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"geometry.type\"."
+        },
+        "geometry.coordinate.latitude": {
+            "key": "latitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"geometry.coordinate.latitude\"."
+        },
+        "geometry.coordinate.longitude": {
+            "key": "longitude",
+            "Path": "geometry.coordinate",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"geometry.coordinate.longitude\"."
+        },
+        "properties.Permit_Class": {
+            "key": "Permit_Class",
+            "Path": "properties",
+            "mapping": "vcslam:Permit vcslam:type \"properties.Permit_Class\"."
+        },
+        "properties.Permit_No": {
+            "key": "Permit_No",
+            "Path": "properties",
+            "mapping": "vcslam:Permit vcslam:id \"properties.Permit_No\"."
+        }
+    }
+}

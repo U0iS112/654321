@@ -1,0 +1,30 @@
+{
+    "location_masked.latitude": {
+        "key": "latitude",
+        "Path": "location_masked"
+    },
+    "location_masked.longitude": {
+        "key": "longitude",
+        "Path": "location_masked"
+    },
+    ":@computed_region_swkg_bavi": {
+        "key": ":@computed_region_swkg_bavi",
+        "Path": null
+    },
+    ":@computed_region_rffn_qbt6": {
+        "key": ":@computed_region_rffn_qbt6",
+        "Path": null
+    },
+    ":@computed_region_v7jj_366k": {
+        "key": ":@computed_region_v7jj_366k",
+        "Path": null
+    },
+    ":@computed_region_guic_hr4a": {
+        "key": ":@computed_region_guic_hr4a",
+        "Path": null
+    },
+    ":@computed_region_rcj3_ccgu": {
+        "key": ":@computed_region_rcj3_ccgu",
+        "Path": null
+    }
+}

@@ -1,0 +1,25 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Offense vcslam:id "offense_id".
+
+vcslam:Offense vcslam:description  "offense".
+
+vcslam:Offense vcslam:code "offense_code".
+
+vcslam:Offense vcslam:start_date_time "offense_start_datetime".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Sector vcslam:identifier "sector".
+
+vcslam:Category vcslam:type "crime_against_catergory".
+
+vcslam:Group vcslam:type "offense_parent_group".
+
+vcslam:Report vcslam:date_time "report_datetime".
+
+vcslam:Report vcslam:identifier "report_number".

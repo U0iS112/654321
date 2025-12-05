@@ -1,0 +1,47 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Maintenance
+    vcslam:refers_to vcslam:Time_period;
+    vcslam:includes vcslam:Area;
+    vcslam:status xsd:string .
+    
+
+vcslam:Time_period
+    vcslam:earliest vcslam:Schedule;
+    vcslam:latest vcslam:Schedule;
+    vcslam:includes vcslam:Revision;
+    vcslam:range xsd:string.
+
+vcslam:Revision
+    vcslam:includes vcslam:Start;
+    vcslam:earliest vcslam:Schedule;
+    vcslam:latest vcslam:Schedule.
+
+vcslam:Schedule
+    vcslam:contains vcslam:Start.
+
+vcslam:Start 
+    vcslam:date xsd:date.
+
+vcslam:End 
+    vcslam:date xsd:date.        
+
+vcslam:Start
+
+vcslam:Area
+    vcslam:id xsd:string;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Location
+    vcslam:includes vcslam:Neighbourhood; 
+    vcslam:positionAt vcslam:Position .
+
+vcslam:Neighbourhood
+    vcslam:name xsd:string.
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .

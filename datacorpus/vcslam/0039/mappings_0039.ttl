@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Flow vcslam:value "flow_rate".
+
+vcslam:Installation vcslam:year "installation_year".
+
+vcslam:Coordinate_pair vcslam:latitude "latitude".
+
+vcslam:Coordinate_pair vcslam:longitude "longitude".
+
+vcslam:Coordinates vcslam:geometry_type "location.type".
+
+vcslam:Coordinates vcslam:coordinate_pair_DP "location.coordinates".
+
+vcslam:Hydrant vcslam:colour "dome_colour".
+
+vcslam:Hydrant vcslam:id "hydrant_number".

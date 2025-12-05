@@ -1,0 +1,100 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "fields.sitename": {
+            "key": "sitename",
+            "Path": "fields",
+            "mapping": "vcslam:Site vcslam:name \"fields.sitename\"."
+        },
+        "fields.primarymaterial": {
+            "key": "primarymaterial",
+            "Path": "fields",
+            "mapping": "vcslam:Material vcslam:type \"fields.primarymaterial\"."
+        },
+        "fields.descriptionofwork": {
+            "key": "descriptionofwork",
+            "Path": "fields",
+            "mapping": "vcslam:Artwork vcslam:description \"fields.descriptionofwork\"."
+        },
+        "fields.ownership": {
+            "key": "ownership",
+            "Path": "fields",
+            "mapping": "vcslam:Artwork vcslam:ownership \"fields.ownership\"."
+        },
+        "fields.artistprojectstatement": {
+            "key": "artistprojectstatement",
+            "Path": "fields",
+            "mapping": "vcslam:Artist vcslam:statement \"fields.artistprojectstatement\"."
+        },
+        "fields.url": {
+            "key": "url",
+            "Path": "fields",
+            "mapping": "vcslam:Artwork vcslam:link \"fields.url\"."
+        },
+        "fields.locationonsite": {
+            "key": "locationonsite",
+            "Path": "fields",
+            "mapping": "vcslam:Site vcslam:information \"fields.locationonsite\"."
+        },
+        "fields.neighbourhood": {
+            "key": "neighbourhood",
+            "Path": "fields",
+            "mapping": "vcslam:Neighbourhood vcslam:name \"fields.neighbourhood\"."
+        },
+        "fields.artists": {
+            "key": "artists",
+            "Path": "fields",
+            "mapping": "vcslam:Artist vcslam:amount \"fields.artists\"."
+        },
+        "fields.geo_local_area": {
+            "key": "geo_local_area",
+            "Path": "fields",
+            "mapping": "vcslam:Local_area vcslam:name \"fields.geo_local_area\"."
+        },
+        "fields.yearofinstallation": {
+            "key": "yearofinstallation",
+            "Path": "fields",
+            "mapping": "vcslam:Installation vcslam:year \"fields.yearofinstallation\"."
+        },
+        "fields.geom.type": {
+            "key": "type",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:geometry_type \"fields.geom.type\"."
+        },
+        "fields.geom.coordinates": {
+            "key": "coordinates",
+            "Path": "fields.geom",
+            "mapping": "vcslam:Coordinates vcslam:coordinate_pair_DP \"fields.geom.coordinates\"."
+        },
+        "datasetid": {
+            "key": "datasetid",
+            "Path": null,
+            "mapping": "vcslam:Dataset vcslam:id \"datasetid\"."
+        },
+        "recordid": {
+            "key": "recordid",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:id \"recordid\"."
+        },
+        "record_timestamp": {
+            "key": "record_timestamp",
+            "Path": null,
+            "mapping": "vcslam:Record vcslam:timestamp \"record_timestamp\"."
+        },
+        "fields.registryid": {
+            "key": "registryid",
+            "Path": "fields",
+            "mapping": "vcslam:Artwork vcslam:id \"fields.registryid\"."
+        },
+        "fields.status": {
+            "key": "status",
+            "Path": "fields",
+            "mapping": "vcslam:Artwork vcslam:status \"fields.status\"."
+        },
+        "fields.type": {
+            "key": "type",
+            "Path": "fields",
+            "mapping": "vcslam:Artwork vcslam:type \"fields.type\"."
+        }
+    }
+}

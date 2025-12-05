@@ -1,0 +1,104 @@
+[
+    {
+        "year": "2019",
+        "month": "December",
+        "month_number": "12",
+        "license_date": "2019-12-23T00:00:00.000",
+        "neighbourhood": "Glenora",
+        "neighbourhood_id": "3200",
+        "pet_type": "Dog",
+        "breed": "DACHSHUND (MINIATURE SMOOTH HAIRED)",
+        "gender": "Male",
+        "spayed_or_neutered": "Yes",
+        "latitude": "53.544904705207486",
+        "longitude": "-113.55704251234017",
+        "location": {
+            "latitude": "53.544904705207486",
+            "longitude": "-113.55704251234017",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        },
+        "count": "1",
+        "point_location": {
+            "type": "Point",
+            "coordinates": [
+                -113.55704251234017,
+                53.544904705207486
+            ]
+        },
+        ":@computed_region_ecxu_fw7u": "196",
+        ":@computed_region_izdr_ja4x": "3",
+        ":@computed_region_5jki_au6x": "5",
+        ":@computed_region_mnf4_kaez": "9",
+        ":@computed_region_eq8d_jmrp": "144",
+        ":@computed_region_da6r_6gkw": "6",
+        ":@computed_region_7ccj_gre3": "139"
+    },
+    {
+        "year": "2019",
+        "month": "November",
+        "month_number": "11",
+        "license_date": "2019-11-28T00:00:00.000",
+        "neighbourhood": "Hazeldean",
+        "neighbourhood_id": "6290",
+        "pet_type": "Cat",
+        "breed": "DOMESTIC (LONG HAIR)",
+        "gender": "Male",
+        "spayed_or_neutered": "Yes",
+        "latitude": "53.504205803712985",
+        "longitude": "-113.47788889905675",
+        "location": {
+            "latitude": "53.504205803712985",
+            "longitude": "-113.47788889905675",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        },
+        "count": "1",
+        "point_location": {
+            "type": "Point",
+            "coordinates": [
+                -113.47788889905675,
+                53.504205803712985
+            ]
+        },
+        ":@computed_region_ecxu_fw7u": "67",
+        ":@computed_region_izdr_ja4x": "7",
+        ":@computed_region_5jki_au6x": "5",
+        ":@computed_region_mnf4_kaez": "3",
+        ":@computed_region_eq8d_jmrp": "170",
+        ":@computed_region_da6r_6gkw": "11",
+        ":@computed_region_7ccj_gre3": "272"
+    },
+    {
+        "year": "2020",
+        "month": "January",
+        "month_number": "1",
+        "license_date": "2020-01-28T00:00:00.000",
+        "neighbourhood": "Alberta Avenue",
+        "neighbourhood_id": "1010",
+        "pet_type": "Dog",
+        "breed": "POMERANIAN",
+        "gender": "Male",
+        "spayed_or_neutered": "Yes",
+        "latitude": "53.568485381482176",
+        "longitude": "-113.48511916925099",
+        "location": {
+            "latitude": "53.568485381482176",
+            "longitude": "-113.48511916925099",
+            "human_address": "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"
+        },
+        "count": "1",
+        "point_location": {
+            "type": "Point",
+            "coordinates": [
+                -113.48511916925099,
+                53.568485381482176
+            ]
+        },
+        ":@computed_region_ecxu_fw7u": "150",
+        ":@computed_region_izdr_ja4x": "4",
+        ":@computed_region_5jki_au6x": "3",
+        ":@computed_region_mnf4_kaez": "10",
+        ":@computed_region_eq8d_jmrp": "3",
+        ":@computed_region_da6r_6gkw": "7",
+        ":@computed_region_7ccj_gre3": "42"
+    }
+]

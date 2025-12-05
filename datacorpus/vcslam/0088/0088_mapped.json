@@ -1,0 +1,110 @@
+{
+    "prefix": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.",
+    "mappings": {
+        "sample_ref_no": {
+            "key": "sample_ref_no",
+            "Path": null,
+            "mapping": "vcslam:Sample vcslam:reference \"sample_ref_no\"."
+        },
+        "sample_id": {
+            "key": "sample_id",
+            "Path": null,
+            "mapping": "vcslam:Sample vcslam:id \"sample_id\"."
+        },
+        "sample_date": {
+            "key": "sample_date",
+            "Path": null,
+            "mapping": "vcslam:Sample vcslam:date_time \"sample_date\"."
+        },
+        "medium": {
+            "key": "medium",
+            "Path": null,
+            "mapping": "vcslam:Sample vcslam:medium \"medium\"."
+        },
+        "param_type": {
+            "key": "param_type",
+            "Path": null,
+            "mapping": "vcslam:Parameter vcslam:type \"param_type\"."
+        },
+        "parameter": {
+            "key": "parameter",
+            "Path": null,
+            "mapping": "vcslam:Parameter vcslam:information \"parameter\"."
+        },
+        "sample_site_no": {
+            "key": "sample_site_no",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:number \"sample_site_no\"."
+        },
+        "site_name": {
+            "key": "site_name",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:name \"site_name\"."
+        },
+        "site_type": {
+            "key": "site_type",
+            "Path": null,
+            "mapping": "vcslam:Site vcslam:type \"site_type\"."
+        },
+        "result": {
+            "key": "result",
+            "Path": null,
+            "mapping": "vcslam:Result vcslam:value \"result\"."
+        },
+        "unit": {
+            "key": "unit",
+            "Path": null,
+            "mapping": "vcslam:Result vcslam:measurement_unit_DP \"unit\"."
+        },
+        "filter": {
+            "key": "filter",
+            "Path": null,
+            "mapping": "vcslam:Filter vcslam:information \"filter\"."
+        },
+        "depth_in_meters": {
+            "key": "depth_in_meters",
+            "Path": null,
+            "mapping": "vcslam:Depth vcslam:value \"depth_in_meters\"."
+        },
+        "project": {
+            "key": "project",
+            "Path": null,
+            "mapping": "vcslam:Project vcslam:name \"project\"."
+        },
+        "watershed": {
+            "key": "watershed",
+            "Path": null,
+            "mapping": "vcslam:Location vcslam:information \"watershed\"."
+        },
+        "location.human_address": {
+            "key": "human_address",
+            "Path": "location",
+            "mapping": "vcslam:Location vcslam:human_address \"location.human_address\"."
+        },
+        "location.latitude": {
+            "key": "latitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"location.latitude\"."
+        },
+        "location.longitude": {
+            "key": "longitude",
+            "Path": "location",
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"location.longitude\"."
+        },
+        "lat_dd_wgs84": {
+            "key": "lat_dd_wgs84",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:latitude \"lat_dd_wgs84\"."
+        },
+        "lon_dd_wgs84": {
+            "key": "lon_dd_wgs84",
+            "Path": null,
+            "mapping": "vcslam:Coordinate_pair vcslam:longitude \"lon_dd_wgs84\"."
+        },
+        "method": {
+            "key": "method",
+            "Path": null,
+            "mapping": "vcslam:Measurement vcslam:method \"method\"."
+        }
+    }
+}

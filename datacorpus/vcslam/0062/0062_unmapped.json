@@ -1,0 +1,18 @@
+{
+    "fields.specialfeatures": {
+        "key": "specialfeatures",
+        "Path": "fields"
+    },
+    "fields.advisories": {
+        "key": "advisories",
+        "Path": "fields"
+    },
+    "fields.nsstreet": {
+        "key": "nsstreet",
+        "Path": "fields"
+    },
+    "fields.ewstreet": {
+        "key": "ewstreet",
+        "Path": "fields"
+    }
+}

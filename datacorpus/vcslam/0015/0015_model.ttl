@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vcslam:Permit
+    vcslam:number xsd:int ;
+    vcslam:refers_to vcslam:Project;
+    vcslam:type xsd:string ;
+    vcslam:status xsd:string ;
+    vcslam:url xsd:anyURI ;
+    vcslam:locatedAt vcslam:Location .
+
+vcslam:Project
+   vcslam:type xsd:string;
+   vcslam:mapped xsd:string;
+   vcslam:is_residential xsd:boolean.       
+
+vcslam:Location   
+    vcslam:includes vcslam:Street;
+    vcslam:includes vcslam:City;
+    vcslam:includes vcslam:State;
+    vcslam:address xsd:string ;   
+    vcslam:zip_code xsd:string ;
+    vcslam:positionAt vcslam:Position .
+
+vcslam:City
+    vcslam:name xsd:string .
+
+vcslam:State
+    vcslam:name xsd:string .
+
+vcslam:Position
+    vcslam:latitude xsd:decimal ;
+    vcslam:longitude xsd:decimal .
+

@@ -1,0 +1,101 @@
+[
+    {
+        "datasetid": "trees-municipal",
+        "recordid": "12248c1f4d63f32767594602868412fb5f8814a6",
+        "fields": {
+            "memorial_tree": "Yes",
+            "number_of_stems": 1,
+            "common_name": "London Planetree",
+            "park": "MacDonald/Memorial Park",
+            "geo_point_2d": [
+                44.222326583,
+                -76.4919955119
+            ],
+            "geojson": {
+                "type": "Point",
+                "coordinates": [
+                    -76.49199551189946,
+                    44.22232658302366
+                ]
+            },
+            "scientific_name": "Platanus x acerifolia",
+            "trunk_diameter": 5,
+            "owner": "Municipal",
+            "date_installed": "2018-07-16"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.4919955119,
+                44.222326583
+            ]
+        },
+        "record_timestamp": "2020-11-09T06:40:00+01:00"
+    },
+    {
+        "datasetid": "trees-municipal",
+        "recordid": "1b76d032126e49cc1a179864792c30587d0b9c56",
+        "fields": {
+            "memorial_tree": "Yes",
+            "number_of_stems": 1,
+            "common_name": "Skyline Honey-Locust",
+            "park": "Lake Ontario Park",
+            "geo_point_2d": [
+                44.2157615845,
+                -76.5299663271
+            ],
+            "geojson": {
+                "type": "Point",
+                "coordinates": [
+                    -76.52996632706802,
+                    44.21576158445046
+                ]
+            },
+            "scientific_name": "Gleditsia triacanthos var. inermis 'Skyline'",
+            "trunk_diameter": 4,
+            "owner": "Municipal",
+            "date_installed": "2020-10-01"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.5299663271,
+                44.2157615845
+            ]
+        },
+        "record_timestamp": "2020-11-09T06:40:00+01:00"
+    },
+    {
+        "datasetid": "trees-municipal",
+        "recordid": "23b5a2a99ec3f5451efb7279185ec02528ba1186",
+        "fields": {
+            "memorial_tree": "Yes",
+            "number_of_stems": 1,
+            "common_name": "Swamp White Oak",
+            "park": "Victoria Park",
+            "geo_point_2d": [
+                44.233744918,
+                -76.4979770293
+            ],
+            "geojson": {
+                "type": "Point",
+                "coordinates": [
+                    -76.49797702927926,
+                    44.233744917986364
+                ]
+            },
+            "scientific_name": "Quercus bicolor",
+            "trunk_diameter": 4,
+            "owner": "Municipal",
+            "date_installed": "2020-10-14"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.4979770293,
+                44.233744918
+            ]
+        },
+        "record_timestamp": "2020-11-09T06:40:00+01:00"
+    }    
+]

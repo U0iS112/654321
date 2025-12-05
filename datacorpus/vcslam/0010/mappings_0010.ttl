@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcslam: <http://www.vcslam.tmdt.info/schema#>.
+
+vcslam:Crash vcslam:day_of_week "Day Of Week".
+
+vcslam:Object vcslam:type "Object 1".
+
+vcslam:Object vcslam:type "Object 2".
+
+vcslam:Street vcslam:name "Steet Name".
+
+vcslam:Street vcslam:number "Street Number".
+
+vcslam:Location vcslam:cross_street "Cross Street".
+
+vcslam:Location vcslam:information "Location".
+
+vcslam:Coordinate_pair vcslam:longitude "Longitude".
+
+vcslam:Coordinate_pair vcslam:latitude "Latitude".
+
+vcslam:Crash vcslam:id "Crash Number".
