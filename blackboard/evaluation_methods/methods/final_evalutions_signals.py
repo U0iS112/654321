@@ -355,8 +355,3 @@ def run(root_folder):
 
     print("\nDONE — output saved under:")
     print(out)
-
-
-
-if __name__ == "__main__":
-    run(r"C:\Users\Jan\Desktop\projects\python\image_gen\blackboard_paper\testing\export_data")
