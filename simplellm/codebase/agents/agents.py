@@ -187,7 +187,7 @@ class LLMMapper:
             data = json.loads(cleaned)
             return self._postprocess_candidates(data)
         except json.JSONDecodeError as e:
-            logger.warning(f"Konnte LLM-Ausgabe nicht sauber parsen: {e}")
+            logger.warning(f"No parsing possible for llm response: {e}")
 
             try:
                 import json5
@@ -199,7 +199,7 @@ class LLMMapper:
                     data = ast.literal_eval(cleaned)
                     return self._postprocess_candidates(data)
                 except Exception:
-                    logger.error("Parsing vollständig fehlgeschlagen.")
+                    logger.error("Parsing total failure.")
                     return {}
 
     def _postprocess_candidates(self, data: dict[str, Any]) -> dict[str, Any]:

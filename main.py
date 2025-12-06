@@ -1,5 +1,5 @@
 from blackboard.codebase.core import blackboard_semantic_mapping
-from simplellm.codebase.core import paper_agents
+from simplellm.codebase.core import paper_agents as simplellm
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -27,8 +27,8 @@ def main():
     export_path_simple_llm_str = str(ROOT / "simplellm" / "exports")
     export_path_blackboard_str = str(ROOT / "blackboard" / "exports")
 
-    paper_agents.main(vcslam_path=VC_SLAM_BASE, sample_ids=sample_ids, historical_ids=historical_ids, base_export_dir=export_path_simple_llm_str,evaluation_run=True)
-    blackboard_semantic_mapping.main(vcslam_path=VC_SLAM_BASE, sample_ids=sample_ids, historical_ids=historical_ids, export_path=export_path_blackboard_str, evaluation=True)
+    simplellm.main(vcslam_path=VC_SLAM_BASE, sample_ids=sample_ids, historical_ids=historical_ids, base_export_dir=export_path_simple_llm_str,evaluation_run=True)
+    blackboard_semantic_mapping.main(vcslam_path=VC_SLAM_BASE, sample_ids=sample_ids, historical_ids=historical_ids, export_path=export_path_blackboard_str, evaluation_run=True)
 
 if __name__ == '__main__':
     main()

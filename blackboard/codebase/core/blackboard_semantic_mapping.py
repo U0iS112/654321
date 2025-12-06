@@ -332,7 +332,7 @@ def merge_label_and_example(label_mapper: AttributeMapper,
 
     merged.state["validated_candidates"] = merged_val
 
-    # ---- MATRIX MERGEN ----
+    # ---- MATRIX MERGE ----
     matrix_label = label_mapper.state.get("matrix") or []
     matrix_example = example_mapper.state.get("matrix") or []
 
@@ -412,7 +412,7 @@ def run_pipeline(
         total = len(attributes_list)
         iteration = 1
         for attr in attributes_list:
-            logger.info(f"🔍 Mapping {attr} ({iteration}/{total})")
+            logger.info(f"Mapping {attr} ({iteration}/{total})")
             iteration += 1
             mapper = AttributeMapper(
                 attribute=attr,
@@ -527,16 +527,19 @@ def run_pipeline(
     logger.info("\nPipeline finished.")
 
     if run_evaluation:
-        run_evaluations(str(base_output_dir))
+        try:
+            run_evaluations(str(base_output_dir))
+        except Exception as e:
+            logger.error(f"Error while running evaluations: {e}")
 def main(
     vcslam_path: str,
     sample_ids: list[str],
     historical_ids: list[str],
     export_path="export",
-    evaluation = False
+    evaluation_run = False
 ):
 
-    run_pipeline(vcslam_path, sample_ids, historical_ids, export_path , evaluation)
+    run_pipeline(vcslam_path, sample_ids, historical_ids, export_path , evaluation_run)
 
 
 

@@ -84,8 +84,8 @@ def build_agents(env):
         if conf["type"] == "openai":
             params["api_key"] = env["openai_key"]
 
-        elif conf["type"] == "ollama": # Hier wird der Ollama API Key verwendet
-            params["host"] = env["ollama_host"]  # URL für den Ollama-Service, Standard-Wert
+        elif conf["type"] == "ollama":
+            params["host"] = env["ollama_host"]
 
         agents.append(LLMMapper(conf["name"], conf["type"], params))
     return agents
@@ -777,4 +777,7 @@ def main(
 
         logger.info("Main run done")
         if evaluation_run:
-            evaluations.run(base_output_dir)
+            try:
+                evaluations.run(base_output_dir)
+            except Exception as e:
+                logger.error(f"Exception during evaluation: {e}")

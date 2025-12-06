@@ -34,4 +34,19 @@ This environment variable is required for all LLM-based components.
 1. Make sure you have Python ≥ 3.10 installed.
 2. Install the dependencies (requirements.txt):
 3. Ensure that `env/.env` exists and contains your API key.
-4. Start the program main.py:
+4. Start the program with the main.py in the root folder:
+
+## Other Information
+Within the main.py in the root folder are the main calls for the architectures SimpleLLM and the Blackboard.
+Both will be given the same Sample IDs (SIDs) and historical references ID (HIDs) and other parameters.
+Regarding the HIDs: If an architecture tries to process a SID which is in identical HIDs, this specific hid will not be utilized for this Sample, 
+
+Each architecture generates by default in the given export path a new subfolder with the current timestamp.
+Within this timestamp folder will be subfolder created for each SID which was processed, with the results for this specific SID.
+If the parameter "evaluation run" like currently is set to true when invoking an architecture, other subfolders within the timestamp folder beside the SIDS will be created,
+which hold global evaluations over all SIDs, and other specialized evaluations.
+
+For each architecture folder exist a subfolder codebase with contains all relevant code for running the specific code,
+while the main runner (a single python here) for the architecture can be found in the core subfolder under codebase.
+
+Within the main runner may be other config parameters, like for the Blackboard Architecture which Chat-GPT should be used.

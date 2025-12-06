@@ -184,7 +184,3 @@ def run(root_folder):
     compute_global_averages(results_by_sid, root_folder)
 
     print("\n🎉 DONE — All debug JSONs + plots + global CSV created.")
-
-
-if __name__ == "__main__":
-    run(r"C:\Users\Jan\Desktop\projects\python\image_gen\blackboard_paper\testing\export_data")
