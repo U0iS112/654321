@@ -203,8 +203,6 @@ class DiscussionEngine:
         return f"""
 You are participating in a semantic mapping  discussion.
 
-
-
 ROLE BEHAVIOR:
 - As a WEAK role, you are more flexible in changing your mapping to another validated candidate if arguments convince you. Which doesn't mean you can't have strong opinion yourself, if you can back it up / convince the others.
 - As a STRONG role, you are more conservative: you mostly provide feedback and only change your mapping if there is a very strong reason.

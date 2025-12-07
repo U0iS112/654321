@@ -3,7 +3,8 @@ import json
 import glob
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import logging
+logger = logging.getLogger(__name__)
 
 # ---------------- CONFIG ----------------
 PREFIX_STR = (
@@ -96,7 +97,7 @@ def process_sid_folder(folder_path: str):
     file_path = os.path.join(folder_path, f"{sid}_mapping_results.json")
 
     if not os.path.exists(file_path):
-        print(f"⚠ Skipping {folder_path} → no mapping_results.json found")
+        logger.info(f"Skipping {folder_path} → no mapping_results.json found")
         return None
 
     with open(file_path, "r", encoding="utf-8") as f:
@@ -215,6 +216,6 @@ def run(root_folder: str):
             global_results[sid] = res
 
     generate_plots(global_results, root_folder)
-    print("\nDONE — evaluations.json + plots + global averages created.")
+    logger.info("\nDONE — evaluations.json + plots + global averages created.")
 
 

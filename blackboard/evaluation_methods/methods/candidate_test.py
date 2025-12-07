@@ -4,6 +4,8 @@ import glob
 from statistics import mean
 import matplotlib.pyplot as plt
 from pathlib import Path
+import logging
+logger = logging.getLogger(__name__)
 
 CURRENT = Path(__file__).resolve()
 METHODS_DIR = CURRENT.parent
@@ -59,7 +61,7 @@ def evaluate_sid(root_folder, sid, ks=(1, 3, 5)):
     mapping_file = os.path.join(sid_folder, f"{sid}_mapping_results.json")
 
     if not os.path.exists(mapping_file):
-        print(f"⚠ Skipping {sid} (no mapping_results.json)")
+        logger.info(f"Skipping {sid} (no mapping_results.json)")
         return None
 
     with open(mapping_file, "r", encoding="utf-8") as f:
@@ -70,7 +72,7 @@ def evaluate_sid(root_folder, sid, ks=(1, 3, 5)):
 
     ref_file = os.path.join(VC_SLAM_BASE, sid, f"{sid}_mapped.json")
     if not os.path.exists(ref_file):
-        print(f"❌ Reference model missing for SID {sid}")
+        logger.info(f"Reference model missing for SID {sid}")
         return None
 
     with open(ref_file, "r", encoding="utf-8") as f:
@@ -97,7 +99,7 @@ def evaluate_sid(root_folder, sid, ks=(1, 3, 5)):
                 "evaluation": evaluation
             }, f, indent=4)
 
-        print(f"✔ Saved debug → {debug_file}")
+        logger.info(f"Saved debug → {debug_file}")
 
     return results_per_k
 
@@ -143,7 +145,7 @@ def compute_global_averages(results_by_sid, root_folder):
         for k in (1, 3, 5):
             f.write(f"hits@{k},{averages[k]}\n")
 
-    print(f"📌 Global averages saved → {csv_file}")
+    logger.info(f"Global averages saved → {csv_file}")
 
     # Create plots
     for k in (1, 3, 5):
@@ -183,4 +185,4 @@ def run(root_folder):
 
     compute_global_averages(results_by_sid, root_folder)
 
-    print("\n🎉 DONE — All debug JSONs + plots + global CSV created.")
+    logger.info("\nDONE — All debug JSONs + plots + global CSV created.")

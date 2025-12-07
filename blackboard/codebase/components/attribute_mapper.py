@@ -189,16 +189,14 @@ class AttributeMapper:
                Now output ONLY the JSON array of mapping candidates:
                """
 
-        # LLM-Aufruf
+
         raw_llm = self._call_llm_as_json(
             user_prompt=user_prompt,
         )
 
         debug_info["raw_llm_response"] = raw_llm
         debug_info["error"] = []
-        # ----------------------------
-        # Ergebnis verarbeiten
-        # ----------------------------
+
         candidates: List[Dict[str, Any]] = []
 
         if isinstance(raw_llm, list):
@@ -756,7 +754,6 @@ The current state of the matrix / array:
         self.state["final_mapping"] = selected
         self.logs["select_final_mappings"] = debug_info
 
-    # -------------- Hilfsfunktionen (intern) --------------
 
     def _build_literal_for_attribute(self) -> str:
 

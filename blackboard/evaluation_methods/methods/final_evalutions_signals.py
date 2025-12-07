@@ -5,6 +5,8 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 from pathlib import Path
 from datacorpus.tools.top_k_eval import evaluate_top_k
+import logging
+logger = logging.getLogger(__name__)
 
 PREFIX_STR = (
     "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n"
@@ -347,11 +349,11 @@ def run(root_folder):
         if not os.path.exists(sample_file):
             continue
 
-        print(f"→ Analyzing {sid}")
+        logger.info(f"→ Analyzing {sid}")
         all_results[sid] = analyze_sample(sample_file, sid)
 
     out = os.path.join(root_folder, "analysis_output")
     save_results(all_results, out)
 
-    print("\nDONE — output saved under:")
-    print(out)
+    logger.info(f"\nDONE — output saved under: {out}")
+

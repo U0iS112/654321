@@ -16,7 +16,9 @@ setup_root_logger(log_level="INFO")
 logger = logging.getLogger(__name__)
 gptmodel = "gpt-5"
 
-
+# ---------------------------------------------------------
+# Environment Loader
+# ---------------------------------------------------------
 def load_environment(vcslam_path_env: str):
 
     CURRENT = Path(__file__).resolve()
@@ -53,7 +55,6 @@ def load_sample(base_dir: Path, sid: str):
     documentation = doc_path.read_text(encoding="utf-8") if doc_path.exists() else ""
     unmapped = json.loads(unmapped_path.read_text(encoding="utf-8")) if unmapped_path.exists() else {}
     ref_mapping = json.loads(ref_path.read_text(encoding="utf-8")) if ref_path.exists() else {}
-
     return json_data, documentation, unmapped, ref_mapping
 
 
@@ -102,194 +103,6 @@ def extract_prefix_block(ontology: str) -> str:
         for line in ontology.splitlines()
         if line.strip().startswith("@prefix")
     )
-
-# ---------------------------------------------------------
-# Debug Methods
-# ---------------------------------------------------------
-def _reset_mapper_to_after_historical(mapper: AttributeMapper, documentation: str):
-
-    state = mapper.state
-
-
-    validated = state.get("validated_candidates") or []
-    for cand in validated:
-        cand.pop("documentation_vote", None)
-        cand.pop("selection_vote", None)
-
-
-
-    matrix = state.get("matrix") or []
-    for row in matrix:
-        agents = row.get("agents", {})
-        agents.pop("documentation", None)
-        agents.pop("selection", None)
-    state["matrix"] = matrix
-
-
-    state["final_mapping"] = None
-
-
-    mapper.logs["documentation_reasoning"] = {
-        "has_documentation": bool(documentation),
-        "validated_candidates_count": len(validated),
-        "raw_llm_response": None,
-    }
-    mapper.logs["select_final_mappings"] = {
-        "validated_candidates_count": len(validated),
-        "matrix_snapshot": None,
-        "raw_llm_response": None,
-        "warnings": [],
-    }
-
-def reset_to_post_validation(mapper: AttributeMapper):
-
-    state = mapper.state
-
-    validated = state.get("validated_candidates") or []
-    for cand in validated:
-        cand.pop("documentation_vote", None)
-        cand.pop("historical_vote", None)
-        cand.pop("selection_vote", None)
-
-
-    matrix = state.get("matrix") or []
-    for row in matrix:
-        agents = row.get("agents", {})
-        agents.pop("documentation", None)
-        agents.pop("historical", None)
-        agents.pop("selection", None)
-    state["matrix"] = matrix
-
-    state["final_mapping"] = None
-
-    mapper.logs["documentation_reasoning"] = {
-    }
-    mapper.logs["select_final_mappings"] = {
-    }
-def restore_original_final_mapping_from_logs(mapper):
-
-
-    logs = copy.deepcopy(mapper.logs.get("select_final_mappings"))
-    if not logs:
-        mapper.state["final_mapping"] = None
-        return
-
-    matrix_snapshot = logs.get("matrix_snapshot")
-    raw_llm_response = logs.get("raw_llm_response")
-
-    if not matrix_snapshot or not raw_llm_response:
-        mapper.state["final_mapping"] = None
-        return
-
-    selected_idx = None
-    for i, vote in enumerate(raw_llm_response):
-        if vote.get("accepted", False):
-            selected_idx = i
-            break
-
-    if selected_idx is None:
-        mapper.state["final_mapping"] = None
-        return
-
-    selected = matrix_snapshot[selected_idx]
-
-
-    mapper.state["final_mapping"] = {
-        "candidate": selected["candidate"],
-        "score": 1,
-        "meta": selected,
-        "selection_reason": selected["selection_vote"]["reason"]
-        if "selection_vote" in selected
-        else None,
-        "index": selected_idx
-    }
-def reset_agent_checkpoints(mapper: AttributeMapper, reset_map : list):
-    state = mapper.state
-
-
-    validated = state.get("validated_candidates") or []
-    raw_candidates = copy.deepcopy(state.get("candidates", []))
-    reset_reason = False
-    for cand in validated:
-        reset_reason = False
-        if "documentation" in reset_map:
-            cand.pop("documentation_vote", None)
-        if "historical" in reset_map:
-            cand.pop("historical_vote", None)
-        if "selection" in reset_map:
-            cand.pop("selection_vote", None)
-            reset_reason = True
-        if "reasoning" in reset_map:
-            reset_reason = True
-
-        if reset_reason:
-            for raw_cand in raw_candidates:
-                if cand["candidate"] == raw_cand["candidate"]:
-                    cand["reason"] = raw_cand["reason"]
-    if "selection" in reset_map:
-        state["final_mapping"] = {}
-
-    elif "reasoning" in reset_map:
-        restore_original_final_mapping_from_logs(mapper)
-
-
-    matrix = state.get("matrix") or []
-    for row in matrix:
-        agents = row.get("agents", {})
-
-        if "documentation" in reset_map:
-            agents.pop("documentation", None)
-        if "historical" in reset_map:
-            agents.pop("historical", None)
-        if "selection" in reset_map:
-            agents.pop("selection", None)
-    state["matrix"] = matrix
-
-
-    if "selection" in reset_map:
-        state["final_mapping"] = None
-
-
-    if "documentation" in reset_map:
-        mapper.logs["documentation_reasoning"] = {
-    }
-    if "historical" in reset_map:
-        mapper.logs["select_final_mappings"] = {
-    }
-
-def rerun_mapping(mapper: AttributeMapper , rerun_map : list):
-    if "documentation" in rerun_map:
-        mapper.documentation_reasoning()
-    if "historical" in rerun_map:
-        mapper.historical_references_reasoning()
-    if "example_value" in rerun_map:
-        mapper.example_value_reasoning()
-    if "proximity" in rerun_map:
-        mapper.attribute_label_proximity_reasoning()
-    if "selection" in rerun_map:
-        mapper.select_final_mappings()
-
-
-
-def clone_mapper_set(mappers_base, api_key, json_data, doc, hist, ontology_str, gpt_model):
-    cloned = {}
-    for attr, mapper in mappers_base.items():
-        new_mapper = AttributeMapper(
-            attribute=attr,
-            api_key=api_key,
-            input_data={
-                "json_data": json_data,
-                "documentation": doc,
-                "historical_references": hist,
-                "ontology": ontology_str,
-            },
-            gpt_model=gpt_model
-        )
-        new_mapper.state = json.loads(json.dumps(mapper.state))
-        new_mapper.logs = json.loads(json.dumps(mapper.logs))
-        cloned[attr] = new_mapper
-    return cloned
-
 
 def merge_label_and_example(label_mapper: AttributeMapper,
                             example_mapper: AttributeMapper,
@@ -359,6 +172,10 @@ def merge_label_and_example(label_mapper: AttributeMapper,
     merged.state["final_mapping"] = None
 
     return merged
+
+# ---------------------------------------------------------
+# Main Runner
+# ---------------------------------------------------------
 
 def run_pipeline(
     vcslam_path: str,
@@ -528,6 +345,7 @@ def run_pipeline(
 
     if run_evaluation:
         try:
+            logger.info("Global evaluations started.")
             run_evaluations(str(base_output_dir))
         except Exception as e:
             logger.error(f"Error while running evaluations: {e}")
