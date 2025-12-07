@@ -12,6 +12,7 @@ from datacorpus.tools.top_k_eval import evaluate_top_k
 from simplellm.evaluation_methods import evaluations
 import logging
 import datetime
+from types import MethodType
 from simplellm.codebase.config.logging_config import setup_root_logger
 from openai import OpenAI
 
@@ -120,6 +121,38 @@ def merge_all_candidates(agent_results):
             combined["mappings_candidates"].setdefault(k, []).extend(cands)
     return combined
 
+def mock_mapping_from_json(self, json_data, ontology, documentation, historical_mappings, unmapped_attributes, candidate_mapping_amount=10):
+    """
+    Ersetzt NUR den echten LLM-Call durch gespeicherte Mapping-Resultate.
+    """
+    sid = getattr(self, "_current_sid", None)
+
+    if not sid:
+        raise ValueError("SID konnte nicht aus Agent gelesen werden (_current_sid fehlt)")
+
+    if not sid:
+        raise ValueError("sample_id fehlt in json_data für Mock-Mapping")
+
+    mock_base = Path(r"C:\Users\Jan\Desktop\projects\python\agents_paper\to_ignore\adjusted_data")
+    json_path = mock_base / sid / f"{sid}_mapping_results.json"
+
+    if not json_path.exists():
+        raise FileNotFoundError(f"Mock file nicht gefunden: {json_path}")
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    model_name = self.name
+
+    if model_name not in data["evaluated_models"]:
+        raise KeyError(f"Model {model_name} nicht im Mock-JSON enthalten")
+
+    model_block = data["evaluated_models"][model_name]
+
+    return {
+        "prefix": model_block.get("prefix", ""),
+        "mappings_candidates": model_block.get("mappings_candidates", {})
+    }
 
 def select_best_candidates(combined):
 
@@ -653,10 +686,13 @@ def main(
             logger.warning(f"⚠️ Historical Sample {hid} not found – skip")
 
     agents = build_agents(env)
-
+    for agent in agents:
+        agent.mapping = MethodType(mock_mapping_from_json, agent)
 
     for sid in sample_ids:
 
+        for agent in agents:
+            agent._current_sid = sid
 
         sample_output_dir = base_output_dir / sid
         sample_output_dir.mkdir(parents=True, exist_ok=True)
@@ -680,32 +716,9 @@ def main(
         agent_weights = {agent.name: agent.get_weight() for agent in agents}
         logger.debug(f"Aktuelle Agenten-Gewichte: {agent_weights}")
 
-        if not calc_weights and voting_and_candidate:
-
-            top_m_values = [1, 3, 5, 10]
-
-            weighted_variants = {}
-            semantic_variants = {}
-
-            for m in top_m_values:
-                weighted_variants[m] = candidate_selection_count(agent_results, agent_weights, top_m=m)
-
-            voted_llm = majority_voting_weighted(agents, combined, json_data, documentation, filtered_historical)
-
-            csv_path = sample_output_dir / f"{sid}_mapping_results.csv"
-            json_path = sample_output_dir / f"{sid}_mapping_results.json"
-
-            append_combined_results_to_exports(
-                csv_path,
-                json_path,
-                weighted_variants,
-                voted_llm,
-                reference,sample_id=sid
-            )
-        else:
-            weighted_variants = {}
-            semantic_variants = {}
-            voted_llm = {"prefix": combined["prefix"], "mappings_candidates": {}}
+        weighted_variants = {}
+        semantic_variants = {}
+        voted_llm = {"prefix": combined["prefix"], "mappings_candidates": {}}
 
         evaluate_and_export(
             sid,
@@ -718,62 +731,6 @@ def main(
             vote_and_selection=voting_and_candidate
         )
 
-
-    if calc_weights and voting_and_candidate:
-
-        agent_weights = calculate_agent_weights(base_output_dir)
-
-
-
-        for agent in agents:
-            if agent.name in agent_weights:
-                agent.set_weight(agent_weights[agent.name])
-
-
-        for sid in sample_ids:
-            sample_output_dir = base_output_dir / sid
-            json_path = sample_output_dir / f"{sid}_mapping_results.json"
-            csv_path = sample_output_dir / f"{sid}_mapping_results.csv"
-
-            if not json_path.exists():
-                continue
-
-
-            with open(json_path, "r", encoding="utf-8") as jf:
-                data = json.load(jf)
-
-
-            json_data, documentation, unmapped, reference = load_sample(env["base_dir"], sid)
-            filtered_historical = [h for h in historical if h["sid"] != sid]
-
-
-            agent_results = {}
-            for a in [ag.name for ag in agents]:
-                if a in data.get("evaluated_models", {}):
-                    agent_results[a] = {
-                        "prefix": data["evaluated_models"][a].get("prefix", ""),
-                        "mappings_candidates": data["evaluated_models"][a].get("mappings_candidates", {})
-                    }
-
-            combined = merge_all_candidates(agent_results)
-
-
-            top_m_values = [1, 3, 5, 10]
-
-            count_variants = {}
-
-            for m in top_m_values:
-                count_variants[m] = candidate_selection_count(agent_results, agent_weights, top_m=m)
-            voted_llm = majority_voting_weighted(agents, combined, json_data, documentation, filtered_historical)
-
-            append_combined_results_to_exports(
-                csv_path,
-                json_path,
-                count_variants,
-                voted_llm,
-                reference,
-                sid
-            )
 
         logger.info("Main run done")
         if evaluation_run:

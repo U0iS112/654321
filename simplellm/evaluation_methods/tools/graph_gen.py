@@ -3,9 +3,10 @@ import matplotlib.pyplot as plt
 import glob
 import os
 import re
+import logging
 import json
 from pandas.api.types import CategoricalDtype
-
+logger = logging.getLogger(__name__)
 standard_root_dir = r""
 
 def generate_plots_from_root_dir(root_dir=standard_root_dir):
@@ -31,7 +32,6 @@ def generate_plots_from_root_dir(root_dir=standard_root_dir):
         except Exception:
             df = pd.read_csv(file, sep="\t")
 
-        print(f"Loaded: {file} → Columns: {list(df.columns)}")
 
         df["sample"] = sid
         all_data.append(df)
@@ -79,7 +79,6 @@ def generate_plots_from_root_dir(root_dir=standard_root_dir):
     avg_csv_path = os.path.join(plot_dir, "model_averages.csv")
     avg_data.rename(columns={"Mappings_From": "from"}, inplace=True)
     avg_data.to_csv(avg_csv_path, index=False)
-    print(f"Saved averages table to: {avg_csv_path}")
 
     # === Split GPT vs. Non-GPT ===
     gpt_mask = data["Mappings_From"].str.contains(r"(?i)gpt", na=False)
@@ -89,7 +88,6 @@ def generate_plots_from_root_dir(root_dir=standard_root_dir):
     # === Plot helper ===
     def plot_subset(subset, label):
         if subset.empty:
-            print(f"No data for category '{label}'.")
             return
 
         subdir = os.path.join(plot_dir, label)
@@ -116,7 +114,6 @@ def generate_plots_from_root_dir(root_dir=standard_root_dir):
 
             img_path = os.path.join(subdir, f"{hits_col}_plot.png")
             plt.savefig(img_path, dpi=300)
-            print(f"Plot saved: {img_path}")
             plt.close()
 
         # Fail rate plot
@@ -137,7 +134,6 @@ def generate_plots_from_root_dir(root_dir=standard_root_dir):
 
             img_path = os.path.join(subdir, "fail_rate_plot.png")
             plt.savefig(img_path, dpi=300)
-            print(f"Fail-rate plot saved: {img_path}")
             plt.close()
 
     # === GPT Models ===
@@ -146,7 +142,6 @@ def generate_plots_from_root_dir(root_dir=standard_root_dir):
     # === Non-GPT Models ===
     plot_subset(non_gpt_data, "NonGPT_models")
 
-    print("\nAll plots and CSV files successfully exported!")
 
 def analyze_gpt_mapping_diversity(root_dir=standard_root_dir):
     """
@@ -166,7 +161,6 @@ def analyze_gpt_mapping_diversity(root_dir=standard_root_dir):
     all_records = []
     ttl_pattern = re.compile(r"(vcslam:[A-Za-z0-9_]+)\s+(vcslam:[A-Za-z0-9_]+)")
 
-    print(f"{len(json_files)} JSON files found – starting GPT diversity analysis…")
 
     for file_path in json_files:
         sid = os.path.basename(os.path.dirname(file_path))
@@ -206,7 +200,6 @@ def analyze_gpt_mapping_diversity(root_dir=standard_root_dir):
 
     df = pd.DataFrame(all_records)
     if df.empty:
-        print("No GPT data found.")
         return
 
     # === Averages per SID & model ===
@@ -230,7 +223,6 @@ def analyze_gpt_mapping_diversity(root_dir=standard_root_dir):
         plt.tight_layout()
         plt.savefig(os.path.join(plot_dir, fname), dpi=300)
         plt.close()
-        print(f"GPT plot saved: {fname}")
 
     # === GPT Diversity Plots ===
     plot_metric("Number of candidates",
@@ -288,7 +280,6 @@ def analyze_gpt_mapping_diversity(root_dir=standard_root_dir):
             fname = f"{fname_prefix}_{model.replace('/', '_').replace(':', '_')}.png"
             plt.savefig(os.path.join(hist_dir, fname), dpi=300)
             plt.close()
-            print(f"GPT histogram saved: {fname}")
 
     plot_histograms("Number of candidates",
                     "Distribution of Candidates per Attribute ",
@@ -318,15 +309,14 @@ def analyze_gpt_mapping_diversity(root_dir=standard_root_dir):
 
     csv_path = os.path.join(plot_dir, "gpt_mapping_diversity_averages.csv")
     final_df.to_csv(csv_path, index=False)
-    print(f"Saved GPT diversity averages table: {csv_path}")
 
-    print("\nGPT Diversity Analysis Completed!\n")
 
 def run(root_dir):
     global standard_root_dir
     standard_root_dir = root_dir
-    generate_plots_from_root_dir()
-    analyze_gpt_mapping_diversity()
+    generate_plots_from_root_dir(root_dir=root_dir)
+    analyze_gpt_mapping_diversity(root_dir=root_dir)
+    logger.info("Finished global analysis")
 
 def main():
     generate_plots_from_root_dir()
